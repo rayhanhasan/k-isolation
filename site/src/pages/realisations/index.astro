@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/sections/PageHero.astro';
+import CaseCard from '../../components/cards/CaseCard.astro';
+import CtaBand from '../../components/sections/CtaBand.astro';
+
+const cases = (await getCollection('realisations')).sort((a, b) => Number(b.data.featured) - Number(a.data.featured) || +b.data.date - +a.data.date);
+const sectors = [...new Set(cases.map((c) => c.data.sector))];
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Réalisations', href: '/realisations/' },
+];
+---
+<BaseLayout
+  title="Nos réalisations : chambres froides, cloisons, rénovation"
+  description="Études de cas K Isolation : rénovation de magasin de nuit, sol de chambre froide négative refait sans rompre le froid, cuisine pro au MIN de Rungis, cloisons d'entrepôt."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Réalisations"
+    title="Des chantiers menés autour de l’activité de nos clients"
+    lead="Pour chaque projet : le contexte, les contraintes d’exploitation, le phasage retenu et le résultat. Pas de visuels de catalogue : uniquement des photos de nos chantiers."
+    breadcrumbs={breadcrumbs}
+  />
+  <section class="py-16 sm:py-20">
+    <div class="container-k">
+      {sectors.length > 1 && (
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Filtrer par secteur" id="case-filters">
+          <button type="button" data-filter="all" aria-pressed="true" class="rounded-full border border-steel-300 px-4 py-2 text-sm font-medium aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white">Tous les secteurs</button>
+          {sectors.map((s) => (
+            <button type="button" data-filter={s} aria-pressed="false" class="rounded-full border border-steel-300 px-4 py-2 text-sm font-medium aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-white">{s}</button>
+          ))}
+        </div>
+      )}
+      <ul class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3" id="case-list">
+        {cases.map((c) => <li data-sector={c.data.sector}><CaseCard entry={c} headingLevel="h2" /></li>)}
+      </ul>
+    </div>
+  </section>
+  <CtaBand title="Votre chantier sera le prochain de cette page ?" loc="realisations" />
+</BaseLayout>
+<script>
+  const btns = document.querySelectorAll<HTMLButtonElement>('#case-filters button');
+  btns.forEach((b) =>
+    b.addEventListener('click', () => {
+      btns.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+      const f = b.dataset.filter;
+      document.querySelectorAll<HTMLElement>('#case-list > li').forEach((li) => {
+        li.hidden = f !== 'all' && li.dataset.sector !== f;
+      });
+    }),
+  );
+</script>

@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/sections/PageHero.astro';
+import SectionHeading from '../components/sections/SectionHeading.astro';
+import Guarantees from '../components/sections/Guarantees.astro';
+import LogoWall from '../components/sections/LogoWall.astro';
+import CtaBand from '../components/sections/CtaBand.astro';
+import Icon from '../components/ui/Icon.astro';
+import { SITE } from '../data/site';
+import teamImg from '../assets/chantiers/entrepot-pose-cloisons-isothermes.jpg';
+
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'À propos', href: '/a-propos/' },
+];
+const values = [
+  { t: 'Le terrain d’abord', d: 'Le dirigeant suit les chantiers. Les décisions se prennent là où se posent les panneaux, pas dans un bureau.' },
+  { t: 'Pas de sous-traitance en cascade', d: 'Nos monteurs sont nos équipes. Vous savez qui entre sur votre site, et nous répondons de leur travail.' },
+  { t: 'Votre exploitation passe avant notre confort', d: 'Nuit, week-end, phasage : nous adaptons le chantier à votre activité, jamais l’inverse.' },
+  { t: 'Dire ce qu’on fait, faire ce qu’on dit', d: 'Planning, garanties, délais : tout ce que nous promettons est écrit. Et ce que nous ne faisons pas (le groupe froid), nous le disons.' },
+];
+---
+<BaseLayout title="À propos : une équipe de pose resserrée, basée à Marseille" description="K Isolation (KISOLATION) : société marseillaise de pose de chambres froides et cloisons isothermes. Équipes salariées, interlocuteur unique, chantiers en site occupé." breadcrumbs={breadcrumbs}>
+  <PageHero eyebrow="À propos" title="Une structure resserrée, des poseurs qui connaissent le froid" lead="KISOLATION est une société créée en 2024 et installée à Marseille. Nos équipes de pose travaillent sur les chambres froides et les cloisons isothermes depuis bien avant : c’est cette expérience de terrain que nous mettons au service de votre site." breadcrumbs={breadcrumbs} image={teamImg} imageAlt="Pose de cloisons isothermes dans un entrepôt par une équipe K Isolation" />
+
+  <section class="py-16 sm:py-20">
+    <div class="container-k grid gap-12 lg:grid-cols-2">
+      <div class="prose-k">
+        <h2>Pourquoi nous existons</h2>
+        <p>Dans un magasin, une cuisine centrale ou un entrepôt frigorifique, un chantier d’isolation n’est jamais « juste » un chantier. Il touche à la chaîne du froid, à l’hygiène, au planning d’ouverture et au chiffre d’affaires du jour.</p>
+        <p>Nous avons créé K Isolation pour une raison simple : les exploitants méritent un poseur qui comprend ces contraintes et qui organise le travail autour d’elles. De nuit quand il le faut, par phases quand le froid ne peut pas s’arrêter, avec un interlocuteur qui reste joignable après la réception.</p>
+        <h2>Ce que nous faisons, et ce que nous ne faisons pas</h2>
+        <p>Notre métier, c’est <strong>l’enveloppe du froid</strong> : panneaux sandwich, portes isothermes, plafonds, sols de chambres froides, cloisons de laboratoires et de salles propres, revêtements muraux alimentaires. Nous les posons, nous les rénovons et nous les entretenons.</p>
+        <p>La production de froid (groupes, évaporateurs, fluides frigorigènes) est le métier des frigoristes. Nous travaillons avec eux, nous coordonnons les interventions pour vous, mais nous ne prétendons pas faire leur travail.</p>
+      </div>
+      <div>
+        <ul class="grid gap-4">
+          {values.map((v) => (
+            <li class="card p-6">
+              <h3 class="flex items-center gap-2 text-lg font-bold text-ink"><Icon name="check" class="size-5 text-brand-600" />{v.t}</h3>
+              <p class="mt-2 text-steel-600">{v.d}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-frost-100 py-14"><LogoWall title="Ils nous ont confié des chantiers" /></section>
+
+  <section class="py-16 sm:py-20">
+    <div class="container-k">
+      <SectionHeading eyebrow="Identité" title="Ce que vos achats vont vérifier (et c’est tant mieux)" lead="Nous préférons que vous trouviez ces informations ici plutôt que de les chercher ailleurs." />
+      <dl class="mt-10 grid gap-px overflow-hidden rounded-2xl border border-steel-200 bg-steel-200 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-white p-6"><dt class="text-sm text-steel-500">Raison sociale</dt><dd class="mt-1 font-semibold text-ink">{SITE.legalName}</dd></div>
+        <div class="bg-white p-6"><dt class="text-sm text-steel-500">SIREN</dt><dd class="mt-1 font-semibold text-ink">{SITE.siren} — {SITE.rcs}</dd></div>
+        <div class="bg-white p-6"><dt class="text-sm text-steel-500">Siège</dt><dd class="mt-1 font-semibold text-ink">{SITE.address.street}, {SITE.address.postalCode} {SITE.address.city}</dd></div>
+        <div class="bg-white p-6"><dt class="text-sm text-steel-500">Dossier fournisseur</dt><dd class="mt-1 font-semibold text-ink">Kbis, URSSAF, décennale, RC Pro : <a href={`mailto:${SITE.email}?subject=Demande%20de%20dossier%20fournisseur`} class="text-brand-600 underline">sur demande</a></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <Guarantees />
+  <CtaBand loc="a-propos" />
+</BaseLayout>

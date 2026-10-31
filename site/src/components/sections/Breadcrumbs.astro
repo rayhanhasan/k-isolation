@@ -6,7 +6,7 @@ interface Props {
 }
 const { items, dark = false } = Astro.props;
 ---
-<nav aria-label="Fil d'Ariane" class:list={['text-sm', dark ? 'text-steel-400' : 'text-steel-500']}>
+<nav aria-label="Fil d'Ariane" class:list={['text-sm', dark ? 'text-steel-300' : 'text-steel-600']}>
   <ol class="flex flex-wrap items-center gap-1.5">
     {items.map((it, i) => (
       <li class="flex items-center gap-1.5">

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /merci/
+
+Sitemap: https://k-isolation.fr/sitemap-index.xml

@@ -5,15 +5,18 @@ interface Props {
   title?: string;
   text?: string;
   preset?: string;
+  /** Lien complet vers le formulaire (prioritaire sur preset) */
+  href?: string;
   loc?: string;
 }
 const {
   title = 'Votre projet mérite un devis clair, chiffré, sans mauvaise surprise.',
   text = 'Décrivez votre besoin en 2 minutes. Un technicien vous rappelle, organise la visite si nécessaire et vous remet un devis détaillé poste par poste.',
   preset,
+  href: hrefProp,
   loc = 'cta-band',
 } = Astro.props;
-const href = preset ? `/devis/?besoin=${encodeURIComponent(preset)}` : '/devis/';
+const href = hrefProp ?? (preset ? `/devis/?besoin=${encodeURIComponent(preset)}` : '/devis/');
 ---
 <section class="py-16 sm:py-20">
   <div class="container-k">

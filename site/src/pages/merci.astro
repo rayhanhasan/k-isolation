@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/ui/Icon.astro';
+import { SITE } from '../data/site';
+---
+<BaseLayout title="Demande bien reçue" description="Votre demande d'estimation a bien été transmise à K Isolation. Un technicien vous recontacte avec une première estimation en moins d'un jour ouvré." noindex>
+  <section class="bg-frost-100 py-20 sm:py-28">
+    <div class="container-k max-w-3xl text-center">
+      <span class="mx-auto flex size-16 items-center justify-center rounded-full bg-ok-600 text-white"><Icon name="check" class="size-8" /></span>
+      <h1 class="mt-6 font-display text-4xl font-extrabold text-ink sm:text-5xl">C’est bien reçu, merci&nbsp;!</h1>
+      <p class="mt-5 text-lg text-steel-600">Un e-mail de confirmation vient de partir vers votre boîte (pensez à vérifier les indésirables). Voici la suite :</p>
+      <ol class="mx-auto mt-10 grid max-w-2xl gap-4 text-left">
+        <li class="card flex gap-4 p-5"><span class="font-display text-2xl font-extrabold text-brand-600">1</span><p><span class="font-semibold text-ink">Un technicien étudie votre demande</span> et vous rappelle au numéro indiqué.</p></li>
+        <li class="card flex gap-4 p-5"><span class="font-display text-2xl font-extrabold text-brand-600">2</span><p><span class="font-semibold text-ink">Première estimation technique et budgétaire</span> en moins d’un jour ouvré.</p></li>
+        <li class="card flex gap-4 p-5"><span class="font-display text-2xl font-extrabold text-brand-600">3</span><p><span class="font-semibold text-ink">Visite technique si nécessaire</span>, puis devis détaillé et planning écrit.</p></li>
+      </ol>
+      <p class="mt-10 text-steel-600">Des photos ou des plans&nbsp;? Répondez à l’e-mail de confirmation en les joignant.</p>
+      <div class="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="/realisations/" class="btn-ghost">Voir nos réalisations</a>
+        <a href={SITE.phoneHref} data-loc="merci" class="btn-primary"><Icon name="phone" class="size-4" /> Urgent ? {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

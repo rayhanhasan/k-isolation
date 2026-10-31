@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/sections/PageHero.astro';
+import Icon from '../components/ui/Icon.astro';
+import { SITE } from '../data/site';
+
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Contact', href: '/contact/' },
+];
+const options = [
+  { icon: 'fileText', t: 'Un projet à chiffrer', d: 'Formulaire en 4 étapes, première estimation en moins d’un jour ouvré.', href: '/devis/', cta: 'Demander une estimation' },
+  { icon: 'alert', t: 'Une panne, une urgence', d: 'Porte, panneau, joint, sol endommagé : appelez directement.', href: SITE.phoneHref, cta: SITE.phone, urgent: true },
+  { icon: 'user', t: 'Frigoriste, cuisiniste, MOE', d: 'Sous-traitez-nous le lot enveloppe en toute confiance.', href: '/partenaires/', cta: 'Devenir partenaire' },
+  { icon: 'building', t: 'Candidature', d: 'Monteurs, chefs d’équipe, techniciens : nous recrutons.', href: '/recrutement/', cta: 'Voir les offres' },
+] as const;
+---
+<BaseLayout title="Contact : parlez à un technicien K Isolation" description="Contactez K Isolation à Marseille : 06 35 29 80 57, contact@k-isolation.fr. Estimation de projet, urgence, partenariat ou candidature : le bon interlocuteur directement." breadcrumbs={breadcrumbs}>
+  <PageHero eyebrow="Contact" title="Parlez directement à un technicien" lead="Pas de standard, pas de commercial qui vous rappelle dans trois semaines : vous êtes en contact avec la personne qui suivra votre chantier." breadcrumbs={breadcrumbs} />
+  <section class="py-16 sm:py-20">
+    <div class="container-k grid gap-12 lg:grid-cols-12">
+      <ul class="grid gap-5 sm:grid-cols-2 lg:col-span-8">
+        {options.map((o) => (
+          <li class:list={['card relative flex flex-col p-6', 'urgent' in o && 'border-alert-600/30 bg-alert-50']}>
+            <span class:list={['flex size-11 items-center justify-center rounded-xl', 'urgent' in o ? 'bg-alert-600 text-white' : 'bg-brand-100 text-brand-700']}><Icon name={o.icon} class="size-5" /></span>
+            <h2 class="mt-4 text-xl font-bold text-ink">{o.t}</h2>
+            <p class="mt-2 flex-1 text-steel-600">{o.d}</p>
+            <a href={o.href} data-loc="contact" class:list={['mt-5 inline-flex items-center gap-1.5 font-semibold after:absolute after:inset-0', 'urgent' in o ? 'text-alert-600' : 'text-brand-600']}>{o.cta} <Icon name="arrowRight" class="size-4" /></a>
+          </li>
+        ))}
+      </ul>
+      <aside class="lg:col-span-4">
+        <div class="rounded-3xl bg-navy-900 p-7 text-white">
+          <p class="font-display text-xl font-bold">K Isolation</p>
+          <address class="mt-5 space-y-4 not-italic text-steel-300">
+            <a href={SITE.phoneHref} data-loc="contact-coordonnees" class="flex items-center gap-3 text-lg font-semibold text-white"><Icon name="phone" class="size-5 text-ice-400" /> {SITE.phone}</a>
+            <a href={`mailto:${SITE.email}`} data-loc="contact-coordonnees" class="flex items-center gap-3 hover:text-white"><Icon name="mail" class="size-5 text-ice-400" /> {SITE.email}</a>
+            <p class="flex items-start gap-3"><Icon name="mapPin" class="mt-0.5 size-5 shrink-0 text-ice-400" /> {SITE.address.street}<br />{SITE.address.postalCode} {SITE.address.city}</p>
+            <p class="flex items-center gap-3"><Icon name="clock" class="size-5 text-ice-400" /> {SITE.openingHours}</p>
+          </address>
+          <p class="mt-6 border-t border-white/10 pt-5 text-sm text-steel-400">Interventions : {SITE.hubs.join(' et ')}, et partout en France pour les projets multi-sites.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

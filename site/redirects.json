@@ -1,0 +1,502 @@
+[
+ {
+  "from": "/installation-fourniture/",
+  "to": "/chambres-froides/",
+  "status": 301
+ },
+ {
+  "from": "/services/installation-fourniture/",
+  "to": "/chambres-froides/",
+  "status": 301
+ },
+ {
+  "from": "/salle-blanche/",
+  "to": "/salles-blanches/",
+  "status": 301
+ },
+ {
+  "from": "/services/amenagements-professionnels-specifiques/",
+  "to": "/cloisons-isothermes/",
+  "status": 301
+ },
+ {
+  "from": "/amenagements-sur-mesure/",
+  "to": "/cloisons-isothermes/",
+  "status": 301
+ },
+ {
+  "from": "/services/remorques/",
+  "to": "/secteurs/logistique-entreposage/",
+  "status": 301
+ },
+ {
+  "from": "/remorques/",
+  "to": "/secteurs/logistique-entreposage/",
+  "status": 301
+ },
+ {
+  "from": "/services/renovation-mise-en-conformite/",
+  "to": "/renovation-chambre-froide/",
+  "status": 301
+ },
+ {
+  "from": "/renovation-conformite/",
+  "to": "/renovation-chambre-froide/",
+  "status": 301
+ },
+ {
+  "from": "/services/service-apres-vente-sav/",
+  "to": "/sav-maintenance/",
+  "status": 301
+ },
+ {
+  "from": "/services/",
+  "to": "/",
+  "status": 301
+ },
+ {
+  "from": "/services/demande-envoi-de-devis/",
+  "to": "/devis/",
+  "status": 301
+ },
+ {
+  "from": "/services/validation-du-devis/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/services/execution-des-travaux/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/services_group/nos-services/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/services_group/process/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/domaine-dactivites/",
+  "to": "/",
+  "status": 301
+ },
+ {
+  "from": "/activtites/",
+  "to": "/",
+  "status": 301
+ },
+ {
+  "from": "/agroalimentaire/",
+  "to": "/secteurs/agroalimentaire/",
+  "status": 301
+ },
+ {
+  "from": "/logistique/",
+  "to": "/secteurs/logistique-entreposage/",
+  "status": 301
+ },
+ {
+  "from": "/laboratoire-cuisine/",
+  "to": "/secteurs/restauration-cuisines-professionnelles/",
+  "status": 301
+ },
+ {
+  "from": "/industrie/",
+  "to": "/secteurs/industrie/",
+  "status": 301
+ },
+ {
+  "from": "/distribution/",
+  "to": "/secteurs/grande-distribution/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio/installation-cloisons-isothermes-haute-performance/",
+  "to": "/realisations/installation-cloisons-isothermes-haute-performance/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio/renovation-magasin-carrefour-lambris-pvc/",
+  "to": "/realisations/renovation-magasin-carrefour-lambris-pvc/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio/depose-remplacement-sol-chambre-froide-negative/",
+  "to": "/realisations/depose-remplacement-sol-chambre-froide-negative/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio/amenagement-bureaux-vestiaires-industriels/",
+  "to": "/realisations/amenagement-bureaux-vestiaires-industriels/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio/cuisine-professionnelle-min-rungis/",
+  "to": "/realisations/cuisine-professionnelle-min-rungis/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio_group/agroalimentaire/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio_group/logistique/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio_group/distribution/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio_group/industrie/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/portfolio_group/cuisine-professionnelle/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/category/realisations-projets/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/comment-bien-choisir-sa-chambre-froide-professionnelle/",
+  "to": "/blog/comment-bien-choisir-sa-chambre-froide-professionnelle/",
+  "status": 301
+ },
+ {
+  "from": "/faut-il-un-permis-ou-une-autorisation-speciale-pour-installer-une-chambre-froide/",
+  "to": "/blog/faut-il-un-permis-ou-une-autorisation-speciale-pour-installer-une-chambre-froide/",
+  "status": 301
+ },
+ {
+  "from": "/comment-bien-isoler-un-entrepot-ou-un-local-industriel-panneaux-cloisons-et-faux-plafonds/",
+  "to": "/blog/comment-bien-isoler-un-entrepot-ou-un-local-industriel-panneaux-cloisons-et-faux-plafonds/",
+  "status": 301
+ },
+ {
+  "from": "/chambre-froide-positive-ou-negative-quelle-difference/",
+  "to": "/blog/chambre-froide-positive-ou-negative-quelle-difference/",
+  "status": 301
+ },
+ {
+  "from": "/category/blog-actualites/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/category/chambre-froide/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/category/agroalimentaire/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/category/logistique/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/category/reglementation/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/category/salle-blanche/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/category/uncategorized/",
+  "to": "/blog/",
+  "status": 301
+ },
+ {
+  "from": "/tag/cloisons/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/tag/entrepot/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/tag/local-industriel/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/2025/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/2025/08/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/author/ines/",
+  "to": "/a-propos/",
+  "status": 301
+ },
+ {
+  "from": "/feed/",
+  "to": "/rss.xml",
+  "status": 301
+ },
+ {
+  "from": "/comments/feed/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/zone/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/",
+  "to": "/zones/marseille/",
+  "status": 301
+ },
+ {
+  "from": "/zone/provence-alpes-cote-d-azur/",
+  "to": "/zones/marseille/",
+  "status": 301
+ },
+ {
+  "from": "/zone/provence-alpes-cote-d-azur/bouches-du-rhone/",
+  "to": "/zones/marseille/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/seine-saint-denis/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/seine-saint-denis/aulnay-sous-bois/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/seine-saint-denis/saint-denis/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/seine-saint-denis/bobigny/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/hauts-de-seine/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/hauts-de-seine/gennevilliers/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/hauts-de-seine/nanterre/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/ile-de-france/hauts-de-seine/courbevoie/",
+  "to": "/zones/ile-de-france/",
+  "status": 301
+ },
+ {
+  "from": "/zone/auvergne-rhone-alpes/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/bourgogne-franche-comte/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/bretagne/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/centre-val-de-loire/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/corse/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/grand-est/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/hauts-de-france/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/normandie/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/nouvelle-aquitaine/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/occitanie/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/pays-de-la-loire/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/zone/suisse/",
+  "to": "/zones/",
+  "status": 301
+ },
+ {
+  "from": "/about-us/",
+  "to": "/a-propos/",
+  "status": 301
+ },
+ {
+  "from": "/faqs/",
+  "to": "/faq/",
+  "status": 301
+ },
+ {
+  "from": "/recrutement-2/",
+  "to": "/recrutement/",
+  "status": 301
+ },
+ {
+  "from": "/recrutement-3/",
+  "to": "/recrutement/",
+  "status": 301
+ },
+ {
+  "from": "/monteur-de-panneaux-de-chambre-froide-h-f/",
+  "to": "/recrutement/",
+  "status": 301
+ },
+ {
+  "from": "/mentions/",
+  "to": "/mentions-legales/",
+  "status": 301
+ },
+ {
+  "from": "/privacy-policy/",
+  "to": "/confidentialite/",
+  "status": 301
+ },
+ {
+  "from": "/politique-de-confidentialite/",
+  "to": "/confidentialite/",
+  "status": 301
+ },
+ {
+  "from": "/nos-realisations/",
+  "to": "/realisations/",
+  "status": 301
+ },
+ {
+  "from": "/nos-solutions/",
+  "to": "/",
+  "status": 301
+ },
+ {
+  "from": "/team/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/testimonials/linda-moore-3/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/elementor-21160/",
+  "to": null,
+  "status": 410
+ },
+ {
+  "from": "/home/",
+  "to": "/",
+  "status": 301
+ },
+ {
+  "from": "/sitemap_index.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ },
+ {
+  "from": "/post-sitemap.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ },
+ {
+  "from": "/page-sitemap.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ },
+ {
+  "from": "/zone-sitemap.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ },
+ {
+  "from": "/cpt_portfolio-sitemap.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ },
+ {
+  "from": "/cpt_services-sitemap.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ },
+ {
+  "from": "/category-sitemap.xml",
+  "to": "/sitemap-index.xml",
+  "status": 301
+ }
+]

@@ -1,0 +1,26 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/sections/Breadcrumbs.astro';
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  updated: string;
+  noindex?: boolean;
+}
+const { title, description, path, updated, noindex = false } = Astro.props;
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: title, href: path },
+];
+---
+<BaseLayout title={title} description={description} breadcrumbs={breadcrumbs} noindex={noindex}>
+  <section class="py-12 sm:py-16">
+    <div class="container-k max-w-3xl">
+      <Breadcrumbs items={breadcrumbs} />
+      <h1 class="mt-6 font-display text-4xl font-extrabold text-ink">{title}</h1>
+      <p class="mt-2 text-sm text-steel-500">Dernière mise à jour : {updated}</p>
+      <div class="prose-k mt-10"><slot /></div>
+    </div>
+  </section>
+</BaseLayout>

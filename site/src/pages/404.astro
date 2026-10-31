@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/ui/Icon.astro';
+import { SERVICES_NAV, SITE } from '../data/site';
+---
+<BaseLayout title="Page introuvable" description="Cette page n'existe pas ou a été déplacée lors de la refonte du site K Isolation." noindex>
+  <section class="py-20 sm:py-28">
+    <div class="container-k max-w-3xl text-center">
+      <p class="font-mono text-sm text-brand-600">Erreur 404</p>
+      <h1 class="mt-3 font-display text-4xl font-extrabold text-ink sm:text-5xl">Cette page n’existe plus</h1>
+      <p class="mt-5 text-lg text-steel-600">Notre site a été entièrement refait. La page que vous cherchez a sans doute changé d’adresse : voici les principales.</p>
+      <ul class="mt-10 grid gap-3 text-left sm:grid-cols-2">
+        {SERVICES_NAV.map((s) => <li><a href={s.href} class="card flex items-center justify-between p-4 font-semibold text-ink hover:border-brand-500">{s.label}<Icon name="arrowRight" class="size-4 text-brand-600" /></a></li>)}
+        <li><a href="/realisations/" class="card flex items-center justify-between p-4 font-semibold text-ink hover:border-brand-500">Réalisations<Icon name="arrowRight" class="size-4 text-brand-600" /></a></li>
+      </ul>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href="/" class="btn-ghost">Retour à l’accueil</a>
+        <a href="/devis/" class="btn-primary">Demander une estimation</a>
+      </div>
+      <p class="mt-6 text-sm text-steel-500">Ou appelez-nous : <a href={SITE.phoneHref} class="font-semibold text-ink">{SITE.phone}</a></p>
+    </div>
+  </section>
+</BaseLayout>

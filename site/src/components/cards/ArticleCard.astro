@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+interface Props {
+  entry: CollectionEntry<'blog'>;
+}
+const { entry } = Astro.props;
+const d = entry.data;
+const date = (d.updated ?? d.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<article class="group relative flex flex-col">
+  {d.cover && (
+    <div class="overflow-hidden rounded-2xl">
+      <Image src={d.cover} alt={d.coverAlt ?? ''} widths={[400, 640]} sizes="(min-width: 1024px) 33vw, 100vw" class="aspect-[16/10] w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+    </div>
+  )}
+  <p class="mt-5 flex items-center gap-3 text-sm text-steel-500">
+    <span class="font-semibold text-brand-600">{d.category}</span>
+    <span aria-hidden="true">·</span>
+    <time datetime={(d.updated ?? d.date).toISOString()}>{d.updated ? `Mis à jour le ${date}` : date}</time>
+  </p>
+  <h3 class="mt-2 text-xl leading-snug font-bold text-ink group-hover:text-brand-700">
+    <a href={`/blog/${entry.id}/`} class="after:absolute after:inset-0">{d.title}</a>
+  </h3>
+  <p class="mt-2 line-clamp-3 text-steel-600">{d.description}</p>
+</article>

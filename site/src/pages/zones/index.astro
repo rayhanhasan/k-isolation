@@ -1,0 +1,49 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/sections/PageHero.astro';
+import CtaBand from '../../components/sections/CtaBand.astro';
+import Icon from '../../components/ui/Icon.astro';
+import { SITE } from '../../data/site';
+
+const zones = (await getCollection('zones')).sort((a, b) => a.data.order - b.data.order);
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Zones d’intervention', href: '/zones/' },
+];
+---
+<BaseLayout
+  title="Zones d'intervention : Marseille, PACA, Île-de-France, France"
+  description="K Isolation intervient depuis Marseille en région PACA et en Île-de-France, et partout en France pour les enseignes et réseaux multi-sites. Projets Suisse sur étude."
+  breadcrumbs={breadcrumbs}
+>
+  <PageHero
+    eyebrow="Zones d’intervention"
+    title="Deux bassins d’intervention, des équipes mobiles partout en France"
+    lead={`Nos équipes travaillent d’abord en région PACA, depuis notre base de Marseille, et en Île-de-France. Pour les enseignes et les réseaux de franchise, elles se déplacent sur l’ensemble du territoire. ${SITE.coverage}.`}
+    breadcrumbs={breadcrumbs}
+  />
+  <section class="py-16 sm:py-20">
+    <div class="container-k grid gap-6 md:grid-cols-2">
+      {zones.map((z) => (
+        <a href={`/zones/${z.id}/`} class="group card flex items-start gap-5 p-7 transition hover:-translate-y-1 hover:shadow-lift">
+          <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-navy-900 text-ice-300"><Icon name="mapPin" class="size-6" /></span>
+          <div>
+            <h2 class="text-2xl font-bold text-ink">{z.data.name}</h2>
+            <p class="mt-2 text-steel-600">{z.data.lead}</p>
+            <span class="link-arrow mt-4">Voir la zone <Icon name="arrowRight" class="size-4" /></span>
+          </div>
+        </a>
+      ))}
+      <div class="card flex items-start gap-5 bg-frost-50 p-7 md:col-span-2">
+        <span class="flex size-12 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-white"><Icon name="truck" class="size-6" /></span>
+        <div>
+          <h2 class="text-2xl font-bold text-ink">Partout en France pour vos sites multiples</h2>
+          <p class="mt-2 max-w-3xl text-steel-600">Enseignes, franchisés multi-unités, plateformes logistiques : nous organisons des campagnes de chantiers sur plusieurs sites avec le même cahier des charges, le même interlocuteur et un planning consolidé. Indiquez la liste de vos sites dans votre demande.</p>
+          <a href="/devis/" data-loc="zones-multisites" class="btn-primary mt-5">Décrire mon projet multi-sites</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <CtaBand loc="zones" />
+</BaseLayout>

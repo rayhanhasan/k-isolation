@@ -23,6 +23,11 @@ export const SITE = {
   siren: '984 177 501',
   siret: '984 177 501 00025',
   rcs: 'RCS Marseille',
+  legalForm: 'Société à responsabilité limitée (SARL)',
+  vat: 'FR52 984 177 501',
+  designer: { name: 'Harbor Digital', url: 'https://harbor-digital.fr' },
+  /** Hébergeur à mettre à jour selon la plateforme retenue lors de la migration. */
+  host: { name: 'Vercel Inc.', address: '440 N Barranca Ave #4133, Covina, CA 91723, États-Unis', url: 'https://vercel.com' },
   publicationDirector: 'Anicet', // TODO_CLIENT : nom complet du directeur de la publication
   linkedin: 'https://www.linkedin.com/company/k-isolation/', // TODO_CLIENT : vérifier l'URL exacte
   openingHours: 'Lun–Ven 7h30–18h30', // TODO_CLIENT
@@ -34,15 +39,15 @@ export const SITE = {
 } as const;
 
 /**
- * Chiffres clés : uniquement ceux qui sont déjà publiés par le client.
- * « 10 ans » = expérience terrain de l'équipe (la société KISOLATION est
- * immatriculée plus récemment : ne jamais écrire « depuis 2014 »).
+ * Chiffres clés : uniquement des faits de chantiers publiés par le client
+ * (cf. audit/02-audience-marche.md §0 bis). Pas de « Est. 2014 », pas de
+ * « 20 000 m² » ni « 50+ partenaires » tant qu'ils ne sont pas documentés.
  */
 export const STATS = [
-  { value: '20 000', suffix: 'm²', label: 'de panneaux posés par nos équipes' },
-  { value: '10', suffix: 'ans', label: "d'expérience terrain en froid & isolation" },
-  { value: '24', suffix: 'h', label: 'pour recevoir votre devis détaillé' },
-  { value: '10', suffix: 'ans', label: 'de garantie décennale sur nos travaux' },
+  { value: '21h–6h', label: 'chantiers de nuit : votre magasin rouvre propre le matin' },
+  { value: '−22 °C', label: 'chaîne du froid maintenue pendant la réfection d’un sol' },
+  { value: '< 24 h', label: 'première estimation technique et budgétaire (jour ouvré)' },
+  { value: '10 ans', label: 'garantie décennale sur les travaux d’enveloppe' },
 ] as const;
 
 /** Références clientes citées sur le site actuel (logos à autoriser — TODO_CLIENT). */
@@ -61,9 +66,9 @@ export type NavItem = { label: string; href: string; description?: string; child
 export const SERVICES_NAV: NavItem[] = [
   { label: 'Chambres froides', href: '/chambres-froides/', description: 'Positives, négatives, sur mesure' },
   { label: 'Cloisons isothermes', href: '/cloisons-isothermes/', description: 'Panneaux sandwich, portes, faux plafonds' },
-  { label: 'Salles blanches', href: '/salles-blanches/', description: 'Environnements maîtrisés ISO' },
-  { label: 'Rénovation & mise en conformité', href: '/renovation-mise-en-conformite/', description: 'Sols, panneaux, HACCP' },
-  { label: 'SAV, dépannage & maintenance', href: '/sav-maintenance/', description: 'Intervention rapide, contrats' },
+  { label: 'Salles propres & labos', href: '/salles-blanches/', description: 'Cloisons, plafonds, portes ISO 7-8' },
+  { label: 'Rénovation & mise en conformité', href: '/renovation-chambre-froide/', description: 'Panneaux, portes, sols, HACCP / IFS' },
+  { label: 'Dépannage & maintenance', href: '/sav-maintenance/', description: 'Enveloppe, portes, joints, contrats' },
 ];
 
 export const SECTORS_NAV: NavItem[] = [

@@ -1,0 +1,32 @@
+---
+import Icon from '../ui/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+interface Props {
+  title?: string;
+}
+const { title = 'Des engagements écrits, pas des slogans' } = Astro.props;
+const items = [
+  { icon: 'shield', t: 'Garantie décennale', d: 'Nos travaux d’enveloppe sont couverts par notre assurance décennale. L’attestation est jointe à chaque devis.' },
+  { icon: 'calendar', t: 'Planning validé avant signature', d: 'Phasage, horaires d’intervention et date de réception sont écrits noir sur blanc dans le devis.' },
+  { icon: 'user', t: 'Un seul interlocuteur', d: 'La personne qui fait la visite suit le chantier jusqu’à la réception, puis reste votre contact SAV.' },
+  { icon: 'fileText', t: 'Dossier fournisseur prêt', d: 'Kbis, attestation URSSAF de vigilance, décennale et RC Pro : envoyés à vos achats sur simple demande.' },
+  { icon: 'sparkles', t: 'Site propre à chaque réouverture', d: 'Zone de travail nettoyée et sécurisée avant le retour de vos équipes ou de vos clients.' },
+  { icon: 'checkCircle', t: 'PV de réception et documents', d: 'Procès-verbal, fiches techniques des matériaux posés : les pièces utiles pour vos audits.' },
+] as const;
+---
+<section class="py-20 sm:py-24">
+  <div class="container-k">
+    <SectionHeading eyebrow="Ce qui vous protège" title={title} lead="Choisir un prestataire, c’est prendre un risque devant votre direction. Voici comment on le réduit pour vous." />
+    <ul class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {items.map((it) => (
+        <li class="card flex gap-4 p-6">
+          <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-100 text-brand-700"><Icon name={it.icon} class="size-5" /></span>
+          <div>
+            <h3 class="font-bold text-ink">{it.t}</h3>
+            <p class="mt-1.5 text-[0.95rem] leading-relaxed text-steel-600">{it.d}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

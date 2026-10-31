@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/sections/PageHero.astro';
+import FaqList from '../components/sections/FaqList.astro';
+import CtaBand from '../components/sections/CtaBand.astro';
+import { faqSchema } from '../lib/schema';
+
+// La FAQ globale agrège les questions des pages solutions (une seule source de vérité).
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const groups = services.map((s) => ({ title: s.data.navLabel, href: `/${s.id}/`, faqs: s.data.faqs }));
+const all = groups.flatMap((g) => g.faqs);
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Questions fréquentes', href: '/faq/' },
+];
+---
+<BaseLayout title="Questions fréquentes : chambres froides, cloisons, rénovation" description="Délais, prix, chantiers en site occupé, garanties, normes HACCP : les réponses aux questions que nous posent nos clients avant de lancer leurs travaux." breadcrumbs={breadcrumbs} schema={all.length ? [faqSchema(all)] : []}>
+  <PageHero eyebrow="FAQ" title="Les questions qu’on nous pose avant de signer" lead="Classées par solution. Une question qui n’y est pas ? Un technicien vous répond directement." breadcrumbs={breadcrumbs} />
+  {groups.map((g, i) => (
+    <div class:list={[i % 2 === 1 && 'bg-frost-50']}>
+      <FaqList faqs={g.faqs} title={g.title} eyebrow="Questions fréquentes" />
+    </div>
+  ))}
+  <CtaBand loc="faq" />
+</BaseLayout>

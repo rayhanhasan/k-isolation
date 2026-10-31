@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/sections/PageHero.astro';
+import Icon from '../components/ui/Icon.astro';
+import { SITE } from '../data/site';
+
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Recrutement', href: '/recrutement/' },
+];
+// Offres reprises du site actuel — TODO_CLIENT : confirmer qu'elles sont toujours ouvertes.
+const jobs = [
+  {
+    title: 'Monteur / monteuse de panneaux de chambres froides (H/F)',
+    place: 'France entière, déplacements',
+    contract: 'CDI · 40 h',
+    missions: ['Montage et assemblage de cloisons isothermes et de chambres froides', 'Respect des plans et des consignes de montage', 'Étanchéité et finitions', 'Contrôle de conformité et respect strict des règles de sécurité'],
+    profile: ['Expérience en montage de panneaux frigorifiques (expérience de plaquiste appréciée)', 'Autonomie et travail en équipe', 'Mobilité France entière, permis B'],
+    perks: 'Véhicule, mutuelle, déplacements pris en charge',
+  },
+  {
+    title: 'Chef d’équipe chambres froides (H/F)',
+    place: 'France entière, déplacements',
+    contract: 'CDI',
+    missions: ['Encadrement d’une équipe de pose', 'Organisation du chantier et relation avec le client sur site', 'Contrôle qualité et réception'],
+    profile: ['Expérience confirmée en pose de panneaux isothermes', 'Leadership, rigueur, sens du client', 'Mobilité nationale, permis B'],
+    perks: 'Véhicule, mutuelle, déplacements pris en charge',
+  },
+];
+const jobSchema = jobs.map((j) => ({
+  '@context': 'https://schema.org',
+  '@type': 'JobPosting',
+  title: j.title,
+  description: `<p>${j.missions.join('. ')}.</p><p>${j.profile.join('. ')}.</p>`,
+  datePosted: '2026-10-31',
+  employmentType: 'FULL_TIME',
+  hiringOrganization: { '@type': 'Organization', name: SITE.legalName, sameAs: SITE.url },
+  applicantLocationRequirements: { '@type': 'Country', name: 'France' },
+  jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: SITE.address.city, postalCode: SITE.address.postalCode, addressCountry: 'FR' } },
+}));
+---
+<BaseLayout title="Recrutement : monteurs et chefs d'équipe chambres froides" description="K Isolation recrute des monteurs de panneaux de chambres froides et des chefs d'équipe en CDI, déplacements France entière. Véhicule, mutuelle, frais pris en charge." breadcrumbs={breadcrumbs} schema={jobSchema}>
+  <PageHero eyebrow="Recrutement" title="Rejoignez une équipe qui pose du froid partout en France" lead="Nous cherchons des monteurs et des chefs d’équipe qui aiment le travail bien fini et les chantiers exigeants : magasins de nuit, chambres négatives, cuisines professionnelles." breadcrumbs={breadcrumbs} ctaHref={`mailto:${SITE.email}?subject=Candidature`} ctaLabel="Envoyer ma candidature" proof={['CDI', 'Véhicule et mutuelle', 'Déplacements pris en charge']} />
+  <section class="py-16 sm:py-20">
+    <div class="container-k grid gap-6 lg:grid-cols-2">
+      {jobs.map((j) => (
+        <article class="card flex flex-col p-7">
+          <p class="flex flex-wrap gap-2 text-sm"><span class="rounded-full bg-brand-100 px-3 py-1 font-semibold text-brand-700">{j.contract}</span><span class="rounded-full bg-frost-100 px-3 py-1 text-steel-600">{j.place}</span></p>
+          <h2 class="mt-4 text-2xl font-bold text-ink">{j.title}</h2>
+          <h3 class="mt-6 font-semibold text-ink">Missions</h3>
+          <ul class="mt-2 space-y-1.5 text-steel-600">{j.missions.map((m) => <li class="flex gap-2"><Icon name="check" class="mt-1 size-4 shrink-0 text-brand-600" />{m}</li>)}</ul>
+          <h3 class="mt-5 font-semibold text-ink">Profil</h3>
+          <ul class="mt-2 space-y-1.5 text-steel-600">{j.profile.map((m) => <li class="flex gap-2"><Icon name="check" class="mt-1 size-4 shrink-0 text-brand-600" />{m}</li>)}</ul>
+          <p class="mt-5 text-sm text-steel-500">Avantages : {j.perks}</p>
+          <a href={`mailto:${SITE.email}?subject=${encodeURIComponent('Candidature — ' + j.title)}`} class="btn-primary mt-6 w-fit">Postuler</a>
+        </article>
+      ))}
+    </div>
+    <p class="container-k mt-10 text-steel-600">Pas d’offre qui vous correspond&nbsp;? Envoyez une candidature spontanée à <a href={`mailto:${SITE.email}?subject=Candidature%20spontan%C3%A9e`} class="font-semibold text-brand-600 underline">{SITE.email}</a>.</p>
+  </section>
+</BaseLayout>

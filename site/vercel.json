@@ -1,0 +1,476 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "astro",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "cleanUrls": false,
+  "headers": [
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "geolocation=(), microphone=(), camera=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/installation-fourniture/",
+      "destination": "/chambres-froides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/installation-fourniture/",
+      "destination": "/chambres-froides/",
+      "statusCode": 301
+    },
+    {
+      "source": "/salle-blanche/",
+      "destination": "/salles-blanches/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/amenagements-professionnels-specifiques/",
+      "destination": "/cloisons-isothermes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/amenagements-sur-mesure/",
+      "destination": "/cloisons-isothermes/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/remorques/",
+      "destination": "/secteurs/logistique-entreposage/",
+      "statusCode": 301
+    },
+    {
+      "source": "/remorques/",
+      "destination": "/secteurs/logistique-entreposage/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/renovation-mise-en-conformite/",
+      "destination": "/renovation-chambre-froide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/renovation-conformite/",
+      "destination": "/renovation-chambre-froide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/service-apres-vente-sav/",
+      "destination": "/sav-maintenance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/demande-envoi-de-devis/",
+      "destination": "/devis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/domaine-dactivites/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/activtites/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/agroalimentaire/",
+      "destination": "/secteurs/agroalimentaire/",
+      "statusCode": 301
+    },
+    {
+      "source": "/logistique/",
+      "destination": "/secteurs/logistique-entreposage/",
+      "statusCode": 301
+    },
+    {
+      "source": "/laboratoire-cuisine/",
+      "destination": "/secteurs/restauration-cuisines-professionnelles/",
+      "statusCode": 301
+    },
+    {
+      "source": "/industrie/",
+      "destination": "/secteurs/industrie/",
+      "statusCode": 301
+    },
+    {
+      "source": "/distribution/",
+      "destination": "/secteurs/grande-distribution/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio/installation-cloisons-isothermes-haute-performance/",
+      "destination": "/realisations/installation-cloisons-isothermes-haute-performance/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio/renovation-magasin-carrefour-lambris-pvc/",
+      "destination": "/realisations/renovation-magasin-carrefour-lambris-pvc/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio/depose-remplacement-sol-chambre-froide-negative/",
+      "destination": "/realisations/depose-remplacement-sol-chambre-froide-negative/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio/amenagement-bureaux-vestiaires-industriels/",
+      "destination": "/realisations/amenagement-bureaux-vestiaires-industriels/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio/cuisine-professionnelle-min-rungis/",
+      "destination": "/realisations/cuisine-professionnelle-min-rungis/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio_group/agroalimentaire/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio_group/logistique/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio_group/distribution/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio_group/industrie/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/portfolio_group/cuisine-professionnelle/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/realisations-projets/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/comment-bien-choisir-sa-chambre-froide-professionnelle/",
+      "destination": "/blog/comment-bien-choisir-sa-chambre-froide-professionnelle/",
+      "statusCode": 301
+    },
+    {
+      "source": "/faut-il-un-permis-ou-une-autorisation-speciale-pour-installer-une-chambre-froide/",
+      "destination": "/blog/faut-il-un-permis-ou-une-autorisation-speciale-pour-installer-une-chambre-froide/",
+      "statusCode": 301
+    },
+    {
+      "source": "/comment-bien-isoler-un-entrepot-ou-un-local-industriel-panneaux-cloisons-et-faux-plafonds/",
+      "destination": "/blog/comment-bien-isoler-un-entrepot-ou-un-local-industriel-panneaux-cloisons-et-faux-plafonds/",
+      "statusCode": 301
+    },
+    {
+      "source": "/chambre-froide-positive-ou-negative-quelle-difference/",
+      "destination": "/blog/chambre-froide-positive-ou-negative-quelle-difference/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/blog-actualites/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/chambre-froide/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/agroalimentaire/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/logistique/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/reglementation/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/salle-blanche/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/category/uncategorized/",
+      "destination": "/blog/",
+      "statusCode": 301
+    },
+    {
+      "source": "/author/ines/",
+      "destination": "/a-propos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/feed/",
+      "destination": "/rss.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/provence-alpes-cote-d-azur/bouches-du-rhone/marseille/",
+      "destination": "/zones/marseille/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/provence-alpes-cote-d-azur/",
+      "destination": "/zones/marseille/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/provence-alpes-cote-d-azur/bouches-du-rhone/",
+      "destination": "/zones/marseille/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/seine-saint-denis/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/seine-saint-denis/aulnay-sous-bois/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/seine-saint-denis/saint-denis/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/seine-saint-denis/bobigny/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/hauts-de-seine/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/hauts-de-seine/gennevilliers/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/hauts-de-seine/nanterre/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/ile-de-france/hauts-de-seine/courbevoie/",
+      "destination": "/zones/ile-de-france/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/auvergne-rhone-alpes/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/bourgogne-franche-comte/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/bretagne/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/centre-val-de-loire/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/corse/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/grand-est/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/hauts-de-france/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/normandie/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/nouvelle-aquitaine/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/occitanie/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/pays-de-la-loire/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone/suisse/",
+      "destination": "/zones/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/a-propos/",
+      "statusCode": 301
+    },
+    {
+      "source": "/faqs/",
+      "destination": "/faq/",
+      "statusCode": 301
+    },
+    {
+      "source": "/recrutement-2/",
+      "destination": "/recrutement/",
+      "statusCode": 301
+    },
+    {
+      "source": "/recrutement-3/",
+      "destination": "/recrutement/",
+      "statusCode": 301
+    },
+    {
+      "source": "/monteur-de-panneaux-de-chambre-froide-h-f/",
+      "destination": "/recrutement/",
+      "statusCode": 301
+    },
+    {
+      "source": "/mentions/",
+      "destination": "/mentions-legales/",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy-policy/",
+      "destination": "/confidentialite/",
+      "statusCode": 301
+    },
+    {
+      "source": "/politique-de-confidentialite/",
+      "destination": "/confidentialite/",
+      "statusCode": 301
+    },
+    {
+      "source": "/nos-realisations/",
+      "destination": "/realisations/",
+      "statusCode": 301
+    },
+    {
+      "source": "/nos-solutions/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/post-sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/page-sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/zone-sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/cpt_portfolio-sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/cpt_services-sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/category-sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "statusCode": 301
+    }
+  ]
+}

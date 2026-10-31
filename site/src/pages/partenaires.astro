@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/sections/PageHero.astro';
+import SectionHeading from '../components/sections/SectionHeading.astro';
+import FaqList from '../components/sections/FaqList.astro';
+import Icon from '../components/ui/Icon.astro';
+import { SITE } from '../data/site';
+import { faqSchema } from '../lib/schema';
+import img from '../assets/chantiers/couloir-panneaux-sandwich.jpg';
+
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Partenaires', href: '/partenaires/' },
+];
+const promises = [
+  { icon: 'shield', t: 'Votre client reste votre client', d: 'Charte de non-sollicitation signée : nous n’approchons jamais votre client final, ni pendant ni après le chantier.' },
+  { icon: 'user', t: 'Marque blanche possible', d: 'Nous intervenons sous votre nom si vous le souhaitez. Tenue, communication et documents adaptés.' },
+  { icon: 'calendar', t: 'Votre planning, pas le nôtre', d: 'Nous calons la pose de l’enveloppe sur vos dates de mise en service et de livraison cuisine.' },
+  { icon: 'refresh', t: 'Prescription croisée', d: 'Les pannes de groupe froid que nos clients nous signalent, nous vous les orientons.' },
+] as const;
+const faqs = [
+  { q: 'Quels types de chantiers pouvez-vous nous sous-traiter ?', a: 'Le lot **enveloppe** : chambres froides en panneaux sandwich, portes isothermes, cloisons de laboratoires et de cuisines, plafonds, sols de chambres froides, lambris et revêtements muraux alimentaires, ainsi que leur rénovation.' },
+  { q: 'Intervenez-vous partout en France ?', a: 'Nos équipes sont basées en région PACA et interviennent en Île-de-France ; elles se déplacent dans toute la France pour les projets qui le justifient (multi-sites, chantiers importants).' },
+  { q: 'Comment se passe la facturation ?', a: 'Vous restez le donneur d’ordre : nous vous facturons directement, avec un devis par chantier. Les conditions de partenariat (tarifs, délais de paiement) se fixent lors d’un premier échange.' },
+];
+---
+<BaseLayout title="Frigoristes, cuisinistes, MOE : sous-traitez le lot enveloppe" description="Frigoristes, cuisinistes CHR, maîtres d'œuvre : confiez-nous la pose des panneaux, portes et sols, en marque blanche et avec charte de non-sollicitation." breadcrumbs={breadcrumbs} schema={[faqSchema(faqs)]}>
+  <PageHero eyebrow="Partenaires" title="Vous faites le froid ou la cuisine. Nous faisons la chambre." lead="Frigoristes, cuisinistes CHR, maîtres d’œuvre : confiez-nous le lot panneaux, portes et sols sans risquer votre relation client." breadcrumbs={breadcrumbs} image={img} imageAlt="Couloir technique habillé de panneaux sandwich blancs" ctaHref="/devis/?besoin=partenaire" ctaLabel="Proposer un chantier" proof={['Charte de non-sollicitation', 'Marque blanche possible', 'Équipes salariées']} />
+  <section class="py-16 sm:py-20">
+    <div class="container-k">
+      <SectionHeading eyebrow="Nos engagements partenaires" title="Ce que vous craignez, on l’a écrit noir sur blanc" />
+      <ul class="mt-10 grid gap-5 sm:grid-cols-2">
+        {promises.map((p) => (
+          <li class="card flex gap-4 p-6">
+            <span class="flex size-11 shrink-0 items-center justify-center rounded-xl bg-brand-100 text-brand-700"><Icon name={p.icon} class="size-5" /></span>
+            <div><h3 class="text-lg font-bold text-ink">{p.t}</h3><p class="mt-1.5 text-steel-600">{p.d}</p></div>
+          </li>
+        ))}
+      </ul>
+      <div class="mt-12 rounded-3xl bg-navy-900 p-8 text-white sm:flex sm:items-center sm:justify-between sm:gap-8">
+        <div>
+          <p class="font-display text-2xl font-bold">Un chantier à pourvoir cette semaine&nbsp;?</p>
+          <p class="mt-2 text-steel-300">Appelez directement : on vous dit tout de suite si on peut tenir votre date.</p>
+        </div>
+        <a href={SITE.phoneHref} data-loc="partenaires" class="btn-primary mt-6 shrink-0 sm:mt-0"><Icon name="phone" class="size-5" /> {SITE.phone}</a>
+      </div>
+    </div>
+  </section>
+  <div class="bg-frost-50"><FaqList faqs={faqs} title="Questions de partenaires" /></div>
+</BaseLayout>

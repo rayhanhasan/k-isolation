@@ -1,0 +1,104 @@
+# Publication hebdomadaire d'un article de conseil.
+#
+# Chaque mardi, Claude rédige le prochain sujet du calendrier éditorial
+# (site/content-plan/calendrier-editorial.json). Le site est reconstruit pour
+# valider l'article, puis :
+#   - mode « revue » (par défaut) : une Pull Request est ouverte. Relisez-la
+#     (15 min : vérifier les points listés, ajouter un fait terrain si possible),
+#     puis cliquez « Merge » : l'hébergeur publie automatiquement.
+#   - mode « direct » : l'article est publié sans relecture
+#     (variable de dépôt ARTICLE_MODE = direct). Déconseillé au démarrage.
+#
+# Prérequis (GitHub > Settings > Secrets and variables > Actions) :
+#   - secret ANTHROPIC_API_KEY
+#   - (facultatif) variable ARTICLE_MODE = revue | direct
+#   - Settings > Actions > General : cocher « Allow GitHub Actions to create and approve pull requests »
+name: Article hebdomadaire
+
+on:
+  schedule:
+    - cron: '17 6 * * 2' # mardi 06:17 UTC (≈ 7 h–8 h à Paris)
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Slug précis du calendrier (vide = prochain sujet)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: article-hebdo
+  cancel-in-progress: false
+
+jobs:
+  article:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - run: npm ci
+
+      - name: Rédaction de l'article
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -n "${{ inputs.slug }}" ]; then
+            node scripts/generate-article.mjs --slug "${{ inputs.slug }}"
+          else
+            node scripts/generate-article.mjs
+          fi
+
+      - name: Vérification par un build complet du site
+        if: steps.gen.outputs.slug != ''
+        run: npm run build
+
+      - name: Publication directe
+        if: steps.gen.outputs.slug != '' && vars.ARTICLE_MODE == 'direct'
+        run: |
+          git config user.name "k-isolation-bot"
+          git config user.email "bot@k-isolation.fr"
+          git add src/content/blog
+          git commit -m "Blog : ${{ steps.gen.outputs.title }}"
+          git push
+
+      - name: Pull Request de relecture
+        if: steps.gen.outputs.slug != '' && vars.ARTICLE_MODE != 'direct'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          path: .
+          add-paths: site/src/content/blog/*.md
+          branch: article/${{ steps.gen.outputs.slug }}
+          commit-message: 'Blog : ${{ steps.gen.outputs.title }}'
+          title: '📝 Article à relire : ${{ steps.gen.outputs.title }}'
+          labels: article
+          body: |
+            Nouvel article généré pour la semaine (${{ steps.gen.outputs.words }} mots), validé par les garde-fous et par un build complet du site.
+
+            **Avant de cliquer « Merge » (15 min) :**
+            - [ ] Lire l'article en entier (onglet « Files changed »)
+            - [ ] Vérifier les normes et chiffres cités
+            - [ ] Si possible, ajouter une photo ou un détail réel d'un chantier récent dans l'encadré « Sur le terrain »
+
+            **Points signalés par le rédacteur :**
+            ${{ steps.gen.outputs.notes }}
+
+            ---
+            **Post LinkedIn prêt à publier** (remplacer [LIEN] par l'URL de l'article une fois en ligne) :
+
+            ```
+            ${{ steps.gen.outputs.linkedin }}
+            ```

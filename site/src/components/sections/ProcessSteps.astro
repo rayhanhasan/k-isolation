@@ -1,0 +1,55 @@
+---
+import SectionHeading from './SectionHeading.astro';
+interface Props {
+  dark?: boolean;
+}
+const { dark = true } = Astro.props;
+const steps = [
+  {
+    t: 'Votre demande',
+    d: '2 minutes en ligne ou un appel. Photos et plans bienvenus, pas obligatoires.',
+    when: 'Jour J',
+  },
+  {
+    t: 'Première estimation',
+    d: 'Un technicien vous rappelle avec une première estimation technique et budgétaire.',
+    when: '< 1 jour ouvré',
+  },
+  {
+    t: 'Visite & planning écrit',
+    d: 'Relevés sur site, devis poste par poste et planning de phasage validé avec vous avant toute signature.',
+    when: 'Sous quelques jours',
+  },
+  {
+    t: 'Chantier autour de votre activité',
+    d: 'Nuit, week-end ou phases successives : vos rayons, votre production et votre froid continuent.',
+    when: 'Selon planning',
+  },
+  {
+    t: 'Réception & suivi',
+    d: 'Contrôle final, PV de réception, documents remis. Le même interlocuteur reste votre contact SAV.',
+    when: 'Après chantier',
+  },
+];
+---
+<section class:list={['relative overflow-hidden py-20 sm:py-24', dark ? 'bg-navy-900 text-white' : 'bg-frost-100']}>
+  {dark && <div class="bg-blueprint absolute inset-0" aria-hidden="true" />}
+  <div class="container-k relative">
+    <SectionHeading
+      eyebrow="Notre méthode en site occupé"
+      title="Ce qui se passe après votre demande"
+      lead="Pas de zone grise : vous savez à chaque étape qui fait quoi, quand, et ce que vous recevez."
+      dark={dark}
+    />
+    <ol class="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 md:grid-cols-5">
+      {steps.map((s, i) => (
+        <li class:list={['relative flex flex-col p-6', dark ? 'bg-navy-900' : 'bg-white']}>
+          <span class:list={['font-mono text-sm', dark ? 'text-ice-400' : 'text-brand-600']}>0{i + 1}</span>
+          <h3 class="mt-4 text-lg font-bold">{s.t}</h3>
+          <p class:list={['mt-2 flex-1 text-[0.95rem] leading-relaxed', dark ? 'text-steel-300' : 'text-steel-600']}>{s.d}</p>
+          <p class:list={['mt-5 inline-flex w-fit rounded-full px-3 py-1 font-mono text-xs', dark ? 'bg-white/10 text-ice-300' : 'bg-frost-100 text-brand-700']}>{s.when}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

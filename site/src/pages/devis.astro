@@ -1,0 +1,339 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/ui/Icon.astro';
+import LogoWall from '../components/sections/LogoWall.astro';
+import { SITE } from '../data/site';
+import { BESOINS, SECTEURS, SURFACES, TEMPERATURES, ECHEANCES, SITES, CONTACT_PREF } from '../data/devis';
+
+const breadcrumbs = [
+  { name: 'Accueil', href: '/' },
+  { name: 'Demande de devis', href: '/devis/' },
+];
+const field = 'mt-2 block w-full rounded-xl border border-steel-300 bg-white px-4 py-3 text-base text-ink placeholder:text-steel-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-100 focus:outline-none';
+const label = 'block font-semibold text-ink';
+const tile = 'flex h-full cursor-pointer items-start gap-3 rounded-2xl border-2 border-steel-200 bg-white p-4 transition hover:border-brand-500 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-100/40 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-brand-500';
+const chip = 'inline-flex cursor-pointer items-center rounded-xl border-2 border-steel-200 bg-white px-4 py-2.5 text-[0.95rem] font-medium transition hover:border-brand-500 has-[:checked]:border-brand-600 has-[:checked]:bg-brand-100/40 has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-brand-500';
+---
+<BaseLayout
+  title="Devis chambre froide, cloisons isothermes, rénovation"
+  description="Décrivez votre projet en 2 minutes : première estimation technique et budgétaire en moins d'un jour ouvré. Sans engagement, aucun démarchage commercial."
+  breadcrumbs={breadcrumbs}
+  hideMobileCta
+>
+  <section class="bg-frost-100 py-10 sm:py-14">
+    <div class="container-k grid gap-10 lg:grid-cols-12">
+      <!-- Colonne formulaire -->
+      <div class="lg:col-span-8">
+        <p class="eyebrow">Demande d’estimation</p>
+        <h1 class="mt-3 font-display text-3xl leading-tight font-extrabold text-ink sm:text-4xl">Votre première estimation en moins d’un jour ouvré</h1>
+        <p class="mt-3 text-lg text-steel-600">4 étapes rapides. Plus vous êtes précis, plus l’estimation l’est aussi.</p>
+
+        <div class="mt-8 rounded-3xl border border-steel-200 bg-white p-5 shadow-card sm:p-8">
+          <!-- Progression -->
+          <div class="mb-8" aria-hidden="true" id="progress-wrap">
+            <div class="flex justify-between font-mono text-xs tracking-wider text-steel-500 uppercase">
+              <span id="step-label">Étape 1 sur 4 · Votre besoin</span>
+              <span id="step-pct">25 %</span>
+            </div>
+            <div class="mt-2 h-2 overflow-hidden rounded-full bg-frost-100"><div id="progress" class="h-full w-1/4 rounded-full bg-brand-600 transition-all duration-500"></div></div>
+          </div>
+
+          <form id="devis-form" action="/api/lead" method="post" novalidate data-ready="false">
+            <!-- Champ piège anti-robots -->
+            <div class="hidden" aria-hidden="true">
+              <label>Ne pas remplir <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+            </div>
+            <input type="hidden" name="t0" id="t0" />
+            <input type="hidden" name="attribution" id="attribution" />
+
+            <!-- ÉTAPE 1 -->
+            <fieldset data-step="1" data-title="Votre besoin" class="step">
+              <legend class="font-display text-xl font-bold text-ink">De quoi avez-vous besoin&nbsp;?</legend>
+              <div class="mt-5 grid gap-3 sm:grid-cols-2">
+                {BESOINS.map((b) => (
+                  <label class:list={[tile, b.value === 'depannage' && 'hover:border-alert-600 has-[:checked]:border-alert-600 has-[:checked]:bg-alert-50']}>
+                    <input type="radio" name="besoin" value={b.value} required class="sr-only" />
+                    <span class:list={['flex size-10 shrink-0 items-center justify-center rounded-lg', b.value === 'depannage' ? 'bg-alert-50 text-alert-600' : 'bg-frost-100 text-brand-600']}><Icon name={b.icon} class="size-5" /></span>
+                    <span><span class="block font-semibold text-ink">{b.label}</span><span class="block text-sm text-steel-500">{b.hint}</span></span>
+                  </label>
+                ))}
+              </div>
+              <div id="urgent-box" hidden class="mt-5 rounded-2xl border border-alert-600/30 bg-alert-50 p-5">
+                <p class="font-bold text-alert-600">Situation urgente ? Le plus rapide est de nous appeler.</p>
+                <a href={SITE.phoneHref} data-loc="devis-urgence" class="btn-alert mt-3"><Icon name="phone" class="size-5" /> {SITE.phone}</a>
+                <p class="mt-3 text-sm text-steel-600">Vous pouvez aussi continuer le formulaire : votre demande sera traitée en priorité.</p>
+              </div>
+            </fieldset>
+
+            <!-- ÉTAPE 2 -->
+            <fieldset data-step="2" data-title="Votre activité" class="step">
+              <legend class="font-display text-xl font-bold text-ink">Dans quel secteur travaillez-vous&nbsp;?</legend>
+              <div class="mt-5 flex flex-wrap gap-2.5">
+                {SECTEURS.map((s) => (
+                  <label class={chip}><input type="radio" name="secteur" value={s.value} required class="sr-only" />{s.label}</label>
+                ))}
+              </div>
+              <p class="mt-8 font-semibold text-ink">Combien de sites sont concernés&nbsp;?</p>
+              <div class="mt-3 flex flex-wrap gap-2.5">
+                {SITES.map((s, i) => (
+                  <label class={chip}><input type="radio" name="sites" value={s} checked={i === 0} class="sr-only" />{s}</label>
+                ))}
+              </div>
+            </fieldset>
+
+            <!-- ÉTAPE 3 -->
+            <fieldset data-step="3" data-title="Votre projet" class="step">
+              <legend class="font-display text-xl font-bold text-ink">Parlez-nous du chantier</legend>
+              <div class="mt-5 grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="cp" class={label}>Code postal du site <span class="text-alert-600">*</span></label>
+                  <input id="cp" name="cp" inputmode="numeric" autocomplete="postal-code" required pattern="[0-9]{4,5}" maxlength="5" placeholder="13004" class={field} />
+                </div>
+                <div>
+                  <label for="surface" class={label}>Surface approximative</label>
+                  <select id="surface" name="surface" class={field}>
+                    {SURFACES.map((s) => <option>{s}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label for="temperature" class={label}>Température</label>
+                  <select id="temperature" name="temperature" class={field}>
+                    {TEMPERATURES.map((s) => <option>{s}</option>)}
+                  </select>
+                </div>
+                <div>
+                  <label for="echeance" class={label}>Échéance <span class="text-alert-600">*</span></label>
+                  <select id="echeance" name="echeance" required class={field}>
+                    <option value="">Choisir…</option>
+                    {ECHEANCES.map((e) => <option value={e.value}>{e.label}</option>)}
+                  </select>
+                </div>
+              </div>
+              <p class="mt-6 font-semibold text-ink">Le site restera-t-il en activité pendant les travaux&nbsp;?</p>
+              <div class="mt-3 flex flex-wrap gap-2.5">
+                <label class={chip}><input type="radio" name="occupe" value="oui" class="sr-only" />Oui, on ne peut pas arrêter</label>
+                <label class={chip}><input type="radio" name="occupe" value="non" class="sr-only" />Non, le site sera fermé</label>
+                <label class={chip}><input type="radio" name="occupe" value="nsp" class="sr-only" />À définir</label>
+              </div>
+              <div class="mt-6 grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="date_cle" class={label}>Date clé <span class="font-normal text-steel-500">(ouverture, audit…)</span></label>
+                  <input id="date_cle" name="date_cle" type="date" class={field} />
+                </div>
+                <div>
+                  <label for="date_type" class={label}>Il s’agit de…</label>
+                  <select id="date_type" name="date_type" class={field}>
+                    <option value="">—</option>
+                    <option>Une ouverture</option>
+                    <option>Un audit / contrôle</option>
+                    <option>Un arrêt programmé</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mt-6">
+                <label for="message" class={label}>Décrivez votre projet <span class="font-normal text-steel-500">(facultatif)</span></label>
+                <textarea id="message" name="message" rows="4" maxlength="3000" placeholder="Ex. : chambre froide négative de 30 m² à créer dans un entrepôt existant, ouverture prévue en mars, travaux possibles la nuit." class={field}></textarea>
+                <p class="mt-2 text-sm text-steel-500">Photos ou plans&nbsp;? Vous pourrez nous les envoyer en réponse à notre e-mail de confirmation.</p>
+              </div>
+            </fieldset>
+
+            <!-- ÉTAPE 4 -->
+            <fieldset data-step="4" data-title="Vos coordonnées" class="step">
+              <legend class="font-display text-xl font-bold text-ink">Où vous envoyer votre estimation&nbsp;?</legend>
+              <div class="mt-5 grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label for="nom" class={label}>Nom et prénom <span class="text-alert-600">*</span></label>
+                  <input id="nom" name="nom" autocomplete="name" required maxlength="120" class={field} />
+                </div>
+                <div>
+                  <label for="societe" class={label}>Société <span class="text-alert-600">*</span></label>
+                  <input id="societe" name="societe" autocomplete="organization" required maxlength="160" class={field} />
+                </div>
+                <div>
+                  <label for="fonction" class={label}>Fonction</label>
+                  <input id="fonction" name="fonction" autocomplete="organization-title" maxlength="120" placeholder="Directeur de magasin, resp. maintenance…" class={field} />
+                </div>
+                <div>
+                  <label for="tel" class={label}>Téléphone <span class="text-alert-600">*</span></label>
+                  <input id="tel" name="tel" type="tel" autocomplete="tel" required maxlength="30" placeholder="06 12 34 56 78" class={field} />
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="email" class={label}>E-mail professionnel <span class="text-alert-600">*</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" required maxlength="160" class={field} />
+                </div>
+              </div>
+              <p class="mt-6 font-semibold text-ink">Comment préférez-vous échanger&nbsp;?</p>
+              <div class="mt-3 flex flex-wrap gap-2.5">
+                {CONTACT_PREF.map((c, i) => (
+                  <label class={chip}><input type="radio" name="preference" value={c} checked={i === 0} class="sr-only" />{c}</label>
+                ))}
+              </div>
+              <p class="mt-6 text-sm leading-relaxed text-steel-500">
+                Vos informations servent uniquement à traiter votre demande et ne sont jamais revendues. <a href="/confidentialite/" class="underline">Politique de confidentialité</a>.
+              </p>
+            </fieldset>
+
+            <p id="form-error" role="alert" class="mt-5 hidden rounded-xl bg-alert-50 px-4 py-3 font-medium text-alert-600"></p>
+
+            <div class="mt-8 flex items-center justify-between gap-3 border-t border-steel-200 pt-6" id="nav-buttons">
+              <button type="button" id="prev" class="btn-ghost invisible">Retour</button>
+              <button type="button" id="next" class="btn-primary">Continuer <Icon name="arrowRight" class="size-4" /></button>
+              <button type="submit" id="submit" class="btn-primary hidden">Recevoir mon estimation <Icon name="arrowRight" class="size-4" /></button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Colonne réassurance -->
+      <aside class="lg:col-span-4">
+        <div class="space-y-5 lg:sticky lg:top-28">
+          <div class="rounded-3xl bg-navy-900 p-6 text-white">
+            <p class="font-display text-lg font-bold">Ce qui se passe ensuite</p>
+            <ol class="mt-5 space-y-5">
+              <li class="flex gap-3"><span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-brand-600 font-mono text-sm">1</span><p class="text-sm text-steel-300"><span class="font-semibold text-white">Accusé de réception immédiat</span> par e-mail, avec le nom de votre interlocuteur.</p></li>
+              <li class="flex gap-3"><span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-brand-600 font-mono text-sm">2</span><p class="text-sm text-steel-300"><span class="font-semibold text-white">Rappel d’un technicien</span> et première estimation en moins d’un jour ouvré.</p></li>
+              <li class="flex gap-3"><span class="flex size-7 shrink-0 items-center justify-center rounded-full bg-brand-600 font-mono text-sm">3</span><p class="text-sm text-steel-300"><span class="font-semibold text-white">Visite technique</span> si nécessaire, puis devis détaillé et planning écrit.</p></li>
+            </ol>
+          </div>
+          <ul class="space-y-3 rounded-3xl border border-steel-200 bg-white p-6 text-[0.95rem]">
+            <li class="flex gap-3"><Icon name="checkCircle" class="mt-0.5 size-5 shrink-0 text-ok-600" /> Sans engagement, aucun démarchage</li>
+            <li class="flex gap-3"><Icon name="checkCircle" class="mt-0.5 size-5 shrink-0 text-ok-600" /> Travaux couverts par la garantie décennale</li>
+            <li class="flex gap-3"><Icon name="checkCircle" class="mt-0.5 size-5 shrink-0 text-ok-600" /> Chantiers de nuit, week-end ou phasés</li>
+            <li class="flex gap-3"><Icon name="checkCircle" class="mt-0.5 size-5 shrink-0 text-ok-600" /> Dossier fournisseur disponible pour vos achats</li>
+          </ul>
+          <div class="rounded-3xl border border-steel-200 bg-white p-6">
+            <p class="font-semibold text-ink">Vous préférez parler à quelqu’un&nbsp;?</p>
+            <a href={SITE.phoneHref} data-loc="devis-aside" class="mt-2 flex items-center gap-2 font-display text-2xl font-extrabold text-brand-600"><Icon name="phone" class="size-6" /> {SITE.phone}</a>
+            <p class="mt-1 text-sm text-steel-500">{SITE.openingHours}</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="border-t border-steel-200 bg-white py-10"><LogoWall /></section>
+</BaseLayout>
+
+<style>
+  /* Sans JavaScript, toutes les étapes restent visibles (formulaire classique). */
+  form[data-ready='true'] .step:not(.is-active) { display: none; }
+  form[data-ready='false'] .step + .step { margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--color-steel-200); }
+  form[data-ready='false'] #next, form[data-ready='false'] #prev { display: none; }
+  form[data-ready='false'] #submit { display: inline-flex; }
+</style>
+
+<script>
+  import { getAttribution, track } from '../lib/attribution';
+
+  const form = document.getElementById('devis-form') as HTMLFormElement;
+  const steps = [...form.querySelectorAll<HTMLFieldSetElement>('.step')];
+  const prev = document.getElementById('prev')!;
+  const next = document.getElementById('next')!;
+  const submit = document.getElementById('submit')!;
+  const err = document.getElementById('form-error')!;
+  const bar = document.getElementById('progress')!;
+  const lbl = document.getElementById('step-label')!;
+  const pct = document.getElementById('step-pct')!;
+  const urgentBox = document.getElementById('urgent-box')!;
+  let current = 0;
+  let started = false;
+
+  (document.getElementById('t0') as HTMLInputElement).value = String(Date.now());
+  (document.getElementById('attribution') as HTMLInputElement).value = JSON.stringify(getAttribution());
+
+  function show(i: number) {
+    current = i;
+    steps.forEach((s, k) => s.classList.toggle('is-active', k === i));
+    prev.classList.toggle('invisible', i === 0);
+    next.classList.toggle('hidden', i === steps.length - 1);
+    submit.classList.toggle('hidden', i !== steps.length - 1);
+    const p = Math.round(((i + 1) / steps.length) * 100);
+    bar.style.width = `${p}%`;
+    pct.textContent = `${p} %`;
+    lbl.textContent = `Étape ${i + 1} sur ${steps.length} · ${steps[i].dataset.title}`;
+    err.classList.add('hidden');
+  }
+
+  function validate(step: HTMLFieldSetElement) {
+    const fields = [...step.querySelectorAll<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>('[required]')];
+    for (const f of fields) {
+      if (f instanceof HTMLInputElement && f.type === 'radio') {
+        if (!step.querySelector(`input[name="${f.name}"]:checked`)) return 'Choisissez une option pour continuer.';
+        continue;
+      }
+      if (!f.checkValidity()) {
+        f.focus();
+        return f.id === 'cp' ? 'Indiquez un code postal valide (5 chiffres).' : f.id === 'email' ? 'Indiquez une adresse e-mail valide.' : 'Merci de compléter les champs obligatoires (*).';
+      }
+    }
+    return '';
+  }
+
+  function goNext() {
+    const msg = validate(steps[current]);
+    if (msg) {
+      err.textContent = msg;
+      err.classList.remove('hidden');
+      return;
+    }
+    track('devis_etape', { etape: String(current + 1) });
+    show(Math.min(current + 1, steps.length - 1));
+    form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  next.addEventListener('click', goNext);
+  prev.addEventListener('click', () => show(Math.max(current - 1, 0)));
+
+  form.addEventListener('change', (e) => {
+    const t = e.target as HTMLInputElement;
+    if (!started) {
+      started = true;
+      track('devis_debut');
+    }
+    if (t.name === 'besoin') {
+      urgentBox.hidden = t.value !== 'depannage';
+      if (t.value !== 'depannage') setTimeout(goNext, 180); // tuile = 1 clic
+    }
+    if (t.name === 'secteur') setTimeout(() => form.querySelector<HTMLInputElement>('input[name="sites"]')?.focus(), 50);
+  });
+
+  // Pré-sélection depuis l'URL (?besoin=…&secteur=…)
+  const params = new URLSearchParams(location.search);
+  for (const key of ['besoin', 'secteur']) {
+    const v = params.get(key);
+    const input = v ? form.querySelector<HTMLInputElement>(`input[name="${key}"][value="${CSS.escape(v)}"]`) : null;
+    if (input) input.checked = true;
+  }
+  const preB = params.get('besoin');
+  if (preB === 'depannage') urgentBox.hidden = false;
+
+  form.dataset.ready = 'true';
+  show(form.querySelector('input[name="besoin"]:checked') && preB !== 'depannage' ? 1 : 0);
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    for (let i = 0; i < steps.length; i++) {
+      const msg = validate(steps[i]);
+      if (msg) {
+        show(i);
+        err.textContent = msg;
+        err.classList.remove('hidden');
+        return;
+      }
+    }
+    submit.setAttribute('disabled', '');
+    submit.textContent = 'Envoi en cours…';
+    const data = Object.fromEntries(new FormData(form).entries());
+    try {
+      const res = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(data) });
+      if (!res.ok) throw new Error(String(res.status));
+      track('devis_envoye', { besoin: String(data.besoin), secteur: String(data.secteur) });
+      location.href = `/merci/?besoin=${encodeURIComponent(String(data.besoin))}`;
+    } catch {
+      submit.removeAttribute('disabled');
+      submit.textContent = 'Réessayer l’envoi';
+      err.innerHTML = 'L’envoi a échoué. Réessayez ou appelez-nous directement au <a class="underline" href="tel:+33635298057">06 35 29 80 57</a>.';
+      err.classList.remove('hidden');
+    }
+  });
+</script>
