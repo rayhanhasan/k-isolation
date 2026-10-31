@@ -1,0 +1,32 @@
+---
+/**
+ * Logo vectoriel K Isolation (monogramme « K » cerclé, repris du badge actuel,
+ * redessiné en SVG pour la netteté et le poids). Variante claire/sombre.
+ */
+interface Props {
+  variant?: 'dark' | 'light';
+  class?: string;
+  showTagline?: boolean;
+}
+const { variant = 'dark', class: className = '', showTagline = true } = Astro.props;
+const text = variant === 'dark' ? 'text-ink' : 'text-white';
+const sub = variant === 'dark' ? 'text-steel-500' : 'text-steel-400';
+const gid = `kg-${variant}`;
+---
+<span class:list={['inline-flex items-center gap-2.5', className]}>
+  <svg viewBox="0 0 40 40" class="size-9 shrink-0" aria-hidden="true">
+    <defs>
+      <linearGradient id={gid} x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2f6bf0" />
+        <stop offset="1" stop-color="#1741a6" />
+      </linearGradient>
+    </defs>
+    <circle cx="20" cy="20" r="19" fill={variant === 'dark' ? '#0b1626' : '#ffffff'} />
+    <circle cx="20" cy="20" r="14.5" fill="none" stroke={`url(#${gid})`} stroke-width="1.6" />
+    <path d="M14.2 11.5h4.1v6.9l6.3-6.9h5l-7.1 7.6 7.5 9.4h-5.1l-5.3-6.9-1.3 1.4v5.5h-4.1z" fill={`url(#${gid})`} />
+  </svg>
+  <span class="flex flex-col leading-none">
+    <span class:list={['font-display text-[1.2rem] font-extrabold tracking-tight', text]}>K&nbsp;Isolation</span>
+    {showTagline && <span class:list={['mt-1 font-mono text-[0.62rem] tracking-[0.16em] uppercase', sub]}>Froid &amp; isolation technique</span>}
+  </span>
+</span>

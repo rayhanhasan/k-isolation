@@ -1,0 +1,32 @@
+---
+import Icon from '../ui/Icon.astro';
+import { marked } from '../../lib/inline-md';
+interface Props {
+  faqs: { q: string; a: string }[];
+  title?: string;
+  eyebrow?: string;
+}
+const { faqs, title = 'Les questions qu’on nous pose avant de signer', eyebrow = 'Questions fréquentes' } = Astro.props;
+---
+<section class="py-16 sm:py-20">
+  <div class="container-k grid gap-10 lg:grid-cols-12">
+    <div class="lg:col-span-4">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2 class="h-section mt-3">{title}</h2>
+      <p class="mt-4 text-steel-600">Une question qui n’est pas ici ? <a href="/contact/" class="link-arrow">Posez-la à un technicien</a></p>
+    </div>
+    <div class="divide-y divide-steel-200 border-y border-steel-200 lg:col-span-8">
+      {faqs.map((f) => (
+        <details class="group py-1">
+          <summary class="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-left text-lg font-semibold text-ink">
+            <span>{f.q}</span>
+            <span class="mt-1 flex size-7 shrink-0 items-center justify-center rounded-full bg-frost-100 text-brand-600 transition group-open:rotate-45">
+              <Icon name="x" class="size-4 rotate-45" />
+            </span>
+          </summary>
+          <div class="prose-k pb-6 text-base" set:html={marked(f.a)} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

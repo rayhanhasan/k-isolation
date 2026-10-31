@@ -1,0 +1,22 @@
+---
+import Icon from '../ui/Icon.astro';
+interface Props {
+  items: { name: string; href: string }[];
+  dark?: boolean;
+}
+const { items, dark = false } = Astro.props;
+---
+<nav aria-label="Fil d'Ariane" class:list={['text-sm', dark ? 'text-steel-400' : 'text-steel-500']}>
+  <ol class="flex flex-wrap items-center gap-1.5">
+    {items.map((it, i) => (
+      <li class="flex items-center gap-1.5">
+        {i > 0 && <Icon name="chevronRight" class="size-3.5 opacity-50" />}
+        {i === items.length - 1 ? (
+          <span aria-current="page" class:list={[dark ? 'text-steel-300' : 'text-steel-600']}>{it.name}</span>
+        ) : (
+          <a href={it.href} class:list={['hover:underline', dark ? 'hover:text-white' : 'hover:text-ink']}>{it.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>

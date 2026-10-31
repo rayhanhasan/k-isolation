@@ -1,0 +1,157 @@
+---
+import Logo from '../ui/Logo.astro';
+import Icon from '../ui/Icon.astro';
+import { MAIN_NAV, SITE } from '../../data/site';
+
+interface Props {
+  overlay?: boolean;
+}
+const { overlay = false } = Astro.props;
+const path = Astro.url.pathname;
+const isActive = (href: string) => href !== '/' && !href.includes('#') && path.startsWith(href);
+---
+<header
+  id="site-header"
+  data-overlay={overlay ? 'true' : 'false'}
+  class:list={[
+    'group/header top-0 z-50 w-full transition-colors duration-300',
+    overlay ? 'fixed text-white data-[scrolled=true]:bg-navy-950/90 data-[scrolled=true]:backdrop-blur-md' : 'sticky border-b border-steel-200/80 bg-white/90 text-ink backdrop-blur-md',
+  ]}
+>
+  <!-- Bandeau de réassurance -->
+  <div class:list={['hidden text-[0.8rem] lg:block', overlay ? 'border-b border-white/10 bg-navy-950/40' : 'bg-navy-900 text-steel-300']}>
+    <div class="container-k flex h-9 items-center justify-between gap-6 text-steel-300">
+      <p class="flex items-center gap-2">
+        <span class="relative flex size-2"><span class="absolute inline-flex size-full animate-ping rounded-full bg-ok-600 opacity-60"></span><span class="relative inline-flex size-2 rounded-full bg-emerald-400"></span></span>
+        Devis détaillé sous {SITE.responseTime} · Garantie décennale · {SITE.hubs.join(' · ')}
+      </p>
+      <div class="flex items-center gap-5">
+        <a href="/sav-maintenance/" class="inline-flex items-center gap-1.5 font-medium text-orange-300 hover:text-orange-200"><Icon name="alert" class="size-3.5" /> Panne ? Dépannage prioritaire</a>
+        <a href="/recrutement/" class="hover:text-white">Recrutement</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-k flex h-[4.25rem] items-center justify-between gap-6">
+    <a href="/" aria-label="K Isolation — accueil" class="shrink-0">
+      <Logo variant={overlay ? 'light' : 'dark'} />
+    </a>
+
+    <nav aria-label="Navigation principale" class="hidden lg:block">
+      <ul class="flex items-center gap-1">
+        {MAIN_NAV.map((item) => (
+          <li class="group/item relative">
+            {item.children ? (
+              <>
+                <button
+                  type="button"
+                  class:list={['inline-flex items-center gap-1 rounded-lg px-3.5 py-2 text-[0.95rem] font-medium transition', overlay ? 'hover:bg-white/10' : 'hover:bg-frost-100']}
+                  aria-haspopup="true"
+                >
+                  {item.label}
+                  <Icon name="chevronDown" class="size-4 opacity-60 transition group-hover/item:rotate-180 group-focus-within/item:rotate-180" />
+                </button>
+                <div class="invisible absolute top-full left-1/2 w-[22rem] -translate-x-1/2 pt-3 opacity-0 transition duration-200 group-focus-within/item:visible group-focus-within/item:opacity-100 group-hover/item:visible group-hover/item:opacity-100">
+                  <ul class="rounded-2xl border border-steel-200 bg-white p-2 text-ink shadow-lift">
+                    {item.children.map((c) => (
+                      <li>
+                        <a href={c.href} class="flex flex-col rounded-xl px-4 py-3 hover:bg-frost-100">
+                          <span class="font-semibold">{c.label}</span>
+                          {c.description && <span class="text-sm text-steel-500">{c.description}</span>}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </>
+            ) : (
+              <a
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+                class:list={[
+                  'inline-flex rounded-lg px-3.5 py-2 text-[0.95rem] font-medium transition aria-[current=page]:text-brand-500',
+                  overlay ? 'hover:bg-white/10' : 'hover:bg-frost-100',
+                ]}
+              >
+                {item.label}
+              </a>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href={SITE.phoneHref} data-loc="header" class:list={['hidden items-center gap-2 rounded-lg px-3 py-2 font-semibold whitespace-nowrap xl:inline-flex', overlay ? 'hover:bg-white/10' : 'hover:bg-frost-100']}>
+        <Icon name="phone" class="size-4" />
+        {SITE.phone}
+      </a>
+      <a href="/devis/" data-loc="header" class="btn-primary hidden min-h-11 px-5 text-[0.95rem] sm:inline-flex">Demander un devis</a>
+      <button
+        type="button"
+        id="menu-open"
+        class:list={['inline-flex size-11 items-center justify-center rounded-lg lg:hidden', overlay ? 'hover:bg-white/10' : 'hover:bg-frost-100']}
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu"
+      >
+        <Icon name="menu" class="size-6" />
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<dialog id="mobile-menu" class="m-0 h-dvh max-h-none w-full max-w-none bg-white p-0 text-ink backdrop:bg-navy-950/60 lg:hidden">
+  <div class="flex h-full flex-col">
+    <div class="container-k flex h-[4.25rem] items-center justify-between border-b border-steel-200">
+      <Logo />
+      <button type="button" id="menu-close" class="inline-flex size-11 items-center justify-center rounded-lg hover:bg-frost-100" aria-label="Fermer le menu">
+        <Icon name="x" class="size-6" />
+      </button>
+    </div>
+    <nav aria-label="Navigation mobile" class="container-k flex-1 overflow-y-auto py-4">
+      {MAIN_NAV.map((item) =>
+        item.children ? (
+          <details class="group border-b border-steel-200 py-1" open={item.label === 'Solutions'}>
+            <summary class="flex cursor-pointer list-none items-center justify-between py-3 text-lg font-semibold">
+              {item.label}
+              <Icon name="chevronDown" class="size-5 transition group-open:rotate-180" />
+            </summary>
+            <ul class="pb-3">
+              {item.children.map((c) => (
+                <li><a href={c.href} class="block rounded-lg px-3 py-2.5 text-steel-600 hover:bg-frost-100 hover:text-ink">{c.label}</a></li>
+              ))}
+            </ul>
+          </details>
+        ) : (
+          <a href={item.href} class="block border-b border-steel-200 py-4 text-lg font-semibold">{item.label}</a>
+        ),
+      )}
+      <a href="/sav-maintenance/" class="mt-4 flex items-center gap-2 rounded-xl bg-alert-50 px-4 py-3 font-semibold text-alert-600"><Icon name="alert" class="size-5" /> Panne ? Dépannage prioritaire</a>
+    </nav>
+    <div class="container-k grid gap-3 border-t border-steel-200 py-4">
+      <a href="/devis/" data-loc="menu-mobile" class="btn-primary w-full">Demander un devis gratuit</a>
+      <a href={SITE.phoneHref} data-loc="menu-mobile" class="btn-ghost w-full"><Icon name="phone" class="size-4" /> {SITE.phone}</a>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const header = document.getElementById('site-header');
+  const dlg = document.getElementById('mobile-menu') as HTMLDialogElement | null;
+  const openBtn = document.getElementById('menu-open');
+  document.getElementById('menu-close')?.addEventListener('click', () => dlg?.close());
+  openBtn?.addEventListener('click', () => {
+    dlg?.showModal();
+    openBtn.setAttribute('aria-expanded', 'true');
+  });
+  dlg?.addEventListener('close', () => openBtn?.setAttribute('aria-expanded', 'false'));
+  dlg?.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => dlg.close()));
+
+  if (header?.dataset.overlay === 'true') {
+    const onScroll = () => header.setAttribute('data-scrolled', String(window.scrollY > 40));
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+</script>

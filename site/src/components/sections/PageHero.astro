@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Breadcrumbs from './Breadcrumbs.astro';
+import Icon from '../ui/Icon.astro';
+import { SITE } from '../../data/site';
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  lead?: string;
+  image?: ImageMetadata;
+  imageAlt?: string;
+  breadcrumbs?: { name: string; href: string }[];
+  ctaHref?: string;
+  ctaLabel?: string;
+  /** Points de réassurance sous les CTA */
+  proof?: string[];
+}
+const {
+  eyebrow,
+  title,
+  lead,
+  image,
+  imageAlt = '',
+  breadcrumbs,
+  ctaHref = '/devis/',
+  ctaLabel = 'Demander un devis gratuit',
+  proof = [`Réponse sous ${SITE.responseTime}`, 'Visite technique sur site', 'Garantie décennale'],
+} = Astro.props;
+---
+<section class="relative overflow-hidden bg-navy-900 text-white">
+  <div class="bg-blueprint absolute inset-0 opacity-70" aria-hidden="true"></div>
+  <div class="absolute -top-40 -right-40 size-[36rem] rounded-full bg-brand-600/25 blur-3xl" aria-hidden="true"></div>
+  <div class="container-k relative grid items-center gap-10 py-14 lg:grid-cols-12 lg:py-20">
+    <div class:list={[image ? 'lg:col-span-7' : 'lg:col-span-9']}>
+      {breadcrumbs && <Breadcrumbs items={breadcrumbs} dark />}
+      {eyebrow && <p class="eyebrow-dark mt-6"><Icon name="snowflake" class="size-3.5" />{eyebrow}</p>}
+      <h1 class="mt-4 font-display text-4xl leading-[1.05] font-extrabold sm:text-5xl lg:text-[3.4rem]">{title}</h1>
+      {lead && <p class="mt-6 max-w-2xl text-lg leading-relaxed text-steel-300">{lead}</p>}
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={ctaHref} data-loc="hero-page" class="btn-primary">{ctaLabel} <Icon name="arrowRight" class="size-4" /></a>
+        <a href={SITE.phoneHref} data-loc="hero-page" class="btn-ghost-dark"><Icon name="phone" class="size-4" /> {SITE.phone}</a>
+      </div>
+      {proof.length > 0 && (
+        <ul class="mt-7 flex flex-wrap gap-x-6 gap-y-2 text-sm text-steel-300">
+          {proof.map((p) => <li class="flex items-center gap-2"><Icon name="checkCircle" class="size-4 text-ice-400" />{p}</li>)}
+        </ul>
+      )}
+    </div>
+    {image && (
+      <div class="lg:col-span-5">
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-lift">
+          <Image src={image} alt={imageAlt} widths={[480, 720, 960]} sizes="(min-width: 1024px) 40vw, 100vw" class="aspect-[4/3] w-full object-cover" loading="eager" fetchpriority="high" />
+        </div>
+      </div>
+    )}
+  </div>
+</section>

@@ -1,0 +1,15 @@
+---
+import Icon from '../ui/Icon.astro';
+import { SITE } from '../../data/site';
+---
+<!-- Barre d'action collante mobile : appeler ou demander un devis en 1 geste -->
+<div class="fixed inset-x-0 bottom-0 z-40 border-t border-steel-200 bg-white/95 p-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] shadow-[0_-8px_24px_-12px_rgb(10_20_34/0.25)] backdrop-blur-md sm:hidden">
+  <div class="grid grid-cols-[auto_1fr] gap-2.5">
+    <a href={SITE.phoneHref} data-loc="barre-mobile" class="btn-ghost min-h-12 px-4" aria-label={`Appeler K Isolation au ${SITE.phone}`}>
+      <Icon name="phone" class="size-5" />
+      <span>Appeler</span>
+    </a>
+    <a href="/devis/" data-loc="barre-mobile" class="btn-primary min-h-12">Devis gratuit sous 24 h</a>
+  </div>
+</div>
+<div class="h-[4.5rem] sm:hidden" aria-hidden="true"></div>

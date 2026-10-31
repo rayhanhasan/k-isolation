@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import MobileCtaBar from '../components/layout/MobileCtaBar.astro';
+import { SITE } from '../data/site';
+import { organizationSchema, websiteSchema, breadcrumbSchema } from '../lib/schema';
+
+export interface Props {
+  title: string;
+  description: string;
+  /** Image de partage (chemin absolu depuis /public ou URL d'un asset optimisé) */
+  image?: string;
+  noindex?: boolean;
+  /** Blocs JSON-LD supplémentaires propres à la page */
+  schema?: object[];
+  breadcrumbs?: { name: string; href: string }[];
+  /** Masque la barre d'appel mobile (ex. sur la page devis) */
+  hideMobileCta?: boolean;
+  /** En-tête transparent posé sur un hero sombre */
+  headerOverlay?: boolean;
+  ogType?: 'website' | 'article';
+}
+
+const {
+  title,
+  description,
+  image = '/og-default.jpg',
+  noindex = false,
+  schema = [],
+  breadcrumbs,
+  hideMobileCta = false,
+  headerOverlay = false,
+  ogType = 'website',
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const fullTitle = title.includes('K Isolation') ? title : `${title} | K Isolation`;
+const ogImage = new URL(image, SITE.url).href;
+const ldBlocks = [organizationSchema(), websiteSchema(), ...(breadcrumbs ? [breadcrumbSchema(breadcrumbs)] : []), ...schema];
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large" />}
+    <meta name="theme-color" content="#0b1626" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Conseils K Isolation" href="/rss.xml" />
+
+    <meta property="og:type" content={ogType} />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    {ldBlocks.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
+
+    {/* Mesure d'audience sans cookie (pas de bandeau de consentement requis). */}
+    {plausibleDomain && <script defer data-domain={plausibleDomain} src="https://plausible.io/js/script.tagged-events.outbound-links.js" />}
+    <slot name="head" />
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-2 focus:shadow-lift">Aller au contenu</a>
+    <Header overlay={headerOverlay} />
+    <main id="contenu" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    {!hideMobileCta && <MobileCtaBar />}
+
+    <script>
+      import { initAttribution, track } from '../lib/attribution';
+      initAttribution();
+      // Suivi des intentions fortes : appel, email, clic CTA devis
+      document.addEventListener('click', (e) => {
+        const a = (e.target as HTMLElement | null)?.closest('a');
+        if (!a) return;
+        const href = a.getAttribute('href') || '';
+        if (href.startsWith('tel:')) track('clic_telephone', { emplacement: a.dataset.loc || 'inconnu' });
+        else if (href.startsWith('mailto:')) track('clic_email', { emplacement: a.dataset.loc || 'inconnu' });
+        else if (href.startsWith('/devis')) track('clic_cta_devis', { emplacement: a.dataset.loc || 'inconnu' });
+      });
+    </script>
+  </body>
+</html>
