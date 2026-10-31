@@ -1,0 +1,872 @@
+[
+ {
+  "id": 219,
+  "count": 3,
+  "description": "",
+  "link": "https://k-isolation.fr/portfolio_group/agroalimentaire/",
+  "name": "Agroalimentaire",
+  "slug": "agroalimentaire",
+  "taxonomy": "cpt_portfolio_group",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Archives des Agroalimentaire - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/portfolio_group/agroalimentaire/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archives des Agroalimentaire - K ISOLATION\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/portfolio_group/agroalimentaire/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/agroalimentaire\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/agroalimentaire\\/\",\"name\":\"Archives des Agroalimentaire - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/agroalimentaire\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/agroalimentaire\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Agroalimentaire\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Archives des Agroalimentaire - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/portfolio_group/agroalimentaire/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Archives des Agroalimentaire - K ISOLATION",
+   "og_url": "https://k-isolation.fr/portfolio_group/agroalimentaire/",
+   "og_site_name": "K ISOLATION",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://k-isolation.fr/portfolio_group/agroalimentaire/",
+      "url": "https://k-isolation.fr/portfolio_group/agroalimentaire/",
+      "name": "Archives des Agroalimentaire - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/portfolio_group/agroalimentaire/#breadcrumb"
+      },
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/portfolio_group/agroalimentaire/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Agroalimentaire"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group/219",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies/cpt_portfolio_group"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio?cpt_portfolio_group=219"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 222,
+  "count": 1,
+  "description": "",
+  "link": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/",
+  "name": "Cuisine professionnelle",
+  "slug": "cuisine-professionnelle",
+  "taxonomy": "cpt_portfolio_group",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Archives des Cuisine professionnelle - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/portfolio_group/cuisine-professionnelle/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archives des Cuisine professionnelle - K ISOLATION\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/portfolio_group/cuisine-professionnelle/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/cuisine-professionnelle\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/cuisine-professionnelle\\/\",\"name\":\"Archives des Cuisine professionnelle - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/cuisine-professionnelle\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/cuisine-professionnelle\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Cuisine professionnelle\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Archives des Cuisine professionnelle - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Archives des Cuisine professionnelle - K ISOLATION",
+   "og_url": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/",
+   "og_site_name": "K ISOLATION",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/",
+      "url": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/",
+      "name": "Archives des Cuisine professionnelle - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/#breadcrumb"
+      },
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/portfolio_group/cuisine-professionnelle/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Cuisine professionnelle"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group/222",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies/cpt_portfolio_group"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio?cpt_portfolio_group=222"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 221,
+  "count": 1,
+  "description": "",
+  "link": "https://k-isolation.fr/portfolio_group/distribution/",
+  "name": "Distribution",
+  "slug": "distribution",
+  "taxonomy": "cpt_portfolio_group",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Archives des Distribution - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/portfolio_group/distribution/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archives des Distribution - K ISOLATION\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/portfolio_group/distribution/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/distribution\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/distribution\\/\",\"name\":\"Archives des Distribution - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/distribution\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/distribution\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Distribution\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Archives des Distribution - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/portfolio_group/distribution/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Archives des Distribution - K ISOLATION",
+   "og_url": "https://k-isolation.fr/portfolio_group/distribution/",
+   "og_site_name": "K ISOLATION",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://k-isolation.fr/portfolio_group/distribution/",
+      "url": "https://k-isolation.fr/portfolio_group/distribution/",
+      "name": "Archives des Distribution - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/portfolio_group/distribution/#breadcrumb"
+      },
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/portfolio_group/distribution/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Distribution"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group/221",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies/cpt_portfolio_group"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio?cpt_portfolio_group=221"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 223,
+  "count": 1,
+  "description": "",
+  "link": "https://k-isolation.fr/portfolio_group/industrie/",
+  "name": "Industrie",
+  "slug": "industrie",
+  "taxonomy": "cpt_portfolio_group",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Archives des Industrie - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/portfolio_group/industrie/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archives des Industrie - K ISOLATION\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/portfolio_group/industrie/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/industrie\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/industrie\\/\",\"name\":\"Archives des Industrie - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/industrie\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/industrie\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Industrie\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Archives des Industrie - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/portfolio_group/industrie/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Archives des Industrie - K ISOLATION",
+   "og_url": "https://k-isolation.fr/portfolio_group/industrie/",
+   "og_site_name": "K ISOLATION",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://k-isolation.fr/portfolio_group/industrie/",
+      "url": "https://k-isolation.fr/portfolio_group/industrie/",
+      "name": "Archives des Industrie - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/portfolio_group/industrie/#breadcrumb"
+      },
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/portfolio_group/industrie/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Industrie"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group/223",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies/cpt_portfolio_group"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio?cpt_portfolio_group=223"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 220,
+  "count": 2,
+  "description": "",
+  "link": "https://k-isolation.fr/portfolio_group/logistique/",
+  "name": "Logistique",
+  "slug": "logistique",
+  "taxonomy": "cpt_portfolio_group",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Archives des Logistique - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/portfolio_group/logistique/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archives des Logistique - K ISOLATION\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/portfolio_group/logistique/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/logistique\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/logistique\\/\",\"name\":\"Archives des Logistique - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/logistique\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/logistique\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Logistique\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Archives des Logistique - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/portfolio_group/logistique/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Archives des Logistique - K ISOLATION",
+   "og_url": "https://k-isolation.fr/portfolio_group/logistique/",
+   "og_site_name": "K ISOLATION",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://k-isolation.fr/portfolio_group/logistique/",
+      "url": "https://k-isolation.fr/portfolio_group/logistique/",
+      "name": "Archives des Logistique - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/portfolio_group/logistique/#breadcrumb"
+      },
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/portfolio_group/logistique/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Logistique"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group/220",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies/cpt_portfolio_group"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio?cpt_portfolio_group=220"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 224,
+  "count": 0,
+  "description": "",
+  "link": "https://k-isolation.fr/portfolio_group/salle-blanche/",
+  "name": "Salle blanche",
+  "slug": "salle-blanche",
+  "taxonomy": "cpt_portfolio_group",
+  "parent": 0,
+  "meta": [],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Archives des Salle blanche - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/portfolio_group/salle-blanche/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Archives des Salle blanche - K ISOLATION\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/portfolio_group/salle-blanche/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/salle-blanche\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/salle-blanche\\/\",\"name\":\"Archives des Salle blanche - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/salle-blanche\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/portfolio_group\\/salle-blanche\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Salle blanche\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Archives des Salle blanche - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/portfolio_group/salle-blanche/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Archives des Salle blanche - K ISOLATION",
+   "og_url": "https://k-isolation.fr/portfolio_group/salle-blanche/",
+   "og_site_name": "K ISOLATION",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "CollectionPage",
+      "@id": "https://k-isolation.fr/portfolio_group/salle-blanche/",
+      "url": "https://k-isolation.fr/portfolio_group/salle-blanche/",
+      "name": "Archives des Salle blanche - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/portfolio_group/salle-blanche/#breadcrumb"
+      },
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/portfolio_group/salle-blanche/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Salle blanche"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group/224",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies/cpt_portfolio_group"
+    }
+   ],
+   "wp:post_type": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio?cpt_portfolio_group=224"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,96 @@
+/**
+ * K Isolation — Popup newsletter (trigger + dismiss + persistence)
+ *
+ * Storage :
+ *  - localStorage `ki_news_dismissed` : timestamp ; valide 30 jours.
+ *  - localStorage `ki_news_subscribed` : '1' ; persistant.
+ *
+ * Trigger :
+ *  - desktop : 25 secondes
+ *  - mobile  : 45 secondes (laisse à l'utilisateur le temps de lire)
+ */
+(function () {
+    'use strict';
+
+    var DISMISS_KEY = 'ki_news_dismissed';
+    var SUB_KEY     = 'ki_news_subscribed';
+    var DISMISS_TTL = 30 * 24 * 60 * 60 * 1000; // 30 jours en ms
+
+    function isDismissed() {
+        try {
+            var ts = parseInt(localStorage.getItem(DISMISS_KEY) || '0', 10);
+            return ts && (Date.now() - ts) < DISMISS_TTL;
+        } catch (e) { return false; }
+    }
+    function isSubscribed() {
+        try { return localStorage.getItem(SUB_KEY) === '1'; }
+        catch (e) { return false; }
+    }
+    function setDismissed() {
+        try { localStorage.setItem(DISMISS_KEY, String(Date.now())); }
+        catch (e) {}
+    }
+    function setSubscribed() {
+        try { localStorage.setItem(SUB_KEY, '1'); }
+        catch (e) {}
+    }
+
+    function isMobile() {
+        return window.matchMedia && window.matchMedia('(max-width: 768px)').matches;
+    }
+
+    function init() {
+        var popup = document.getElementById('ki-news-popup');
+        if (!popup) return;
+
+        if (isSubscribed() || isDismissed()) {
+            popup.parentNode && popup.parentNode.removeChild(popup);
+            return;
+        }
+
+        // Trigger timer
+        var delay = isMobile() ? 45000 : 25000;
+        setTimeout(function () {
+            popup.classList.add('is-open');
+            popup.setAttribute('aria-hidden', 'false');
+        }, delay);
+
+        // Fermeture
+        function close(persistDismiss) {
+            popup.classList.remove('is-open');
+            popup.setAttribute('aria-hidden', 'true');
+            if (persistDismiss) setDismissed();
+            setTimeout(function () {
+                popup.parentNode && popup.parentNode.removeChild(popup);
+            }, 300);
+        }
+
+        popup.addEventListener('click', function (e) {
+            if (e.target.closest('[data-ki-popup-close]')) {
+                e.preventDefault();
+                close(true);
+            }
+        });
+
+        // Échap pour fermer
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && popup.classList.contains('is-open')) {
+                close(true);
+            }
+        });
+
+        // Si le form est soumis : on considère l'inscription faite, on ne réouvre plus
+        var form = popup.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function () {
+                setSubscribed();
+            });
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();

@@ -1,4 +1,14 @@
-# k-isolation.fr : refonte 2026
+# k-isolation.fr
+
+> **Statut (31/10/2026) : refonte en pause, non validée.** Priorité : export complet du site WordPress actuel et migration vers un nouvel hébergeur.
+> - [`MIGRATION-WORDPRESS.md`](MIGRATION-WORDPRESS.md) : déplacer le site actuel tel quel, sans couper le site ni les e-mails.
+> - [`export-site-actuel/`](export-site-actuel/LISEZMOI.md) : copie complète du site, médiathèque originale, données WordPress, relevé DNS, scripts d'export et d'import.
+>
+> Le dossier `site/` (prototype de refonte) et les documents `AUDIT-SYNTHESE.md`, `MIGRATION.md` et `CONTENU-A-VALIDER.md` concernent la refonte en pause. Les audits de `audit/` restent valables pour le site actuel.
+
+---
+
+## Refonte (en pause)
 
 Nouveau site de **K Isolation** (chambres froides, cloisons isothermes, rénovation et dépannage de l'enveloppe du froid, Marseille et Île-de-France), avec l'audit complet de l'ancien site WordPress et l'automatisation du blog.
 

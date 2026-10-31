@@ -1,0 +1,436 @@
+[
+ {
+  "id": 20468,
+  "date": "2025-08-09T17:03:39",
+  "date_gmt": "2025-08-09T17:03:39",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_testimonials&#038;p=20468"
+  },
+  "modified": "2025-08-16T02:09:49",
+  "modified_gmt": "2025-08-16T02:09:49",
+  "slug": "ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires",
+  "status": "publish",
+  "type": "cpt_testimonials",
+  "link": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/",
+  "title": {
+   "rendered": "Un exemple"
+  },
+  "content": {
+   "rendered": "\n<p>Ici, des témoignages de vos clients ou collaborateurs/partenaires.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Ici, des témoignages de vos clients ou collaborateurs/partenaires.</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 20465,
+  "template": "",
+  "cpt_testimonials_group": [
+   17
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Un exemple - K ISOLATION</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Un exemple - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Ici, des témoignages de vos clients ou collaborateurs/partenaires.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2025-08-16T02:09:49+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg\" />\n\t<meta property=\"og:image:width\" content=\"500\" />\n\t<meta property=\"og:image:height\" content=\"500\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/\",\"name\":\"Un exemple - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/12\\/dcd7fd496b4d18ed702efe0d693a5f06.jpg\",\"datePublished\":\"2025-08-09T17:03:39+00:00\",\"dateModified\":\"2025-08-16T02:09:49+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/12\\/dcd7fd496b4d18ed702efe0d693a5f06.jpg\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/12\\/dcd7fd496b4d18ed702efe0d693a5f06.jpg\",\"width\":500,\"height\":500,\"caption\":\"dcd7fd496b4d18ed702efe0d693a5f06\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Un exemple\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Un exemple - K ISOLATION",
+   "robots": {
+    "index": "noindex",
+    "follow": "follow"
+   },
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Un exemple - K ISOLATION",
+   "og_description": "Ici, des témoignages de vos clients ou collaborateurs/partenaires.",
+   "og_url": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2025-08-16T02:09:49+00:00",
+   "og_image": [
+    {
+     "width": 500,
+     "height": 500,
+     "url": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+     "type": "image/jpeg"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/",
+      "url": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/",
+      "name": "Un exemple - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+      "datePublished": "2025-08-09T17:03:39+00:00",
+      "dateModified": "2025-08-16T02:09:49+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+      "width": 500,
+      "height": 500,
+      "caption": "dcd7fd496b4d18ed702efe0d693a5f06"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/testimonials/ici-des-temoignages-de-vos-clients-ou-collaborateurs-partenaires/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Un exemple"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials/20468",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_testimonials"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/1"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/20465"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=20468"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_testimonials_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials_group?post=20468"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 19661,
+  "date": "2024-12-03T14:28:59",
+  "date_gmt": "2024-12-03T14:28:59",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_testimonials&#038;p=19661"
+  },
+  "modified": "2025-08-09T16:59:27",
+  "modified_gmt": "2025-08-09T16:59:27",
+  "slug": "linda-moore-3",
+  "status": "publish",
+  "type": "cpt_testimonials",
+  "link": "https://k-isolation.fr/testimonials/linda-moore-3/",
+  "title": {
+   "rendered": "Rayhan HM"
+  },
+  "content": {
+   "rendered": "\n<p>Super collaboration, personne très sympathique et professionnelle. Communication fluide et une expérience agréable.</p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Super collaboration, personne très sympathique et professionnelle. Communication fluide et une expérience agréable.</p>\n",
+   "protected": false
+  },
+  "author": 1,
+  "featured_media": 20465,
+  "template": "",
+  "cpt_testimonials_group": [
+   17
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Rayhan HM - K ISOLATION</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Rayhan HM - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Super collaboration, personne très sympathique et professionnelle. Communication fluide et une expérience agréable.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/testimonials/linda-moore-3/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2025-08-09T16:59:27+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg\" />\n\t<meta property=\"og:image:width\" content=\"500\" />\n\t<meta property=\"og:image:height\" content=\"500\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/\",\"name\":\"Rayhan HM - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/12\\/dcd7fd496b4d18ed702efe0d693a5f06.jpg\",\"datePublished\":\"2024-12-03T14:28:59+00:00\",\"dateModified\":\"2025-08-09T16:59:27+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/12\\/dcd7fd496b4d18ed702efe0d693a5f06.jpg\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/12\\/dcd7fd496b4d18ed702efe0d693a5f06.jpg\",\"width\":500,\"height\":500,\"caption\":\"dcd7fd496b4d18ed702efe0d693a5f06\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/testimonials\\/linda-moore-3\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Rayhan HM\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Rayhan HM - K ISOLATION",
+   "robots": {
+    "index": "noindex",
+    "follow": "follow"
+   },
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Rayhan HM - K ISOLATION",
+   "og_description": "Super collaboration, personne très sympathique et professionnelle. Communication fluide et une expérience agréable.",
+   "og_url": "https://k-isolation.fr/testimonials/linda-moore-3/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2025-08-09T16:59:27+00:00",
+   "og_image": [
+    {
+     "width": 500,
+     "height": 500,
+     "url": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+     "type": "image/jpeg"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/testimonials/linda-moore-3/",
+      "url": "https://k-isolation.fr/testimonials/linda-moore-3/",
+      "name": "Rayhan HM - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/testimonials/linda-moore-3/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/testimonials/linda-moore-3/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+      "datePublished": "2024-12-03T14:28:59+00:00",
+      "dateModified": "2025-08-09T16:59:27+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/testimonials/linda-moore-3/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/testimonials/linda-moore-3/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/testimonials/linda-moore-3/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/12/dcd7fd496b4d18ed702efe0d693a5f06.jpg",
+      "width": 500,
+      "height": 500,
+      "caption": "dcd7fd496b4d18ed702efe0d693a5f06"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/testimonials/linda-moore-3/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Rayhan HM"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials/19661",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_testimonials"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/1"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/20465"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=19661"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_testimonials_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials_group?post=19661"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

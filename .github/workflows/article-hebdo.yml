@@ -16,8 +16,10 @@
 name: Article hebdomadaire
 
 on:
-  schedule:
-    - cron: '17 6 * * 2' # mardi 06:17 UTC (≈ 7 h–8 h à Paris)
+  # Planification désactivée tant que la refonte est en pause.
+  # Pour la réactiver, décommenter les deux lignes suivantes :
+  # schedule:
+  #   - cron: '17 6 * * 2' # mardi 06:17 UTC (≈ 7 h–8 h à Paris)
   workflow_dispatch:
     inputs:
       slug:

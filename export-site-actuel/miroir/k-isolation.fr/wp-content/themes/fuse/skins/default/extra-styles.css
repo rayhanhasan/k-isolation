@@ -1,0 +1,191 @@
+/* Portfolio Band */
+.sc_portfolio.sc_portfolio_band .sc_portfolio_item .post_content_wrap .post_meta .post_categories {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+/* MC4WP Style 9 */
+#style-9.mc4wp-form .mc4wp-form-fields input[type="email"] {
+  border-color: var(--theme-color-bd_color);
+}
+
+/* Testimonials decoration */
+.sc_testimonials_decoration .sc_testimonials_item_content:before {
+  content: '\E9EB';
+  color: var(--theme-color-text_link);
+}
+
+/* Testimonials Alter */
+.sc_testimonials_alter [class*="column"] .sc_testimonials_item_author:before,
+.sc_testimonials_alter .sc_testimonials_item_author:before {
+  content: '\E9EB';
+  color: var(--theme-color-text_link);
+}
+
+/* Testimonials Alter Controls */
+.sc_testimonials_alter .swiper-pagination-custom .swiper-pagination-button.swiper-pagination-button-active,
+.sc_testimonials_alter .sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet.swiper-pagination-bullet-active,
+.sc_testimonials_alter .sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet:hover,
+.sc_testimonials_alter .slider_container .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.sc_testimonials_alter .slider_outer .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.sc_testimonials_alter .slider_container .slider_pagination_wrap .swiper-pagination-bullet:hover, .sc_testimonials_alter
+.slider_outer .slider_pagination_wrap .swiper-pagination-bullet:hover {
+  border-color: var(--theme-color-text_link3);
+  background-color: var(--theme-color-text_link3);
+}
+
+/* Blogger Classic Slider Controls */
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .swiper-pagination-custom .swiper-pagination-button.swiper-pagination-button-active,
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet.swiper-pagination-bullet-active,
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet:hover,
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .slider_container .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .slider_outer .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .slider_container .slider_pagination_wrap .swiper-pagination-bullet:hover,
+.sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .slider_outer .slider_pagination_wrap .swiper-pagination-bullet:hover {
+  border-color: var(--theme-color-text_link3);
+  background-color: var(--theme-color-text_link3);
+}
+
+/* Blogger Default Slider Controls */
+.sc_blogger_default.sc_blogger_default_classic .swiper-pagination-custom .swiper-pagination-button.swiper-pagination-button-active,
+.sc_blogger_default.sc_blogger_default_classic .sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet.swiper-pagination-bullet-active,
+.sc_blogger_default.sc_blogger_default_classic .sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet:hover,
+.sc_blogger_default.sc_blogger_default_classic .slider_container .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.sc_blogger_default.sc_blogger_default_classic .slider_outer .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.sc_blogger_default.sc_blogger_default_classic .slider_container .slider_pagination_wrap .swiper-pagination-bullet:hover,
+.sc_blogger_default.sc_blogger_default_classic .slider_outer .slider_pagination_wrap .swiper-pagination-bullet:hover {
+  border-color: var(--theme-color-text_link2);
+  background-color: var(--theme-color-text_link2);
+}
+
+/* Slider Controls */
+.swiper-pagination-custom .swiper-pagination-button.swiper-pagination-button-active,
+.sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet.swiper-pagination-bullet-active,
+.sc_slider_controls.slider_pagination_style_bullets .slider_pagination_bullet:hover,
+.slider_container .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.slider_outer .slider_pagination_wrap .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.slider_container .slider_pagination_wrap .swiper-pagination-bullet:hover,
+.slider_outer .slider_pagination_wrap .swiper-pagination-bullet:hover {
+  border-color: var(--theme-color-text_link2);
+  background-color: var(--theme-color-text_link2);
+}
+
+/* Custom BTN */
+.round-square.big .elementor-button {
+  width: 141px;
+  height: 141px;
+  line-height: 140px;
+}
+
+/* Icons divider 4 */
+.sc_icons_divider4 .slider-wrapper .sc_icons_item:after,
+.sc_icons_divider4 .sc_icons_columns_wrap .sc_icons_item:after {
+  background-color: var(--theme-color-alter_bd_hover);
+}
+
+/* Cart Short */
+.sc_layouts_cart_items_short {
+  background-color: var(--theme-color-text_link2);
+}
+
+/* Num Hover */
+.sc_cover:hover + .elementor-container .num-hover,
+.sc_cover:hover + .elementor-container .num-hover * {
+  color: var(--theme-color-text_link2);
+}
+
+.sc_cover + .elementor-container .num-hover,
+.sc_cover + .elementor-container .num-hover * {
+  color: var(--theme-color-bd_color);
+}
+
+/* Team Hover */
+.sc_team_hover .post_featured .trx_addons_hover_mask {
+  background: var(--theme-color-inverse_dark);
+  background: -moz-linear-gradient(0deg, var(--theme-color-text_link) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(0deg, var(--theme-color-text_link) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, var(--theme-color-text_link) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.sc_team_hover .post_featured .sc_team_item_socials .social_item:hover .social_icon {
+  color: #ffffff;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer Socials Modern */
+[class*="scheme_"].footer_wrap .sc_socials.sc_socials_default.modern .socials_wrap .social_item .social_icon,
+.footer_wrap [class*="scheme_"].vc_row .sc_socials.sc_socials_default.modern .socials_wrap .social_item .social_icon {
+  background-color: var(--theme-color-bg_color) !important;
+}
+
+/* 404 */
+.search-no-results .page_content_wrap,
+.error404 .page_content_wrap {
+  background-color: var(--theme-color-bg_color);
+}
+
+.post_item_404 .page_title {
+  color: var(--theme-color-alter_bg_hover);
+}
+
+.post_item_404 .post_content .all-svg {
+  display: none;
+}
+
+/* Wooc */
+/* stars */
+.woocommerce p.stars a, .star-rating span, .star-rating:before {
+  color: var(--theme-color-text_link);
+}
+
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+  background: var(--theme-color-alter_bd_color);
+}
+
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: var(--theme-color-alter_link);
+}
+
+@media (max-width: 1023px) {
+  /* Custom BTN */
+  .round-square.big .elementor-button {
+    width: 121px;
+    height: 121px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 767px) {
+  /* Custom BTN */
+  .round-square.big .elementor-button {
+    width: 101px;
+    height: 101px;
+    line-height: 100px;
+  }
+}
+@media (max-width: 479px) {
+  /* Custom BTN */
+  .round-square.big .elementor-button {
+    width: 81px;
+    height: 81px;
+    line-height: 80px;
+  }
+
+  /* Blogger */
+  .sc_blogger_default.sc_blogger_default_classic .sc_blogger_item_title,
+  .sc_blogger_default.sc_blogger_default_classic .sc_item_columns_1 .sc_blogger_item_title,
+  .sc_blogger_default.sc_blogger_default_classic .sc_item_columns_2 .sc_blogger_item_title,
+  .sc_blogger_default.sc_blogger_default_classic .sc_item_columns_3 .sc_blogger_item_title {
+    font-size: 20px;
+  }
+
+  .sc_blogger_classic-masonry.sc_blogger_classic-masonry_default .post_layout_classic-masonry .post_title {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=extra-styles.css.map */

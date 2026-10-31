@@ -1,0 +1,1268 @@
+/* ==========================================================================
+   K Isolation — Portfolio v2.0 — Magazine Industriel
+   Design : image-first, grille éditoriale, stats intégrées hero
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap");
+
+/* ─── Variables & reset ────────────────────────────────────────────────── */
+#ki-portfolio {
+    --kp-navy:    #0f1b2d;
+    --kp-navy-2:  #0a1320;
+    --kp-navy-l:  #1a2d47;
+    --kp-blue:    #1a56db;
+    --kp-blue-l:  #7aa6ff;
+    --kp-bg:      #f4f6f9;
+    --kp-line:    #e2e8f0;
+    --kp-text:    #1f2937;
+    --kp-soft:    #4b5563;
+    --kp-mute:    #6b7280;
+    --kp-r:       16px;
+
+    font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: var(--kp-text);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    background: var(--kp-bg);
+}
+
+#ki-portfolio *, #ki-portfolio *::before, #ki-portfolio *::after { box-sizing: border-box; }
+#ki-portfolio img { max-width: 100%; height: auto; display: block; }
+#ki-portfolio a { color: inherit; text-decoration: none; }
+
+#ki-portfolio h1, #ki-portfolio h2, #ki-portfolio h3 {
+    font-family: "Poppins", "DM Sans", sans-serif;
+    color: var(--kp-navy);
+    line-height: 1.18;
+    letter-spacing: -0.015em;
+    margin: 0 0 14px;
+    font-weight: 700;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+
+/* ─── Container ─────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-c {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* ─── Kicker ────────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-kicker {
+    background: var(--kp-navy-2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 11px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.55);
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#ki-portfolio .ki-port-kicker strong { color: #fff; letter-spacing: 3px; }
+#ki-portfolio .ki-port-kicker .sep { display: inline-block; margin: 0 14px; color: rgba(255, 255, 255, 0.25); font-weight: 400; }
+
+/* ─── Hero ──────────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-hero {
+    background: var(--kp-navy);
+    color: #fff;
+    padding: 80px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+#ki-portfolio .ki-port-hero-bg {
+    position: absolute; inset: 0;
+    background:
+        radial-gradient(60% 80% at 12% 30%, rgba(26, 86, 219, 0.30) 0%, transparent 60%),
+        radial-gradient(50% 80% at 95% 80%, rgba(59, 130, 246, 0.18) 0%, transparent 65%);
+    pointer-events: none;
+}
+#ki-portfolio .ki-port-hero-inner {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 48px;
+    max-width: 760px;
+}
+#ki-portfolio .ki-port-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--kp-blue-l);
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+#ki-portfolio .ki-port-h1 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    letter-spacing: -0.03em;
+    margin: 0 0 16px;
+}
+#ki-portfolio .ki-port-hero-lead {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15.5px;
+    line-height: 1.65;
+    margin: 0;
+    max-width: 620px;
+}
+
+/* ─── Hero Stats ────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-hero-stats {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    margin-top: 0;
+}
+#ki-portfolio .ki-port-hero-stat {
+    padding: 20px 24px;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+#ki-portfolio .ki-port-hero-stat:last-child { border-right: none; }
+#ki-portfolio .ki-port-hero-stat:nth-child(2n) { border-right: none; }
+@media (min-width: 640px) {
+    #ki-portfolio .ki-port-hero-stats { grid-template-columns: repeat(4, 1fr); }
+    #ki-portfolio .ki-port-hero-stat:nth-child(2n) { border-right: 1px solid rgba(255, 255, 255, 0.08); }
+    #ki-portfolio .ki-port-hero-stat:last-child { border-right: none; }
+}
+#ki-portfolio .ki-port-hero-stat strong {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.01em;
+    margin-bottom: 3px;
+    -webkit-text-fill-color: #fff !important;
+}
+#ki-portfolio .ki-port-hero-stat span {
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.52);
+    line-height: 1.3;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.52) !important;
+}
+
+/* ─── Projects section ──────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-projects {
+    padding: 48px 0 64px;
+    background: var(--kp-bg);
+}
+
+/* ─── Editorial grid ────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-editorial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+/* ─── Project card (image-first, overlay text) ──────────────────────────── */
+#ki-portfolio .ki-port-pcard {
+    border-radius: var(--kp-r);
+    overflow: hidden;
+    position: relative;
+    background: var(--kp-navy);
+    /* Shadow subtile */
+    box-shadow: 0 2px 12px rgba(15, 27, 45, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#ki-portfolio .ki-port-pcard:hover {
+    box-shadow: 0 20px 48px rgba(15, 27, 45, 0.22);
+    transform: translateY(-3px);
+}
+
+/* Lien plein card */
+#ki-portfolio .ki-port-pcard-link {
+    display: block;
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    text-decoration: none;
+}
+#ki-portfolio .ki-port-pcard--xl .ki-port-pcard-link {
+    aspect-ratio: 16 / 10;
+}
+
+/* Image */
+#ki-portfolio .ki-port-pcard-img {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    background: var(--kp-navy-l);
+}
+#ki-portfolio .ki-port-pcard-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.75s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+#ki-portfolio .ki-port-pcard:hover .ki-port-pcard-img img {
+    transform: scale(1.07);
+}
+
+/* Gradient overlay */
+#ki-portfolio .ki-port-pcard-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 19, 32, 0.04) 0%,
+        rgba(10, 19, 32, 0.0) 30%,
+        rgba(10, 19, 32, 0.50) 60%,
+        rgba(10, 19, 32, 0.88) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 18px;
+    transition: background 0.35s ease;
+}
+#ki-portfolio .ki-port-pcard:hover .ki-port-pcard-overlay {
+    background: linear-gradient(
+        to bottom,
+        rgba(10, 19, 32, 0.04) 0%,
+        rgba(10, 19, 32, 0.0) 20%,
+        rgba(10, 19, 32, 0.58) 55%,
+        rgba(10, 19, 32, 0.92) 100%
+    );
+}
+#ki-portfolio .ki-port-pcard--xl .ki-port-pcard-overlay { padding: 22px; }
+
+/* Badge catégorie */
+#ki-portfolio .ki-port-pcard-top { display: flex; }
+#ki-portfolio .ki-port-pcard-badge {
+    display: inline-block;
+    background: rgba(26, 86, 219, 0.82);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Corps de carte */
+#ki-portfolio .ki-port-pcard-bottom {
+    transform: translateY(6px);
+    transition: transform 0.3s ease;
+}
+#ki-portfolio .ki-port-pcard:hover .ki-port-pcard-bottom {
+    transform: translateY(0);
+}
+#ki-portfolio .ki-port-pcard-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    line-height: 1.25;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+}
+#ki-portfolio .ki-port-pcard--xl .ki-port-pcard-title {
+    font-size: clamp(18px, 2.2vw, 26px);
+    margin: 0 0 12px;
+}
+#ki-portfolio .ki-port-pcard-excerpt {
+    color: rgba(255, 255, 255, 0.80);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.80) !important;
+    font-size: 13.5px;
+    line-height: 1.55;
+    margin: 0 0 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#ki-portfolio .ki-port-pcard-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: rgba(255, 255, 255, 0.92) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.92) !important;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+#ki-portfolio .ki-port-pcard:hover .ki-port-pcard-cta {
+    opacity: 1;
+    transform: translateY(0);
+}
+#ki-portfolio .ki-port-pcard-cta svg { flex-shrink: 0; }
+
+/* Focus visible */
+#ki-portfolio .ki-port-pcard-link:focus-visible {
+    outline: 3px solid var(--kp-blue);
+    outline-offset: 4px;
+    border-radius: var(--kp-r);
+}
+
+/* ─── Empty state ───────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--kp-mute);
+    font-size: 16px;
+}
+
+/* ─── Pagination ────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-pagination {
+    padding: 0 0 56px;
+    background: var(--kp-bg);
+}
+#ki-portfolio .ki-port-pagination .page-numbers {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 6px;
+}
+#ki-portfolio .ki-port-pagination .page-numbers li a,
+#ki-portfolio .ki-port-pagination .page-numbers li span {
+    min-width: 40px; min-height: 40px; padding: 0 12px;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: 8px; background: #fff;
+    color: var(--kp-soft); border: 1px solid var(--kp-line);
+    font-size: 14px; font-weight: 600; transition: all .15s ease;
+}
+#ki-portfolio .ki-port-pagination .page-numbers li a:hover { border-color: var(--kp-blue); color: var(--kp-blue); }
+#ki-portfolio .ki-port-pagination .page-numbers li .current { background: var(--kp-navy); color: #fff; border-color: var(--kp-navy); }
+
+/* ─── SEO Section ───────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-seo {
+    padding: 72px 0 80px;
+    background: #fff;
+    border-top: 1px solid var(--kp-line);
+    border-bottom: 1px solid var(--kp-line);
+}
+#ki-portfolio .ki-port-seo-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 52px;
+    align-items: start;
+}
+#ki-portfolio .ki-port-seo-label {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--kp-blue);
+    margin-bottom: 12px;
+}
+#ki-portfolio .ki-port-seo-h2 {
+    font-size: clamp(20px, 2.4vw, 28px);
+    font-weight: 700;
+    color: var(--kp-navy);
+    line-height: 1.22;
+    margin: 0 0 20px;
+    letter-spacing: -0.015em;
+}
+#ki-portfolio .ki-port-seo-text p {
+    color: var(--kp-soft);
+    line-height: 1.8;
+    margin: 0 0 14px;
+    font-size: 15px;
+}
+
+/* Stats row dans SEO */
+#ki-portfolio .ki-port-seo-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 28px 0 28px;
+}
+#ki-portfolio .ki-port-seo-stat {
+    padding: 16px 18px;
+    background: var(--kp-bg);
+    border-radius: 12px;
+    border: 1px solid var(--kp-line);
+}
+#ki-portfolio .ki-port-seo-stat strong {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--kp-navy);
+    letter-spacing: -0.02em;
+    margin-bottom: 3px;
+    -webkit-text-fill-color: var(--kp-navy) !important;
+}
+#ki-portfolio .ki-port-seo-stat span {
+    font-size: 12.5px;
+    color: var(--kp-mute);
+    line-height: 1.4;
+    -webkit-text-fill-color: var(--kp-mute) !important;
+}
+
+/* CTA devis SEO */
+#ki-portfolio .ki-port-btn-seo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 22px;
+    background: var(--kp-blue);
+    color: #fff;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+#ki-portfolio .ki-port-btn-seo:hover { background: #1648c0; transform: translateY(-2px); }
+#ki-portfolio .ki-port-btn-seo svg { flex-shrink: 0; }
+
+/* ─── Sectors list ──────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-sectors-col { }
+#ki-portfolio .ki-port-sectors-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#ki-portfolio .ki-port-sectors-list li a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    background: var(--kp-bg);
+    border: 1px solid var(--kp-line);
+    border-radius: 12px;
+    color: var(--kp-text);
+    text-decoration: none;
+    transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+#ki-portfolio .ki-port-sectors-list li a:hover {
+    background: #fff;
+    border-color: rgba(26, 86, 219, 0.4);
+    transform: translateX(4px);
+}
+#ki-portfolio .ki-port-sectors-list li a > svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    color: var(--kp-blue);
+    margin-left: auto;
+    transition: transform 0.18s ease;
+}
+#ki-portfolio .ki-port-sectors-list li a:hover > svg { transform: translateX(3px); }
+#ki-portfolio .ki-port-sector-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    background: rgba(26, 86, 219, 0.08);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--kp-blue);
+}
+#ki-portfolio .ki-port-sector-icon svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 0;
+    display: block;
+}
+#ki-portfolio .ki-port-sector-text { flex: 1; min-width: 0; }
+#ki-portfolio .ki-port-sector-text strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--kp-navy);
+    margin-bottom: 2px;
+    -webkit-text-fill-color: var(--kp-navy) !important;
+}
+#ki-portfolio .ki-port-sector-text span {
+    font-size: 12px;
+    color: var(--kp-mute);
+    line-height: 1.3;
+    -webkit-text-fill-color: var(--kp-mute) !important;
+}
+
+/* ─── CTA Final ─────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-final-cta {
+    padding: 56px 0 96px;
+    background: var(--kp-bg);
+}
+#ki-portfolio .ki-port-final-card {
+    background:
+        radial-gradient(60% 100% at 0% 0%, rgba(26, 86, 219, 0.30) 0%, transparent 60%),
+        linear-gradient(135deg, var(--kp-navy) 0%, #1a2d47 100%);
+    border-radius: 22px;
+    padding: 52px 32px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 24px 60px rgba(15, 27, 45, 0.18);
+}
+#ki-portfolio .ki-port-final-card h2 {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    font-size: clamp(22px, 3vw, 30px);
+    margin: 0 0 14px;
+}
+#ki-portfolio .ki-port-final-card p {
+    color: rgba(255, 255, 255, 0.80);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.80) !important;
+    font-size: 15px;
+    margin: 0 0 28px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ki-portfolio .ki-port-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    min-height: 48px;
+    transition: transform .15s ease, box-shadow .15s ease;
+    text-decoration: none !important;
+}
+#ki-portfolio .ki-port-btn-white {
+    background: #fff !important;
+    color: var(--kp-blue) !important;
+    -webkit-text-fill-color: var(--kp-blue) !important;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+#ki-portfolio .ki-port-btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+/* ==========================================================================
+   SINGLE PROJET — inchangé
+   ========================================================================== */
+#ki-portfolio.ki-port-single { background: #fff; }
+
+#ki-portfolio .ki-port-single-hero {
+    background: var(--kp-navy); color: #fff;
+    padding: 64px 0 56px; position: relative; overflow: hidden;
+}
+#ki-portfolio .ki-port-single-breadcrumb {
+    font-size: 13px; color: rgba(255, 255, 255, 0.65);
+    margin: 0 0 26px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+}
+#ki-portfolio .ki-port-single-breadcrumb a { color: rgba(255, 255, 255, 0.88); transition: color .15s ease; }
+#ki-portfolio .ki-port-single-breadcrumb a:hover { color: #fff; }
+#ki-portfolio .ki-port-single-breadcrumb .sep { color: rgba(255, 255, 255, 0.35); }
+#ki-portfolio .ki-port-single-breadcrumb [aria-current] { color: #fff; }
+#ki-portfolio .ki-port-single-badge {
+    display: inline-flex; align-items: center;
+    padding: 5px 12px;
+    background: rgba(255, 255, 255, 0.14) !important;
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase;
+    border-radius: 999px; margin-bottom: 18px; transition: background .15s;
+}
+#ki-portfolio .ki-port-single-badge:hover { background: var(--kp-blue) !important; }
+#ki-portfolio .ki-port-single-h1 {
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    font-size: clamp(28px, 4.4vw, 44px); line-height: 1.12;
+    letter-spacing: -0.02em; margin: 0 0 28px; max-width: 880px;
+}
+#ki-portfolio .ki-port-single-meta {
+    display: flex; flex-wrap: wrap; gap: 22px 36px;
+    padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.10);
+    font-size: 13px; color: rgba(255, 255, 255, 0.75);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.75) !important;
+}
+#ki-portfolio .ki-port-single-meta strong {
+    display: block; font-family: "Poppins", sans-serif;
+    font-size: 10.5px; font-weight: 700;
+    color: var(--kp-blue-l) !important; -webkit-text-fill-color: var(--kp-blue-l) !important;
+    letter-spacing: 1.6px; text-transform: uppercase; margin-bottom: 3px;
+}
+#ki-portfolio .ki-port-single-cover { background: #000; }
+#ki-portfolio .ki-port-single-cover img {
+    width: 100%; height: auto; max-height: 580px; object-fit: cover; display: block;
+}
+#ki-portfolio .ki-port-single-article { padding: 56px 0 80px; background: #fff; }
+#ki-portfolio .ki-port-single-content { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+#ki-portfolio .ki-port-related { background: var(--kp-bg); padding: 72px 0; }
+#ki-portfolio .ki-port-related-title {
+    text-align: center; font-size: clamp(22px, 2.6vw, 28px); margin: 0 0 40px;
+}
+
+/* ─── Cards related (utilisées dans single.php) ─────────────────────────── */
+#ki-portfolio .ki-port-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+#ki-portfolio .ki-port-card {
+    background: #fff; border-radius: 14px; overflow: hidden;
+    border: 1px solid var(--kp-line); display: flex; flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+#ki-portfolio .ki-port-card-media {
+    position: relative; display: block; overflow: hidden;
+    aspect-ratio: 16 / 9; background: var(--kp-bg);
+}
+#ki-portfolio .ki-port-card-media img {
+    width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease;
+}
+#ki-portfolio .ki-port-badge {
+    display: inline-flex; align-items: center;
+    padding: 5px 12px; background: rgba(26, 86, 219, 0.10);
+    color: var(--kp-blue); font-size: 11px; font-weight: 700;
+    letter-spacing: 1.4px; text-transform: uppercase; border-radius: 999px;
+    text-decoration: none;
+}
+#ki-portfolio .ki-port-badge:hover { background: var(--kp-blue); color: #fff; }
+#ki-portfolio .ki-port-badge-overlay {
+    position: absolute; top: 14px; left: 14px;
+    background: rgba(15, 27, 45, 0.88); color: #fff;
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 1;
+}
+#ki-portfolio .ki-port-card-body {
+    padding: 18px 22px 22px; display: flex; flex-direction: column; gap: 14px; flex: 1;
+}
+#ki-portfolio .ki-port-card-h3 { font-size: 17px; line-height: 1.35; margin: 0; }
+#ki-portfolio .ki-port-card-h3 a { color: var(--kp-navy); }
+#ki-portfolio .ki-port-card-h3 a:hover { color: var(--kp-blue); }
+#ki-portfolio .ki-port-card-more {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--kp-blue); font-weight: 600; font-size: 14px; transition: gap .15s ease;
+}
+#ki-portfolio .ki-port-card-more:hover { gap: 10px; }
+@media (hover: hover) {
+    #ki-portfolio .ki-port-card:hover {
+        transform: translateY(-4px); border-color: transparent;
+        box-shadow: 0 16px 36px rgba(15, 27, 45, 0.10);
+    }
+    #ki-portfolio .ki-port-card:hover .ki-port-card-media img { transform: scale(1.04); }
+}
+
+/* ─── A11y ──────────────────────────────────────────────────────────────── */
+#ki-portfolio a:focus-visible, #ki-portfolio button:focus-visible {
+    outline: 2px solid var(--kp-blue); outline-offset: 3px; border-radius: 8px;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+/* ≥ 600px : 2 colonnes */
+@media (min-width: 600px) {
+    #ki-portfolio .ki-port-editorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    /* Carte XL : pleine largeur */
+    #ki-portfolio .ki-port-pcard--xl {
+        grid-column: 1 / -1;
+    }
+    #ki-portfolio .ki-port-pcard--xl .ki-port-pcard-link {
+        aspect-ratio: 21 / 9;
+    }
+    #ki-portfolio .ki-port-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ≥ 1024px : 3 colonnes */
+@media (min-width: 1024px) {
+    #ki-portfolio .ki-port-hero { padding: 96px 0 0; }
+    #ki-portfolio .ki-port-projects { padding: 60px 0 80px; }
+
+    #ki-portfolio .ki-port-editorial-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    /* Carte XL : 2 colonnes sur 3 */
+    #ki-portfolio .ki-port-pcard--xl {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    #ki-portfolio .ki-port-pcard--xl .ki-port-pcard-link {
+        aspect-ratio: 16 / 10;
+    }
+
+    #ki-portfolio .ki-port-seo { padding: 96px 0 104px; }
+    #ki-portfolio .ki-port-seo-grid {
+        grid-template-columns: 1fr 400px;
+        gap: 72px;
+    }
+    #ki-portfolio .ki-port-final-cta { padding: 80px 0 120px; }
+    #ki-portfolio .ki-port-final-card { padding: 72px 64px; }
+    #ki-portfolio .ki-port-single-hero { padding: 96px 0 72px; }
+    #ki-portfolio .ki-port-related { padding: 96px 0; }
+    #ki-portfolio .ki-port-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ==========================================================================
+   SINGLE PROJET v2.0 — Ajouts au portfolio.css existant
+   Sections génériques + layout 2-colonnes + contenu projet (.ki-pj-*)
+   ========================================================================== */
+
+/* ─── Hero v2 ───────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-single-hero {
+    background: var(--kp-navy);
+    color: #fff;
+    padding: 56px 0 52px;
+    position: relative;
+    overflow: hidden;
+}
+#ki-portfolio .ki-port-single-hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+        radial-gradient(50% 80% at 8% 40%, rgba(26, 86, 219, 0.25) 0%, transparent 60%),
+        radial-gradient(40% 60% at 95% 70%, rgba(59, 130, 246, 0.14) 0%, transparent 60%);
+    pointer-events: none;
+}
+#ki-portfolio .ki-port-single-hero-inner {
+    position: relative; z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#ki-portfolio .ki-port-single-hero-content { flex: 1; }
+#ki-portfolio .ki-port-single-hero-cta { }
+#ki-portfolio .ki-port-btn-hero {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    border-radius: 10px;
+    font-size: 14px; font-weight: 600;
+    text-decoration: none;
+    transition: background .2s ease;
+    white-space: nowrap;
+}
+#ki-portfolio .ki-port-btn-hero:hover { background: rgba(255, 255, 255, 0.20); }
+#ki-portfolio .ki-port-btn-hero svg { flex-shrink: 0; }
+
+/* Breadcrumb */
+#ki-portfolio .ki-port-single-breadcrumb {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.58);
+    margin: 0 0 22px;
+    display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+    position: relative; z-index: 1;
+}
+#ki-portfolio .ki-port-single-breadcrumb a { color: rgba(255, 255, 255, 0.82); text-decoration: none; transition: color .15s; }
+#ki-portfolio .ki-port-single-breadcrumb a:hover { color: #fff; }
+#ki-portfolio .ki-port-single-breadcrumb .sep { color: rgba(255, 255, 255, 0.30); }
+#ki-portfolio .ki-port-single-breadcrumb [aria-current] { color: rgba(255, 255, 255, 0.65); }
+
+/* Badge catégorie */
+#ki-portfolio .ki-port-single-badge {
+    display: inline-flex; align-items: center;
+    padding: 5px 13px;
+    background: rgba(26, 86, 219, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 10.5px; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase;
+    border-radius: 999px;
+    margin-bottom: 14px;
+    text-decoration: none;
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    transition: background .15s;
+}
+#ki-portfolio .ki-port-single-badge:hover { background: var(--kp-blue); }
+
+/* H1 projet */
+#ki-portfolio .ki-port-single-h1 {
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    font-size: clamp(24px, 4vw, 40px);
+    line-height: 1.12; letter-spacing: -0.02em;
+    margin: 0 0 14px; max-width: 820px;
+}
+/* Lead */
+#ki-portfolio .ki-port-single-lead {
+    color: rgba(255, 255, 255, 0.76);
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.76) !important;
+    font-size: 15.5px; line-height: 1.65;
+    margin: 0 0 22px; max-width: 680px;
+}
+
+/* Meta strip */
+#ki-portfolio .ki-port-single-meta {
+    display: flex; flex-wrap: wrap; gap: 12px 32px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+#ki-portfolio .ki-port-single-meta-item {
+    display: flex; flex-direction: column; gap: 2px;
+}
+#ki-portfolio .ki-port-single-meta-label {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px; font-weight: 700;
+    color: var(--kp-blue-l) !important;
+    -webkit-text-fill-color: var(--kp-blue-l) !important;
+    letter-spacing: 1.6px; text-transform: uppercase;
+}
+#ki-portfolio .ki-port-single-meta-value {
+    font-size: 13px; font-weight: 500;
+    color: rgba(255, 255, 255, 0.85) !important;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* ─── Cover image ───────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-single-cover { background: var(--kp-navy); }
+#ki-portfolio .ki-port-single-cover img {
+    width: 100%; height: auto;
+    max-height: 560px; object-fit: cover; display: block;
+}
+
+/* ─── Layout 2 colonnes (contenu + sidebar) ─────────────────────────────── */
+#ki-portfolio .ki-port-single-wrap {
+    padding: 56px 0 72px;
+    background: #fff;
+}
+#ki-portfolio .ki-port-single-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* ─── Article contenu ───────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-single-content {
+    min-width: 0;
+}
+
+/* ─── Sidebar ───────────────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-single-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Carte fiche chantier */
+#ki-portfolio .ki-port-sidebar-card {
+    background: var(--kp-bg);
+    border: 1px solid var(--kp-line);
+    border-radius: 18px;
+    overflow: hidden;
+}
+#ki-portfolio .ki-port-sidebar-card-head {
+    background: var(--kp-navy);
+    color: #fff;
+    -webkit-text-fill-color: #fff !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 1.8px; text-transform: uppercase;
+    padding: 14px 22px;
+}
+#ki-portfolio .ki-port-sidebar-dl {
+    margin: 0; padding: 18px 22px;
+    display: flex; flex-direction: column; gap: 12px;
+}
+#ki-portfolio .ki-port-sidebar-dl > div {
+    display: flex; align-items: baseline; gap: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--kp-line);
+}
+#ki-portfolio .ki-port-sidebar-dl > div:last-child { border-bottom: none; padding-bottom: 0; }
+#ki-portfolio .ki-port-sidebar-dl dt {
+    font-family: "Poppins", sans-serif;
+    font-size: 10.5px; font-weight: 700;
+    letter-spacing: 1.2px; text-transform: uppercase;
+    color: var(--kp-mute);
+    -webkit-text-fill-color: var(--kp-mute) !important;
+    min-width: 80px; flex-shrink: 0;
+}
+#ki-portfolio .ki-port-sidebar-dl dd {
+    font-size: 13.5px; font-weight: 500;
+    color: var(--kp-navy);
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    margin: 0;
+}
+#ki-portfolio .ki-port-sidebar-dl dd a { color: var(--kp-blue); text-decoration: none; }
+#ki-portfolio .ki-port-sidebar-dl dd a:hover { text-decoration: underline; }
+
+/* CTA sidebar */
+#ki-portfolio .ki-port-sidebar-cta {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    margin: 4px 22px 14px;
+    padding: 13px 18px;
+    background: var(--kp-blue);
+    color: #fff !important; -webkit-text-fill-color: #fff !important;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px; font-weight: 700;
+    text-decoration: none;
+    transition: background .2s ease, transform .2s ease;
+}
+#ki-portfolio .ki-port-sidebar-cta:hover { background: #1648c0; transform: translateY(-1px); }
+#ki-portfolio .ki-port-sidebar-cta svg { flex-shrink: 0; }
+
+#ki-portfolio .ki-port-sidebar-link {
+    display: block;
+    text-align: center;
+    padding: 0 22px 18px;
+    font-size: 13px; color: var(--kp-soft);
+    text-decoration: none;
+    transition: color .15s;
+}
+#ki-portfolio .ki-port-sidebar-link:hover { color: var(--kp-blue); }
+
+/* Badges sidebar */
+#ki-portfolio .ki-port-sidebar-badges {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 8px;
+}
+#ki-portfolio .ki-port-sidebar-badge {
+    display: flex; align-items: center; gap: 8px;
+    padding: 11px 14px;
+    background: var(--kp-bg);
+    border: 1px solid var(--kp-line);
+    border-radius: 10px;
+    font-size: 12.5px; font-weight: 600;
+    color: var(--kp-text);
+    -webkit-text-fill-color: var(--kp-text) !important;
+}
+#ki-portfolio .ki-port-sidebar-badge svg { flex-shrink: 0; color: var(--kp-blue); }
+
+/* ─── Styles contenu projet (classes .ki-pj-*) ──────────────────────────── */
+/* Utilisés dans les nouveaux posts (HTML propre sans CSS embarqué) */
+
+#ki-portfolio .ki-port-single-content .ki-pj-lead {
+    font-size: 16.5px;
+    line-height: 1.78;
+    color: var(--kp-soft);
+    margin: 0 0 36px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--kp-line);
+}
+
+#ki-portfolio .ki-port-single-content .ki-pj-section {
+    margin: 0 0 44px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-section:last-child { margin-bottom: 0; }
+
+#ki-portfolio .ki-port-single-content .ki-pj-h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(20px, 2.2vw, 26px);
+    font-weight: 700;
+    color: var(--kp-navy);
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    line-height: 1.2; letter-spacing: -0.015em;
+    margin: 0 0 8px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-section-lead {
+    font-size: 15px;
+    color: var(--kp-mute);
+    -webkit-text-fill-color: var(--kp-mute) !important;
+    margin: 0 0 24px;
+    line-height: 1.65;
+}
+
+/* Grille des travaux (3 cartes) */
+#ki-portfolio .ki-port-single-content .ki-pj-works {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-work-card {
+    padding: 22px 24px;
+    background: var(--kp-bg);
+    border: 1px solid var(--kp-line);
+    border-radius: 14px;
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-work-card:hover {
+    box-shadow: 0 8px 24px rgba(15, 27, 45, 0.08);
+    transform: translateY(-2px);
+}
+#ki-portfolio .ki-port-single-content .ki-pj-work-icon {
+    width: 40px; height: 40px;
+    background: rgba(26, 86, 219, 0.08);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--kp-blue);
+    margin-bottom: 14px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-work-icon svg { width: 20px; height: 20px; flex-shrink: 0; }
+#ki-portfolio .ki-port-single-content .ki-pj-work-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px; font-weight: 700;
+    color: var(--kp-navy) !important;
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    margin: 0 0 8px; line-height: 1.3;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-work-card p {
+    font-size: 14px; line-height: 1.7;
+    color: var(--kp-soft);
+    -webkit-text-fill-color: var(--kp-soft) !important;
+    margin: 0;
+}
+
+/* Grille résultats (2 colonnes) */
+#ki-portfolio .ki-port-single-content .ki-pj-results-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-result-box {
+    padding: 24px 26px;
+    background: var(--kp-bg);
+    border: 1px solid var(--kp-line);
+    border-radius: 14px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-result-box h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px; font-weight: 700;
+    color: var(--kp-navy) !important;
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    margin: 0 0 14px; line-height: 1.3;
+}
+
+/* Checklist */
+#ki-portfolio .ki-port-single-content .ki-pj-checklist {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; flex-direction: column; gap: 10px;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-checklist li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14.5px; line-height: 1.65;
+    color: var(--kp-soft);
+    -webkit-text-fill-color: var(--kp-soft) !important;
+}
+#ki-portfolio .ki-port-single-content .ki-pj-checklist li::before {
+    content: '';
+    display: block; flex-shrink: 0;
+    width: 18px; height: 18px; margin-top: 2px;
+    background: rgba(26, 86, 219, 0.10);
+    border-radius: 999px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4l2.5 2.5L9 1' stroke='%231a56db' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ─── Section Engagements (générique tous projets) ─────────────────────── */
+#ki-portfolio .ki-port-engagements {
+    padding: 72px 0 80px;
+    background: var(--kp-bg);
+    border-top: 1px solid var(--kp-line);
+}
+#ki-portfolio .ki-port-engagements-head {
+    text-align: center;
+    margin-bottom: 48px;
+}
+#ki-portfolio .ki-port-seo-label {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--kp-blue);
+    margin-bottom: 10px;
+}
+#ki-portfolio .ki-port-engagements-h2 {
+    font-size: clamp(20px, 2.4vw, 28px);
+    font-weight: 700; color: var(--kp-navy);
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    line-height: 1.22; letter-spacing: -0.015em;
+    margin: 0 0 12px;
+}
+#ki-portfolio .ki-port-engagements-lead {
+    font-size: 15.5px; color: var(--kp-soft);
+    -webkit-text-fill-color: var(--kp-soft) !important;
+    max-width: 540px; margin: 0 auto; line-height: 1.65;
+}
+#ki-portfolio .ki-port-eng-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+#ki-portfolio .ki-port-eng-card {
+    background: #fff;
+    border: 1px solid var(--kp-line);
+    border-radius: 16px;
+    padding: 28px 26px;
+    transition: box-shadow .22s ease, transform .22s ease;
+    position: relative;
+    overflow: hidden;
+}
+#ki-portfolio .ki-port-eng-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--kp-blue), #3b82f6);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .3s ease;
+}
+#ki-portfolio .ki-port-eng-card:hover {
+    box-shadow: 0 10px 32px rgba(15, 27, 45, 0.08);
+    transform: translateY(-3px);
+}
+#ki-portfolio .ki-port-eng-card:hover::after { transform: scaleX(1); }
+#ki-portfolio .ki-port-eng-icon {
+    width: 48px; height: 48px;
+    background: rgba(26, 86, 219, 0.08);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--kp-blue);
+    margin-bottom: 16px;
+}
+#ki-portfolio .ki-port-eng-card h3 {
+    font-size: 16px; font-weight: 700;
+    color: var(--kp-navy) !important;
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    margin: 0 0 8px; line-height: 1.3;
+}
+#ki-portfolio .ki-port-eng-card p {
+    font-size: 14px; line-height: 1.7;
+    color: var(--kp-soft);
+    -webkit-text-fill-color: var(--kp-soft) !important;
+    margin: 0;
+}
+
+/* ─── Related projects ──────────────────────────────────────────────────── */
+#ki-portfolio .ki-port-related {
+    background: #fff;
+    padding: 72px 0 80px;
+    border-top: 1px solid var(--kp-line);
+}
+#ki-portfolio .ki-port-related-title {
+    font-size: clamp(20px, 2.4vw, 26px);
+    font-weight: 700; color: var(--kp-navy);
+    -webkit-text-fill-color: var(--kp-navy) !important;
+    text-align: center; margin: 0 0 40px;
+}
+
+/* ─── Responsive ────────────────────────────────────────────────────────── */
+@media (min-width: 768px) {
+    #ki-portfolio .ki-port-single-hero-inner {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    #ki-portfolio .ki-port-single-layout {
+        grid-template-columns: 1fr 340px;
+        gap: 56px;
+    }
+    #ki-portfolio .ki-port-single-sidebar {
+        position: sticky;
+        top: 88px;
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+    }
+    #ki-portfolio .ki-port-single-content .ki-pj-works {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #ki-portfolio .ki-port-single-content .ki-pj-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #ki-portfolio .ki-port-eng-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    #ki-portfolio .ki-port-single-hero { padding: 72px 0 60px; }
+    #ki-portfolio .ki-port-single-wrap { padding: 72px 0 88px; }
+    #ki-portfolio .ki-port-single-layout {
+        grid-template-columns: 1fr 360px;
+    }
+    #ki-portfolio .ki-port-single-content .ki-pj-works {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #ki-portfolio .ki-port-eng-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #ki-portfolio .ki-port-engagements { padding: 88px 0 96px; }
+    #ki-portfolio .ki-port-related { padding: 88px 0 96px; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   FAQ SECTION — single project page
+   ═══════════════════════════════════════════════════════════════════════ */
+#ki-portfolio .ki-port-faq {
+    padding: 56px 0 64px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ki-port-faq-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 40px;
+}
+
+.ki-port-faq-h2 {
+    font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+    font-weight: 800;
+    color: var(--navy, #0f1b2d);
+    margin: .4rem 0 0;
+    line-height: 1.25;
+}
+
+.ki-port-faq-list {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.ki-port-faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.ki-port-faq-item:first-child {
+    border-top: 1px solid #e2e8f0;
+}
+
+.ki-port-faq-item dt {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--navy, #0f1b2d);
+    margin-bottom: .5rem;
+    -webkit-text-fill-color: var(--navy, #0f1b2d) !important;
+}
+
+.ki-port-faq-item dd {
+    margin: 0;
+    color: #4b5563;
+    font-size: .95rem;
+    line-height: 1.7;
+    -webkit-text-fill-color: #4b5563 !important;
+}
+
+@media (min-width: 768px) {
+    .ki-port-faq-item {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 24px;
+        align-items: start;
+    }
+    .ki-port-faq-item dt { margin-bottom: 0; }
+}
+
+/* ── Sidebar badge icon centering fix ────────────────────────────── */
+#ki-portfolio .ki-port-sidebar-badge svg {
+    flex-shrink: 0;
+    display: block;
+}
+#ki-portfolio .ki-port-eng-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ki-portfolio .ki-pj-work-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

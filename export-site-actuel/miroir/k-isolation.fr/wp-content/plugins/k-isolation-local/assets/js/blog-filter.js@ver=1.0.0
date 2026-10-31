@@ -1,0 +1,63 @@
+/**
+ * K Isolation Blog — Filtrage instantané par catégorie (vanilla JS, zéro deps).
+ *
+ * Fonctionnement :
+ *   - Au clic sur un bouton filtre [data-filter="slug"], on prévient la nav
+ *     (preventDefault) et on masque/affiche les cartes selon leur data-cats.
+ *   - Fallback no-JS : si JS désactivé, chaque filtre est un <a> qui pointe
+ *     vers /category/[slug]/ (rendu serveur classique).
+ *   - Les ancres restent valides (clic droit → ouvrir dans nouvel onglet OK).
+ */
+(function () {
+    'use strict';
+
+    function init() {
+        var container = document.getElementById('ki-blog');
+        if (!container) return;
+
+        var filters = container.querySelectorAll('.ki-blog-filter');
+        var cards   = container.querySelectorAll('.ki-blog-card');
+        if (!filters.length || !cards.length) return;
+
+        filters.forEach(function (btn) {
+            btn.addEventListener('click', function (e) {
+                // Modifier+click → laisser le comportement natif (nouvel onglet, etc.)
+                if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+
+                e.preventDefault();
+                var slug = btn.getAttribute('data-filter') || 'all';
+
+                // Mise à jour visuelle des filtres
+                filters.forEach(function (f) { f.classList.remove('is-active'); });
+                btn.classList.add('is-active');
+
+                // Filtrage des cartes
+                cards.forEach(function (card) {
+                    if (slug === 'all') {
+                        card.classList.remove('is-hidden');
+                        return;
+                    }
+                    var cats = (card.getAttribute('data-cats') || '').split(/\s+/);
+                    if (cats.indexOf(slug) !== -1) {
+                        card.classList.remove('is-hidden');
+                    } else {
+                        card.classList.add('is-hidden');
+                    }
+                });
+
+                // Met à jour l'URL sans recharger (history API) pour partage propre
+                if (window.history && window.history.replaceState) {
+                    try {
+                        window.history.replaceState({}, '', btn.getAttribute('href'));
+                    } catch (err) { /* noop */ }
+                }
+            });
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
+})();

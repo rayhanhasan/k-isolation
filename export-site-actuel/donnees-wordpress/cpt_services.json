@@ -1,0 +1,1865 @@
+[
+ {
+  "id": 21418,
+  "date": "2026-02-24T03:19:42",
+  "date_gmt": "2026-02-24T03:19:42",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=21418"
+  },
+  "modified": "2026-04-25T15:19:03",
+  "modified_gmt": "2026-04-25T15:19:03",
+  "slug": "remorques",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/remorques/",
+  "title": {
+   "rendered": "Remorques réfrigérées &amp; isothermes"
+  },
+  "content": {
+   "rendered": "\n<style>\n:root{\n  --kiso-blue:#0052a3;\n  --kiso-blue-dark:#003f7d;\n  --kiso-soft:#eef4fb;\n  --kiso-text:#0f172a;\n  --kiso-muted:#64748b;\n  --kiso-border:#e5e7eb;\n  --kiso-bg:#ffffff;\n  --kiso-radius:14px;\n  --kiso-shadow:0 10px 28px rgba(0,0,0,.04);\n}\n\n*{box-sizing:border-box}\n.kiso-container{max-width:1200px;margin:0 auto;padding:0 20px}\n.kiso-sec{padding:72px 0}\n@media (max-width:900px){.kiso-sec{padding:60px 0}}\n@media (max-width:520px){.kiso-sec{padding:52px 0}}\n\n.kiso-eyebrow{\n  display:flex;align-items:center;gap:10px;\n  font-size:12px;letter-spacing:.22em;text-transform:uppercase;\n  color:var(--kiso-blue);font-weight:900;margin:0 0 14px 0;\n}\n.kiso-eyebrow::before{content:\"\";width:10px;height:10px;border-radius:3px;background:var(--kiso-blue);opacity:.95}\n.kiso-title{\n  font-size:clamp(26px,3.1vw,44px);\n  line-height:1.1;color:var(--kiso-text);\n  font-weight:950;margin:0 0 14px 0;\n  letter-spacing:-0.02em;\n}\n.kiso-lead{\n  max-width:920px;\n  color:var(--kiso-muted);\n  font-size:16px;\n  line-height:1.95;\n  margin:0;\n}\n.kiso-divider{\n  height:1px;\n  background:linear-gradient(to right, var(--kiso-border), transparent);\n  margin:30px 0 0;\n}\n\n.kiso-btn{\n  display:inline-flex;align-items:center;justify-content:center;gap:10px;\n  padding:14px 20px;border-radius:12px;text-decoration:none;\n  font-weight:900;font-size:15px;white-space:nowrap;\n  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;\n}\n.kiso-btn-primary{background:var(--kiso-blue-dark);color:#fff;box-shadow:0 10px 24px rgba(0,63,125,.18)}\n.kiso-btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(0,63,125,.22)}\n.kiso-btn-secondary{background:#fff;color:var(--kiso-text);border:1px solid var(--kiso-border)}\n.kiso-btn-secondary:hover{transform:translateY(-1px);border-color:rgba(0,82,163,.35)}\n\n.kiso-chip{\n  display:inline-flex;align-items:center;gap:10px;\n  background:#f1f5f9;\n  padding:9px 12px;border-radius:999px;\n  border:1px solid rgba(15,23,42,.06);\n  color:var(--kiso-text);\n  font-size:13.5px;font-weight:700;\n}\n.kiso-dot{width:8px;height:8px;border-radius:99px;background:rgba(0,82,163,.8)}\n\n/* =========================================================\n   HERO – REMORQUES (prestige, sans surcharge)\n========================================================= */\n.kiso-hero{\n  position:relative;\n  padding:86px 0;\n  background:linear-gradient(180deg, rgba(0,82,163,.06), rgba(0,82,163,0));\n  overflow:hidden;\n}\n.kiso-hero::before{\n  content:\"\";\n  position:absolute;\n  width:540px;height:540px;border-radius:50%;\n  background:rgba(0,82,163,.08);\n  left:-240px;top:50%;\n  transform:translateY(-50%);\n}\n.kiso-hero::after{\n  content:\"\";\n  position:absolute;\n  width:520px;height:520px;border-radius:50%;\n  background:rgba(0,82,163,.06);\n  right:-260px;bottom:-300px;\n  filter:blur(1px);\n}\n.kiso-hero-grid{\n  position:relative;\n  display:grid;\n  grid-template-columns:1.15fr .85fr;\n  gap:40px;\n  align-items:center;\n}\n.kiso-hero h1{\n  font-size:clamp(30px,4.2vw,56px);\n  line-height:1.03;margin:0 0 16px 0;\n  color:var(--kiso-text);\n  font-weight:950;letter-spacing:-0.02em;\n}\n.kiso-hero p{\n  margin:0;\n  font-size:17px;line-height:2.0;\n  color:var(--kiso-muted);\n  max-width:860px;\n}\n.kiso-hero-actions{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}\n.kiso-hero-chips{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap}\n\n.kiso-hero-card{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:16px;box-shadow:var(--kiso-shadow);\n  padding:26px;position:relative;overflow:hidden;\n}\n.kiso-hero-card::before{\n  content:\"\";\n  position:absolute;\n  width:220px;height:220px;border-radius:50%;\n  background:rgba(0,82,163,.06);\n  right:-90px;top:-90px;\n}\n.kiso-hero-card h3{\n  position:relative;\n  margin:0 0 12px 0;\n  font-size:15px;font-weight:950;color:var(--kiso-text);\n}\n.kiso-hero-card ul{\n  position:relative;\n  margin:0;padding:0;list-style:none;\n  display:grid;gap:10px;\n  color:var(--kiso-muted);\n  font-size:14.5px;line-height:1.65;\n}\n.kiso-hero-card li{display:grid;grid-template-columns:12px 1fr;gap:10px;align-items:start}\n.kiso-hero-card li::before{content:\"\";width:10px;height:10px;border-radius:3px;background:var(--kiso-blue);margin-top:6px;opacity:.9}\n\n@media (max-width:900px){\n  .kiso-hero{padding:68px 0}\n  .kiso-hero-grid{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   SECTION – 2 SOLUTIONS ALIGNÉES\n========================================================= */\n.kiso-split{\n  display:grid;\n  grid-template-columns:repeat(2, minmax(0, 1fr));\n  gap:18px;\n  margin-top:34px;\n  align-items:stretch;\n}\n\n/* Carte */\n.kiso-panel{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:16px;\n  box-shadow:var(--kiso-shadow);\n  overflow:hidden;\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n  display:flex;\n  flex-direction:column;\n  height:100%;\n}\n\n.kiso-panel:hover{\n  transform:translateY(-2px);\n  border-color:rgba(0,82,163,.25);\n  box-shadow:0 18px 40px rgba(0,0,0,.06);\n}\n\n/* Header */\n.kiso-panel-head{\n  padding:22px 22px;\n  border-bottom:1px solid var(--kiso-border);\n  display:flex;\n  justify-content:space-between;\n  align-items:flex-start;\n  gap:14px;\n  min-height:110px;\n}\n\n.kiso-panel-head &gt; div:first-child{\n  flex:1;\n}\n\n.kiso-panel-head b{\n  display:block;\n  font-size:12px;\n  letter-spacing:.18em;\n  text-transform:uppercase;\n  color:rgba(0,82,163,.70);\n  font-weight:900;\n  margin-bottom:6px;\n}\n\n.kiso-panel-head h3{\n  margin:0;\n  font-size:18px;\n  font-weight:950;\n  color:var(--kiso-text);\n  line-height:1.25;\n  min-height:48px;\n}\n\n/* Badge */\n.kiso-panel-pill{\n  flex:0 0 auto;\n  border:1px solid rgba(0,82,163,.18);\n  background:rgba(0,82,163,.06);\n  color:var(--kiso-blue-dark);\n  font-weight:900;\n  font-size:12px;\n  padding:8px 10px;\n  border-radius:999px;\n  white-space:nowrap;\n}\n\n/* Body */\n.kiso-panel-body{\n  padding:22px 22px;\n  flex:1;\n  display:flex;\n  flex-direction:column;\n}\n\n.kiso-panel-body p{\n  margin:0 0 12px 0;\n  color:var(--kiso-muted);\n  line-height:1.9;\n  font-size:15px;\n}\n\n/* Liste */\n.kiso-bullets{\n  margin:0;\n  padding:0;\n  list-style:none;\n  display:grid;\n  gap:10px;\n  color:var(--kiso-text);\n  font-size:14.8px;\n  line-height:1.65;\n}\n\n.kiso-bullets li{\n  display:grid;\n  grid-template-columns:12px 1fr;\n  gap:10px;\n  align-items:start;\n}\n\n.kiso-bullets li::before{\n  content:\"\";\n  width:10px;\n  height:10px;\n  border-radius:3px;\n  background:rgba(0,82,163,.85);\n  margin-top:6px;\n}\n\n/* Footer boutons */\n.kiso-panel-foot{\n  padding:18px 22px 24px 22px;\n  display:flex;\n  gap:12px;\n  margin-top:auto;\n}\n\n.kiso-panel-foot .kiso-btn{\n  flex:1;\n  min-height:48px;\n  text-align:center;\n  justify-content:center;\n}\n\n/* Responsive tablette */\n@media (max-width:900px){\n  .kiso-split{\n    grid-template-columns:1fr;\n  }\n\n  .kiso-panel-head{\n    min-height:auto;\n  }\n\n  .kiso-panel-head h3{\n    min-height:auto;\n  }\n}\n\n/* Mobile */\n@media (max-width:520px){\n  .kiso-panel-head{\n    padding:18px 16px;\n  }\n\n  .kiso-panel-body{\n    padding:18px 16px;\n  }\n\n  .kiso-panel-foot{\n    padding:16px;\n    flex-direction:column;\n  }\n\n  .kiso-panel-foot .kiso-btn{\n    width:100%;\n  }\n}\n\n/* =========================================================\n   SECTION – Applications (grid compact)\n========================================================= */\n.kiso-apps{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:repeat(3,1fr);\n  gap:12px;\n}\n.kiso-app{\n  display:flex;align-items:center;justify-content:space-between;gap:14px;\n  padding:16px 18px;border:1px solid var(--kiso-border);border-radius:14px;background:#fff;\n  color:var(--kiso-text);\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n}\n.kiso-app span{font-weight:900}\n.kiso-app i{font-style:normal;color:rgba(0,63,125,.75)}\n.kiso-app:hover{transform:translateY(-1px);border-color:rgba(0,82,163,.28);box-shadow:0 14px 30px rgba(0,0,0,.05)}\n@media (max-width:900px){.kiso-apps{grid-template-columns:repeat(2,1fr)}}\n@media (max-width:520px){.kiso-apps{grid-template-columns:1fr}}\n\n/* =========================================================\n   SECTION – Conformité (cards fines)\n========================================================= */\n.kiso-conf{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:1.05fr .95fr;\n  gap:16px;\n  align-items:start;\n}\n.kiso-conf-panel{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:16px;box-shadow:var(--kiso-shadow);\n  padding:24px;position:relative;overflow:hidden;\n}\n.kiso-conf-panel::before{\n  content:\"\";\n  position:absolute;\n  width:240px;height:240px;border-radius:50%;\n  background:rgba(0,82,163,.06);\n  right:-110px;top:-110px;\n}\n.kiso-conf-panel h3{\n  position:relative;margin:0 0 10px 0;\n  font-size:18px;font-weight:950;color:var(--kiso-text);\n}\n.kiso-conf-panel p{\n  position:relative;margin:0;\n  color:var(--kiso-muted);line-height:1.95;font-size:15px;\n}\n.kiso-conf-list{display:grid;gap:12px}\n.kiso-conf-item{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.03);\n  padding:18px 18px;\n}\n.kiso-conf-item b{\n  display:block;\n  font-size:12px;letter-spacing:.18em;text-transform:uppercase;\n  color:rgba(0,82,163,.70);font-weight:950;margin-bottom:8px;\n}\n.kiso-conf-item p{margin:0;color:var(--kiso-muted);line-height:1.85;font-size:14.8px}\n@media (max-width:900px){.kiso-conf{grid-template-columns:1fr}}\n\n/* =========================================================\n   CTA FINAL\n========================================================= */\n.kiso-cta{\n  margin-top:44px;\n  border-radius:16px;\n  border:1px solid rgba(0,82,163,.18);\n  background:linear-gradient(180deg, rgba(0,82,163,.08), rgba(0,82,163,0));\n  padding:34px;\n  position:relative;\n  overflow:hidden;\n}\n.kiso-cta::before{\n  content:\"\";\n  position:absolute;\n  width:340px;height:340px;border-radius:50%;\n  background:rgba(0,82,163,.10);\n  right:-150px; top:-170px;\n}\n.kiso-cta h3{\n  position:relative;\n  margin:0 0 10px 0;\n  font-size:22px;font-weight:950;color:var(--kiso-text);\n}\n.kiso-cta p{\n  position:relative;margin:0 0 18px 0;\n  color:var(--kiso-muted);line-height:1.95;font-size:15.5px;max-width:920px;\n}\n.kiso-cta-actions{position:relative;display:flex;gap:12px;flex-wrap:wrap}\n</style>\n\n<!-- =========================================================\n     PAGE : REMORQUES FRIGORIFIQUES &amp; ISOTHERMES\n========================================================= -->\n\n<section class=\"kiso-hero\">\n  <div class=\"kiso-container\">\n    <div class=\"kiso-hero-grid\">\n\n      <div>\n        <div class=\"kiso-eyebrow\">Remorques</div>\n        <p>\n          Solutions sur mesure pour le transport sous température dirigée.\n          K ISOLATION conçoit et installe des solutions isothermes et frigorifiques pour remorques,\n          adaptées au transport de denrées alimentaires et de produits sensibles à la température.\n        </p>\n\n        <div class=\"kiso-hero-chips\">\n          <span class=\"kiso-chip\"><span class=\"kiso-dot\"></span>Chaîne du froid maîtrisée</span>\n          <span class=\"kiso-chip\"><span class=\"kiso-dot\"></span>Finitions hygiéniques</span>\n          <span class=\"kiso-chip\"><span class=\"kiso-dot\"></span>Conformité HACCP</span>\n        </div>\n\n        <div class=\"kiso-hero-actions\">\n          <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis</a>\n          <a class=\"kiso-btn kiso-btn-secondary\" href=\"/nos-realisations\">Voir des réalisations</a>\n        </div>\n\n        <div class=\"kiso-divider\"></div>\n      </div>\n\n      <aside class=\"kiso-hero-card\">\n        <h3>Deux approches, un même objectif</h3>\n        <ul>\n          <li>Remorque clé en main, conçue selon votre activité</li>\n          <li>Optimisation d’une remorque existante, coûts maîtrisés</li>\n          <li>Isolation haute performance : positif ou négatif</li>\n          <li>Étude technique et accompagnement jusqu’à la mise en service</li>\n        </ul>\n      </aside>\n\n    </div>\n  </div>\n</section>\n\n<section class=\"kiso-sec\">\n  <div class=\"kiso-container\">\n\n    <div class=\"kiso-eyebrow\">Deux solutions adaptées</div>\n    <h2 class=\"kiso-title\">Choisissez la configuration la plus pertinente pour votre transport</h2>\n    <p class=\"kiso-lead\">\n      Nous vous proposons soit une réalisation clé en main de remorques sur mesure,\n      soit l’installation de supports isothermes directement sur votre remorque existante.\n      Dans les deux cas : performance thermique, robustesse et conformité.\n    </p>\n\n    <div class=\"kiso-split\">\n\n      <!-- SOLUTION 1 -->\n      <article class=\"kiso-panel\">\n        <div class=\"kiso-panel-head\">\n          <div>\n            <b>Solution 01</b>\n            <h3>Création de remorques frigorifiques ou isothermes clé en main</h3>\n          </div>\n          <div class=\"kiso-panel-pill\">Sur-mesure</div>\n        </div>\n\n        <div class=\"kiso-panel-body\">\n          <p>\n            Nous réalisons des remorques entièrement équipées, conçues selon votre activité\n            et vos contraintes d’exploitation, pour une performance thermique constante.\n          </p>\n          <ul class=\"kiso-bullets\">\n            <li>Structure isotherme en panneaux sandwich</li>\n            <li>Isolation haute performance pour température positive ou négative</li>\n            <li>Intégration de groupes frigorifiques si nécessaire</li>\n            <li>Portes isothermes, seuils étanches, finitions hygiéniques</li>\n            <li>Aménagement intérieur sur mesure (rails, étagères, zones séparées)</li>\n          </ul>\n        </div>\n\n        <div class=\"kiso-panel-foot\">\n          <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Étude personnalisée</a>\n          <a class=\"kiso-btn kiso-btn-secondary\" href=\"/nos-solutions\">Voir nos solutions</a>\n        </div>\n      </article>\n\n      <!-- SOLUTION 2 -->\n      <article class=\"kiso-panel\">\n        <div class=\"kiso-panel-head\">\n          <div>\n            <b>Solution 02</b>\n            <h3>Installation de solutions isothermes sur remorques existantes</h3>\n          </div>\n          <div class=\"kiso-panel-pill\">Optimisation</div>\n        </div>\n\n        <div class=\"kiso-panel-body\">\n          <p>\n            Vous disposez déjà d’une remorque ? K ISOLATION intervient pour installer ou adapter\n            des solutions isothermes directement sur votre support, afin d’optimiser votre équipement.\n          </p>\n          <ul class=\"kiso-bullets\">\n            <li>Pose de panneaux sandwich isothermes</li>\n            <li>Création de cloisons, plafonds et planchers isolés</li>\n            <li>Mise en place de portes isothermes et joints d’étanchéité</li>\n            <li>Adaptation à votre usage spécifique</li>\n          </ul>\n        </div>\n\n        <div class=\"kiso-panel-foot\">\n          <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un chiffrage</a>\n          <a class=\"kiso-btn kiso-btn-secondary\" href=\"/nos-realisations\">Voir des cas clients</a>\n        </div>\n      </article>\n\n    </div>\n\n    <div class=\"kiso-divider\"></div>\n\n    <!-- =========================================================\n         APPLICATIONS\n    ========================================================= -->\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px\">Applications</div>\n    <h2 class=\"kiso-title\">Transport de produits sensibles : secteurs concernés</h2>\n    <p class=\"kiso-lead\">\n      Nos remorques frigorifiques et isothermes sont adaptées aux usages alimentaires\n      et aux filières où la stabilité thermique ne tolère aucune approximation.\n    </p>\n\n    <div class=\"kiso-apps\" aria-label=\"Secteurs de transport concernés\">\n      <div class=\"kiso-app\"><span>Viandes &amp; produits carnés</span><i>Température maîtrisée</i></div>\n      <div class=\"kiso-app\"><span>Produits laitiers &amp; frais</span><i>Hygiène renforcée</i></div>\n      <div class=\"kiso-app\"><span>Fruits, légumes &amp; denrées</span><i>Chaîne du froid</i></div>\n      <div class=\"kiso-app\"><span>Traiteurs &amp; métiers de bouche</span><i>Flux intensifs</i></div>\n      <div class=\"kiso-app\"><span>Industries agroalimentaires</span><i>Volumes &amp; cadence</i></div>\n      <div class=\"kiso-app\"><span>Logistique spécialisée</span><i>Multi-températures</i></div>\n    </div>\n\n    <div class=\"kiso-divider\"></div>\n\n    <!-- =========================================================\n         CONFORMITÉ\n    ========================================================= -->\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px\">Conformité &amp; sécurité</div>\n    <h2 class=\"kiso-title\">Des installations pensées pour l’audit et le contrôle</h2>\n    <p class=\"kiso-lead\">\n      Nos installations sont conçues pour préserver la chaîne du froid et répondre aux exigences\n      HACCP et aux contrôles sanitaires, grâce à des matériaux adaptés et des finitions hygiéniques.\n    </p>\n\n    <div class=\"kiso-conf\">\n      <div class=\"kiso-conf-panel\">\n        <h3>Transport sûr, conforme et contrôlé</h3>\n        <p>\n          L’utilisation de panneaux sandwich performants, de joints d’étanchéité adaptés,\n          et de solutions de fermeture fiables garantit une protection optimale de vos marchandises\n          durant le transport, en limitant les déperditions thermiques et les risques de non-conformité.\n        </p>\n      </div>\n\n      <div class=\"kiso-conf-list\">\n        <div class=\"kiso-conf-item\">\n          <b>Chaîne du froid</b>\n          <p>Stabilité des températures, limitation des ponts thermiques et maîtrise des ouvertures.</p>\n        </div>\n        <div class=\"kiso-conf-item\">\n          <b>HACCP</b>\n          <p>Surfaces nettoyables, finitions hygiéniques, conception pensée pour l’exploitation.</p>\n        </div>\n        <div class=\"kiso-conf-item\">\n          <b>Contrôles &amp; audits</b>\n          <p>Conception conforme aux exigences qualité et aux pratiques des contrôles sanitaires.</p>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"kiso-divider\"></div>\n\n    <!-- =========================================================\n         POURQUOI K ISOLATION\n    ========================================================= -->\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px\">Pourquoi K ISOLATION</div>\n    <h2 class=\"kiso-title\">Un partenaire technique, du cahier des charges à la mise en service</h2>\n    <p class=\"kiso-lead\">\n      Nous concevons des solutions durables et robustes, avec un accompagnement clair à chaque étape :\n      étude, conception, installation, réglages et recommandations d’exploitation.\n    </p>\n\n    <div class=\"kiso-split\">\n      <article class=\"kiso-panel\">\n        <div class=\"kiso-panel-head\">\n          <div>\n            <b>Engagement</b>\n            <h3>Solutions durables, robustes et conformes</h3>\n          </div>\n          <div class=\"kiso-panel-pill\">Qualité</div>\n        </div>\n        <div class=\"kiso-panel-body\">\n          <ul class=\"kiso-bullets\">\n            <li>Expertise reconnue en solutions isothermes et panneaux sandwich</li>\n            <li>Réalisations sur mesure adaptées à chaque activité</li>\n            <li>Accompagnement technique de la conception à la mise en service</li>\n            <li>Choix de matériaux et finitions adaptés à l’alimentaire</li>\n          </ul>\n        </div>\n      </article>\n\n      <article class=\"kiso-panel\">\n        <div class=\"kiso-panel-head\">\n          <div>\n            <b>Approche</b>\n            <h3>Optimiser l’existant tout en maîtrisant les coûts</h3>\n          </div>\n          <div class=\"kiso-panel-pill\">Efficience</div>\n        </div>\n        <div class=\"kiso-panel-body\">\n          <p style=\"margin:0;line-height:1.9;font-size:15px\">\n            Selon votre parc et votre activité, nous vous orientons vers la meilleure stratégie :\n            création clé en main, ou adaptation de votre remorque actuelle avec une enveloppe isotherme performante.\n          </p>\n        </div>\n      </article>\n    </div>\n\n    <!-- =========================================================\n         CTA FINAL\n    ========================================================= -->\n    <div class=\"kiso-cta\">\n      <h3>Besoin d’une remorque isotherme ou frigorifique ?</h3>\n      <p>\n        Contactez K ISOLATION pour une étude personnalisée et un devis adapté à votre activité\n        et à vos contraintes de transport. <strong>Réponse rapide • Devis clair • Solution sur mesure.</strong>\n      </p>\n      <div class=\"kiso-cta-actions\">\n        <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis</a>\n        <a class=\"kiso-btn kiso-btn-secondary\" href=\"/nos-realisations\">Voir nos réalisations</a>\n      </div>\n    </div>\n\n  </div>\n</section>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Remorques Solutions sur mesure pour le transport sous température dirigée. K ISOLATION conçoit et installe des solutions isothermes et frigorifiques pour remorques, adaptées au transport de denrées alimentaires et de&hellip;</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 21595,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   184
+  ],
+  "class_list": [
+   "post-21418",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "cpt_services_group-nos-services"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Remorques réfrigérées &amp; isothermes - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/services/remorques/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Remorques réfrigérées &amp; isothermes - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Remorques Solutions sur mesure pour le transport sous température dirigée. K ISOLATION conçoit et installe des solutions isothermes et frigorifiques pour remorques, adaptées au transport de denrées alimentaires et de&hellip;\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/remorques/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T15:19:03+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2026/02/Frame-1.jpg\" />\n\t<meta property=\"og:image:width\" content=\"2219\" />\n\t<meta property=\"og:image:height\" content=\"1479\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Durée de lecture estimée\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/\",\"name\":\"Remorques réfrigérées &amp; isothermes - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2026\\/02\\/Frame-1.jpg\",\"datePublished\":\"2026-02-24T03:19:42+00:00\",\"dateModified\":\"2026-04-25T15:19:03+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2026\\/02\\/Frame-1.jpg\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2026\\/02\\/Frame-1.jpg\",\"width\":2219,\"height\":1479,\"caption\":\"Frame 1\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/remorques\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Remorques réfrigérées &amp; isothermes\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Remorques réfrigérées &amp; isothermes - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/services/remorques/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Remorques réfrigérées &amp; isothermes - K ISOLATION",
+   "og_description": "Remorques Solutions sur mesure pour le transport sous température dirigée. K ISOLATION conçoit et installe des solutions isothermes et frigorifiques pour remorques, adaptées au transport de denrées alimentaires et de&hellip;",
+   "og_url": "https://k-isolation.fr/services/remorques/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T15:19:03+00:00",
+   "og_image": [
+    {
+     "width": 2219,
+     "height": 1479,
+     "url": "https://k-isolation.fr/wp-content/uploads/2026/02/Frame-1.jpg",
+     "type": "image/jpeg"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Durée de lecture estimée": "4 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/remorques/",
+      "url": "https://k-isolation.fr/services/remorques/",
+      "name": "Remorques réfrigérées &amp; isothermes - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/services/remorques/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/services/remorques/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2026/02/Frame-1.jpg",
+      "datePublished": "2026-02-24T03:19:42+00:00",
+      "dateModified": "2026-04-25T15:19:03+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/remorques/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/remorques/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/services/remorques/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2026/02/Frame-1.jpg",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2026/02/Frame-1.jpg",
+      "width": 2219,
+      "height": 1479,
+      "caption": "Frame 1"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/remorques/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Remorques réfrigérées &amp; isothermes"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/21418",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=21418"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/21595"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=21418"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=21418"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 19566,
+  "date": "2025-11-03T18:57:37",
+  "date_gmt": "2025-11-03T18:57:37",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=19566"
+  },
+  "modified": "2026-04-25T10:15:11",
+  "modified_gmt": "2026-04-25T10:15:11",
+  "slug": "service-apres-vente-sav",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/service-apres-vente-sav/",
+  "title": {
+   "rendered": "Maintenance &amp; SAV"
+  },
+  "content": {
+   "rendered": "\n<style>\n.kiso-audit-icon{\n  position:relative;\n  margin-top:22px;\n  display:flex;\n  justify-content:center;\n  align-items:center;\n}\n\n.kiso-audit-icon img{\n  width:100%;\n  max-width:180px;\n  height:auto;\n  display:block;\n  opacity:.82;\n}\n\n/* tablette */\n@media (max-width:900px){\n  .kiso-audit-icon{\n    margin-top:18px;\n  }\n\n  .kiso-audit-icon img{\n    max-width:140px;\n  }\n}\n\n/* mobile */\n@media (max-width:520px){\n  .kiso-audit-icon img{\n    max-width:110px;\n  }\n}\n:root{\n  --kiso-blue:#0052a3;\n  --kiso-blue-dark:#003f7d;\n  --kiso-soft:#eef4fb;\n  --kiso-text:#0f172a;\n  --kiso-muted:#64748b;\n  --kiso-border:#e5e7eb;\n  --kiso-bg:#ffffff;\n  --kiso-radius:14px;\n  --kiso-shadow:0 10px 28px rgba(0,0,0,.04);\n}\n\n*{box-sizing:border-box}\n.kiso-container{max-width:1200px;margin:0 auto;padding:0 20px}\n.kiso-sec{padding:70px 0}\n@media (max-width:900px){.kiso-sec{padding:60px 0}}\n@media (max-width:520px){.kiso-sec{padding:52px 0}}\n\n.kiso-eyebrow{\n  display:flex;align-items:center;gap:10px;\n  font-size:12px;letter-spacing:.22em;text-transform:uppercase;\n  color:var(--kiso-blue);font-weight:900;margin:0 0 14px 0;\n}\n.kiso-eyebrow::before{content:\"\";width:10px;height:10px;border-radius:3px;background:var(--kiso-blue);opacity:.95}\n\n.kiso-title{\n  font-size:clamp(26px,3.1vw,42px);\n  line-height:1.12;color:var(--kiso-text);\n  font-weight:950;margin:0 0 14px 0;\n  letter-spacing:-0.02em;\n}\n.kiso-lead{\n  max-width:900px;\n  color:var(--kiso-muted);\n  font-size:16px;\n  line-height:1.9;\n  margin:0;\n}\n.kiso-divider{\n  height:1px;\n  background:linear-gradient(to right, var(--kiso-border), transparent);\n  margin:28px 0 0;\n}\n\n.kiso-btn{\n  display:inline-flex;align-items:center;justify-content:center;gap:10px;\n  padding:14px 20px;border-radius:12px;text-decoration:none;\n  font-weight:900;font-size:15px;white-space:nowrap;\n  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;\n}\n.kiso-btn-primary{background:var(--kiso-blue-dark);color:#fff;box-shadow:0 10px 24px rgba(0,63,125,.18)}\n.kiso-btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(0,63,125,.22)}\n.kiso-btn-secondary{background:#fff;color:var(--kiso-text);border:1px solid var(--kiso-border)}\n.kiso-btn-secondary:hover{transform:translateY(-1px);border-color:rgba(0,82,163,.35)}\n\n/* =========================================================\n   HERO (même DA)\n========================================================= */\n.kiso-hero{\n  position:relative;\n  padding:80px 0;\n  background:linear-gradient(180deg, rgba(0,82,163,.06), rgba(0,82,163,0));\n  overflow:hidden;\n}\n.kiso-hero::before{\n  content:\"\";\n  position:absolute;\n  width:520px;height:520px;border-radius:50%;\n  background:rgba(0,82,163,.08);\n  left:-220px;top:50%;\n  transform:translateY(-50%);\n}\n.kiso-hero-grid{\n  position:relative;\n  display:grid;\n  grid-template-columns:1.15fr .85fr;\n  gap:40px;\n  align-items:center;\n}\n.kiso-hero h1{\n  font-size:clamp(30px,4vw,54px);\n  line-height:1.05;margin:0 0 16px 0;\n  color:var(--kiso-text);\n  font-weight:950;\n  letter-spacing:-0.02em;\n}\n.kiso-hero p{\n  margin:0;\n  font-size:17px;\n  line-height:1.95;\n  color:var(--kiso-muted);\n  max-width:780px;\n}\n.kiso-hero-actions{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}\n\n.kiso-hero-aside{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  box-shadow:var(--kiso-shadow);\n  padding:26px;\n}\n.kiso-hero-aside-title{font-weight:950;color:var(--kiso-text);margin:0 0 12px 0;font-size:15px}\n.kiso-hero-aside ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:var(--kiso-muted);font-size:14.5px;line-height:1.65}\n.kiso-hero-aside li{display:grid;grid-template-columns:12px 1fr;gap:10px;align-items:start}\n.kiso-hero-aside li::before{content:\"\";width:10px;height:10px;border-radius:3px;background:var(--kiso-blue);margin-top:6px;opacity:.9}\n\n@media (max-width:900px){\n  .kiso-hero{padding:64px 0}\n  .kiso-hero-grid{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   SECTION AUDITS / CONFORMITE (signature)\n========================================================= */\n.kiso-audit-wrap{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:1.05fr .95fr;\n  gap:18px;\n  align-items:start;\n}\n.kiso-audit-panel{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:16px;box-shadow:var(--kiso-shadow);\n  padding:26px;\n  position:relative;\n  overflow:hidden;\n}\n.kiso-audit-panel::before{\n  content:\"\";\n  position:absolute;\n  width:260px;height:260px;border-radius:50%;\n  background:rgba(0,82,163,.06);\n  right:-120px;top:-120px;\n}\n.kiso-audit-panel h3{\n  position:relative;margin:0 0 10px 0;\n  font-size:18px;font-weight:950;color:var(--kiso-text);\n}\n.kiso-audit-panel p{\n  position:relative;margin:0;\n  color:var(--kiso-muted);\n  line-height:1.9;font-size:15px;\n}\n.kiso-audit-list{\n  display:grid;gap:12px;\n}\n.kiso-audit-item{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:16px;box-shadow:0 10px 24px rgba(0,0,0,.03);\n  padding:18px 18px 18px 18px;\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n}\n.kiso-audit-item:hover{\n  transform:translateY(-1px);\n  border-color:rgba(0,82,163,.28);\n  box-shadow:0 14px 30px rgba(0,0,0,.05);\n}\n.kiso-audit-item b{\n  display:block;\n  font-size:12px;\n  letter-spacing:.18em;\n  text-transform:uppercase;\n  color:rgba(0,82,163,.70);\n  margin-bottom:8px;\n  font-weight:950;\n}\n.kiso-audit-item p{margin:0;color:var(--kiso-muted);line-height:1.8;font-size:14.8px}\n\n@media (max-width:900px){\n  .kiso-audit-wrap{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   LISTE PREMIUM NUMEROTEE (comme tes pages)\n========================================================= */\n.kiso-list-card{\n  margin-top:34px;\n  background:var(--kiso-bg);\n  border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  overflow:hidden;\n  box-shadow:var(--kiso-shadow);\n}\n.kiso-item{\n  display:grid;\n  grid-template-columns:72px 1fr;\n  padding:26px 28px;\n  border-top:1px solid var(--kiso-border);\n  transition:background .25s ease;\n}\n.kiso-item:first-child{border-top:none}\n.kiso-num{\n  font-size:12px;letter-spacing:.18em;color:#94a3b8;\n  font-weight:950;padding-top:4px;\n}\n.kiso-item h3{\n  margin:0 0 8px 0;\n  color:var(--kiso-text);\n  font-size:18px;\n  font-weight:950;\n  line-height:1.25;\n}\n.kiso-item p{\n  margin:0;\n  color:var(--kiso-muted);\n  font-size:15px;\n  line-height:1.85;\n  max-width:920px;\n}\n.kiso-item:hover{background:rgba(0,82,163,0.03)}\n.kiso-item:hover .kiso-num{color:rgba(0,82,163,0.55)}\n@media (max-width:900px){.kiso-item{grid-template-columns:56px 1fr;padding:22px 18px}}\n@media (max-width:520px){.kiso-item{grid-template-columns:44px 1fr}.kiso-item h3{font-size:17px}.kiso-item p{font-size:14.5px}}\n\n/* =========================================================\n   SERVICES SPECIALISES (accordéon premium)\n========================================================= */\n.kiso-accordion{\n  margin-top:34px;\n  border:1px solid var(--kiso-border);\n  border-radius:16px;\n  overflow:hidden;\n  background:#fff;\n  box-shadow:var(--kiso-shadow);\n}\n.kiso-acc-item{border-top:1px solid var(--kiso-border)}\n.kiso-acc-item:first-child{border-top:none}\n.kiso-acc-btn{\n  width:100%;\n  background:transparent;\n  border:0;\n  display:flex;\n  justify-content:space-between;\n  align-items:center;\n  gap:16px;\n  padding:18px 18px;\n  cursor:pointer;\n  text-align:left;\n}\n.kiso-acc-left{display:flex;flex-direction:column;gap:6px}\n.kiso-acc-k{\n  font-size:12px;letter-spacing:.18em;text-transform:uppercase;\n  color:rgba(0,82,163,.70);\n  font-weight:950;\n}\n.kiso-acc-title{\n  font-size:16px;\n  color:var(--kiso-text);\n  font-weight:950;\n  line-height:1.25;\n}\n.kiso-acc-icon{\n  width:34px;height:34px;border-radius:10px;\n  border:1px solid var(--kiso-border);\n  display:flex;align-items:center;justify-content:center;\n  color:var(--kiso-blue-dark);\n  flex:0 0 auto;\n  transition:transform .25s ease, border-color .25s ease, background .25s ease;\n}\n.kiso-acc-btn[aria-expanded=\"true\"] .kiso-acc-icon{\n  transform:rotate(180deg);\n  border-color:rgba(0,82,163,.30);\n  background:rgba(0,82,163,.05);\n}\n.kiso-acc-panel{\n  max-height:0;\n  overflow:hidden;\n  transition:max-height .35s ease;\n}\n.kiso-acc-panel-inner{\n  padding:0 18px 18px 18px;\n  color:var(--kiso-muted);\n  font-size:14.8px;\n  line-height:1.85;\n}\n.kiso-acc-panel-inner ul{\n  margin:10px 0 0 0;\n  padding-left:18px;\n}\n.kiso-acc-panel-inner li{margin:6px 0}\n\n/* =========================================================\n   PHOTOS (grille élégante)\n========================================================= */\n.kiso-photos{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:1.2fr .8fr;\n  gap:14px;\n}\n.kiso-photo{\n  position:relative;overflow:hidden;\n  border-radius:16px;border:1px solid var(--kiso-border);\n  background:#f8fafc;min-height:240px;\n}\n.kiso-photo img{\n  width:100%;height:100%;object-fit:cover;display:block;\n  transition:transform .45s ease;\n}\n.kiso-photo:hover img{transform:scale(1.04)}\n.kiso-photos-right{display:grid;grid-template-rows:1fr 1fr;gap:14px}\n.kiso-photo-badge{\n  position:absolute;left:14px;bottom:14px;\n  background:rgba(15,23,42,.72);color:#fff;\n  font-size:12px;font-weight:900;\n  padding:8px 10px;border-radius:12px;\n  letter-spacing:.08em;\n}\n@media (max-width:900px){\n  .kiso-photos{grid-template-columns:1fr}\n  .kiso-photo{min-height:200px}\n}\n\n/* =========================================================\n   SECTEURS (liens)\n========================================================= */\n.kiso-sectors{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:repeat(3, 1fr);\n  gap:12px;\n}\n.kiso-sector{\n  display:flex;align-items:center;justify-content:space-between;gap:14px;\n  padding:16px 18px;border:1px solid var(--kiso-border);border-radius:14px;background:#fff;\n  text-decoration:none;color:var(--kiso-text);\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n}\n.kiso-sector span{font-weight:950}\n.kiso-sector i{font-style:normal;color:rgba(0,63,125,.75);transition:transform .2s ease}\n.kiso-sector:hover{transform:translateY(-1px);border-color:rgba(0,82,163,.30);box-shadow:0 14px 30px rgba(0,0,0,.05)}\n.kiso-sector:hover i{transform:translateX(3px)}\n@media (max-width:900px){.kiso-sectors{grid-template-columns:repeat(2,1fr)}}\n@media (max-width:520px){.kiso-sectors{grid-template-columns:1fr}}\n\n/* =========================================================\n   CTA FINAL\n========================================================= */\n.kiso-cta{\n  margin-top:44px;\n  border-radius:16px;\n  border:1px solid rgba(0,82,163,.18);\n  background:linear-gradient(180deg, rgba(0,82,163,.08), rgba(0,82,163,0));\n  padding:34px;\n  position:relative;\n  overflow:hidden;\n}\n.kiso-cta::before{\n  content:\"\";\n  position:absolute;\n  width:320px;height:320px;border-radius:50%;\n  background:rgba(0,82,163,.10);\n  right:-140px; top:-160px;\n}\n.kiso-cta h3{\n  position:relative;\n  margin:0 0 10px 0;\n  font-size:22px;\n  font-weight:950;\n  color:var(--kiso-text);\n}\n.kiso-cta p{\n  position:relative;\n  margin:0 0 18px 0;\n  color:var(--kiso-muted);\n  line-height:1.95;\n  font-size:15.5px;\n  max-width:900px;\n}\n.kiso-cta-actions{\n  position:relative;\n  display:flex;\n  gap:12px;\n  flex-wrap:wrap;\n}\n</style>\n\n<!-- =========================================================\n     HERO\n========================================================= -->\n<section class=\"kiso-hero\">\n  <div class=\"kiso-container\">\n    <div class=\"kiso-hero-grid\">\n\n      <div>\n        <div class=\"kiso-eyebrow\">K Isolation Services</div>\n        <p>\n          K ISOLATION Services vous accompagne dans le suivi, l’entretien et la maintenance de vos installations\n          isothermes, chambres froides et espaces à température contrôlée. Notre priorité : réduire vos interruptions\n          d’exploitation et optimiser la longévité de vos installations.\n        </p>\n\n        <div class=\"kiso-hero-actions\">\n          <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis gratuit</a>\n          <a class=\"kiso-btn kiso-btn-secondary\" href=\"/portfolio\">Voir nos réalisations</a>\n        </div>\n\n        <div class=\"kiso-divider\"></div>\n      </div>\n\n      <div class=\"kiso-hero-aside\">\n        <div class=\"kiso-hero-aside-title\">Support terrain, réactif</div>\n        <ul>\n          <li>Maintenance préventive et corrective</li>\n          <li>Traçabilité documentaire et rapports d’intervention</li>\n          <li>Réduction des arrêts et maîtrise des risques</li>\n          <li>Accompagnement avant / pendant / après audits</li>\n        </ul>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<!-- =========================================================\n     SECTION : AUDITS & CONFORMITE (signature, inspirée \"services\")\n========================================================= -->\n<section class=\"kiso-sec\">\n  <div class=\"kiso-container\">\n\n    <div class=\"kiso-eyebrow\">Audits &#038; mise en conformité</div>\n    <h2 class=\"kiso-title\">Le contrat de maintenance : un gage de conformité lors des audits</h2>\n    <p class=\"kiso-lead\">\n      Lors d’un audit sanitaire, qualité ou réglementaire (HACCP, IFS, BRC, ISO…), la performance et l’état des\n      installations isothermes sont des éléments clés d’évaluation. La présence d’un contrat de maintenance actif\n      démontre votre maîtrise des risques et la traçabilité des actions réalisées.\n    </p>\n\n    <div class=\"kiso-audit-wrap\">\n      <div class=\"kiso-audit-panel\">\n  <h3>K ISOLATION, votre partenaire conformité</h3>\n  <p>\n    Grâce à ses contrats de maintenance dédiés aux solutions isothermes et installations frigorifiques,\n    K ISOLATION accompagne ses clients avant, pendant et après les audits, en assurant la fiabilité technique\n    et documentaire de leurs installations.\n  </p>\n\n  <div class=\"kiso-audit-icon\">\n    <img decoding=\"async\" src=\"https://k-isolation.fr/wp-content/uploads/2026/03/evaluation.png\" alt=\"Audit conformité\">\n  </div>\n</div>\n\n      <div class=\"kiso-audit-list\">\n        <div class=\"kiso-audit-item\">\n          <b>Suivi régulier</b>\n          <p>Rapports d’intervention attestant des contrôles, réglages et opérations sur chambres froides, portes, panneaux et équipements.</p>\n        </div>\n        <div class=\"kiso-audit-item\">\n          <b>Anticipation</b>\n          <p>Détection en amont des défauts d’étanchéité, pertes de performance thermique ou dégradations générant des non-conformités.</p>\n        </div>\n        <div class=\"kiso-audit-item\">\n          <b>Chaîne du froid</b>\n          <p>Stabilité des températures et sécurité des produits : un point déterminant lors des contrôles.</p>\n        </div>\n        <div class=\"kiso-audit-item\">\n          <b>Actions correctives</b>\n          <p>Interventions rapides, ciblées et traçables en cas d’observations lors d’un audit.</p>\n        </div>\n        <div class=\"kiso-audit-item\">\n          <b>Démarche qualité</b>\n          <p>Un contrat de maintenance valorise votre engagement hygiène, sécurité et conformité réglementaire.</p>\n        </div>\n      </div>\n    </div>\n\n    <!-- =========================================================\n         SECTION : NOS CONTRATS (liste premium)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Nos contrats de maintenance</div>\n    <h2 class=\"kiso-title\">Préventif ou correctif : une couverture adaptée à votre exploitation</h2>\n    <p class=\"kiso-lead\">\n      Bénéficiez d’un suivi personnalisé, de rapports d’intervention clairs et d’un planning maîtrisé pour la tranquillité\n      d’esprit de votre exploitation.\n    </p>\n\n    <div class=\"kiso-list-card\">\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">01</div>\n        <div>\n          <h3>Maintenance préventive</h3>\n          <p>\n            Visites régulières programmées, contrôle complet des composants isothermes et frigorifiques,\n            vérification des joints, de l’étanchéité et des performances thermiques.\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">02</div>\n        <div>\n          <h3>Maintenance corrective</h3>\n          <p>\n            Interventions en cas d’anomalie, remplacement des pièces usées ou défectueuses,\n            optimisation de la performance après diagnostic.\n          </p>\n        </div>\n      </article>\n\n    </div>\n\n    <!-- =========================================================\n         SECTION : SERVICES SPECIALISES (accordéon premium)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Services spécialisés</div>\n    <h2 class=\"kiso-title\">Une palette d’interventions au-delà du contrat</h2>\n    <p class=\"kiso-lead\">\n      Des opérations ciblées pour corriger, adapter ou sécuriser vos installations, avec une logique terrain et une exécution maîtrisée.\n    </p>\n\n    <div class=\"kiso-accordion\" data-kiso-accordion>\n\n      <div class=\"kiso-acc-item\">\n        <button class=\"kiso-acc-btn\" type=\"button\" aria-expanded=\"false\">\n          <div class=\"kiso-acc-left\">\n            <div class=\"kiso-acc-k\">Portes isothermes</div>\n            <div class=\"kiso-acc-title\">Remplacement, réglage et remise en performance</div>\n          </div>\n          <div class=\"kiso-acc-icon\">⌄</div>\n        </button>\n        <div class=\"kiso-acc-panel\">\n          <div class=\"kiso-acc-panel-inner\">\n            Réglages, reprise d’étanchéité, remplacement d’éléments, optimisation des fermetures et du passage.\n            <ul>\n              <li>Contrôle des joints et ajustements</li>\n              <li>Remplacement de composants usés</li>\n              <li>Amélioration de l’étanchéité et du confort d’usage</li>\n            </ul>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"kiso-acc-item\">\n        <button class=\"kiso-acc-btn\" type=\"button\" aria-expanded=\"false\">\n          <div class=\"kiso-acc-left\">\n            <div class=\"kiso-acc-k\">Panneaux &#038; cloisons</div>\n            <div class=\"kiso-acc-title\">Réparation, modification et reprise de surfaces isothermes</div>\n          </div>\n          <div class=\"kiso-acc-icon\">⌄</div>\n        </button>\n        <div class=\"kiso-acc-panel\">\n          <div class=\"kiso-acc-panel-inner\">\n            Interventions sur panneaux sandwich, cloisons et plafonds pour corriger les défauts, renforcer la durabilité et s’adapter à vos besoins.\n            <ul>\n              <li>Réfection locale et reprise d’étanchéité</li>\n              <li>Modification de volumes / passages</li>\n              <li>Renforcement zones exposées (chocs, humidité)</li>\n            </ul>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"kiso-acc-item\">\n        <button class=\"kiso-acc-btn\" type=\"button\" aria-expanded=\"false\">\n          <div class=\"kiso-acc-left\">\n            <div class=\"kiso-acc-k\">Opérations particulières</div>\n            <div class=\"kiso-acc-title\">Repositionnement, sécurisation, adaptation à un nouveau process</div>\n          </div>\n          <div class=\"kiso-acc-icon\">⌄</div>\n        </button>\n        <div class=\"kiso-acc-panel\">\n          <div class=\"kiso-acc-panel-inner\">\n            Pour les changements d’activité ou d’organisation : nous adaptons l’existant en limitant l’arrêt d’exploitation.\n            <ul>\n              <li>Repositionnement d’installations</li>\n              <li>Sécurisation des zones et des accès</li>\n              <li>Adaptations ciblées aux nouveaux flux</li>\n            </ul>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <!-- =========================================================\n         SECTEURS (liens)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Applications</div>\n    <h2 class=\"kiso-title\">Maintenance par secteur</h2>\n    <p class=\"kiso-lead\">Une maintenance pensée pour vos contraintes d’hygiène, de température et d’exploitation.</p>\n\n    <div class=\"kiso-sectors\">\n      <a class=\"kiso-sector\" href=\"/agroalimentaire\"><span>Agroalimentaire</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/logistique\"><span>Logistique</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/laboratoire-cuisine\"><span>Laboratoire &#038; Cuisine</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/salle-blanche\"><span>Salle blanche</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/industrie\"><span>Industrie</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/distribution\"><span>Distribution</span><i>→</i></a>\n    </div>\n\n    <!-- =========================================================\n         CTA FINAL\n    ========================================================= -->\n    <div class=\"kiso-cta\">\n      <h3>Besoin d’un contrat de maintenance ou d’une intervention ?</h3>\n      <p>\n        Dites-nous votre installation (type, volumes, températures, contraintes d’audit).\n        Nous vous proposons une solution de maintenance claire, traçable et adaptée.\n        <strong>Devis gratuit sous 24h.</strong>\n      </p>\n      <div class=\"kiso-cta-actions\">\n        <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis</a>\n        <a class=\"kiso-btn kiso-btn-secondary\" href=\"/portfolio\">Voir des réalisations</a>\n      </div>\n    </div>\n\n  </div>\n</section>\n\n<script>\n/* Accordéon premium – vanilla JS (léger, WP-friendly) */\n(function(){\n  const root = document.querySelector('[data-kiso-accordion]');\n  if(!root) return;\n\n  const items = root.querySelectorAll('.kiso-acc-item');\n\n  function closeAll(except){\n    items.forEach(it=>{\n      if(it === except) return;\n      const btn = it.querySelector('.kiso-acc-btn');\n      const panel = it.querySelector('.kiso-acc-panel');\n      btn.setAttribute('aria-expanded','false');\n      panel.style.maxHeight = 0;\n    });\n  }\n\n  items.forEach(it=>{\n    const btn = it.querySelector('.kiso-acc-btn');\n    const panel = it.querySelector('.kiso-acc-panel');\n\n    btn.addEventListener('click', ()=>{\n      const isOpen = btn.getAttribute('aria-expanded') === 'true';\n      closeAll(isOpen ? null : it);\n\n      if(isOpen){\n        btn.setAttribute('aria-expanded','false');\n        panel.style.maxHeight = 0;\n      } else {\n        btn.setAttribute('aria-expanded','true');\n        panel.style.maxHeight = panel.scrollHeight + 'px';\n      }\n    });\n  });\n\n  window.addEventListener('resize', ()=>{\n    items.forEach(it=>{\n      const btn = it.querySelector('.kiso-acc-btn');\n      const panel = it.querySelector('.kiso-acc-panel');\n      if(btn.getAttribute('aria-expanded') === 'true'){\n        panel.style.maxHeight = panel.scrollHeight + 'px';\n      }\n    });\n  });\n})();\n</script>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Nous assurons le suivi, l’entretien et restons à votre écoute après l’intervention.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 21465,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   185,
+   184
+  ],
+  "class_list": [
+   "post-19566",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "cpt_services_group-process",
+   "cpt_services_group-nos-services"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Maintenance &amp; SAV - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/services/service-apres-vente-sav/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Maintenance &amp; SAV - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Nous assurons le suivi, l’entretien et restons à votre écoute après l’intervention.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/service-apres-vente-sav/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T10:15:11+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2025/11/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png\" />\n\t<meta property=\"og:image:width\" content=\"1024\" />\n\t<meta property=\"og:image:height\" content=\"1024\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Durée de lecture estimée\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/\",\"name\":\"Maintenance &amp; SAV - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2025\\/11\\/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png\",\"datePublished\":\"2025-11-03T18:57:37+00:00\",\"dateModified\":\"2026-04-25T10:15:11+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2025\\/11\\/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2025\\/11\\/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png\",\"width\":1024,\"height\":1024,\"caption\":\"Gemini Generated Image yrrfkoyrrfkoyrrf\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/service-apres-vente-sav\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Maintenance &amp; SAV\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Maintenance &amp; SAV - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/services/service-apres-vente-sav/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Maintenance &amp; SAV - K ISOLATION",
+   "og_description": "Nous assurons le suivi, l’entretien et restons à votre écoute après l’intervention.",
+   "og_url": "https://k-isolation.fr/services/service-apres-vente-sav/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T10:15:11+00:00",
+   "og_image": [
+    {
+     "width": 1024,
+     "height": 1024,
+     "url": "https://k-isolation.fr/wp-content/uploads/2025/11/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Durée de lecture estimée": "4 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/service-apres-vente-sav/",
+      "url": "https://k-isolation.fr/services/service-apres-vente-sav/",
+      "name": "Maintenance &amp; SAV - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/services/service-apres-vente-sav/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/services/service-apres-vente-sav/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2025/11/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png",
+      "datePublished": "2025-11-03T18:57:37+00:00",
+      "dateModified": "2026-04-25T10:15:11+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/service-apres-vente-sav/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/service-apres-vente-sav/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/services/service-apres-vente-sav/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2025/11/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2025/11/Gemini_Generated_Image_yrrfkoyrrfkoyrrf.png",
+      "width": 1024,
+      "height": 1024,
+      "caption": "Gemini Generated Image yrrfkoyrrfkoyrrf"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/service-apres-vente-sav/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Maintenance &amp; SAV"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/19566",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=19566"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/21465"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=19566"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=19566"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 19565,
+  "date": "2025-11-03T18:57:37",
+  "date_gmt": "2025-11-03T18:57:37",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=19565"
+  },
+  "modified": "2026-04-25T10:15:11",
+  "modified_gmt": "2026-04-25T10:15:11",
+  "slug": "execution-des-travaux",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/execution-des-travaux/",
+  "title": {
+   "rendered": "Exécution des Travaux"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Nos équipes qualifiées réalisent les travaux dans les règles de l’art et les délais convenus.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   185
+  ],
+  "class_list": [
+   "post-19565",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "hentry",
+   "cpt_services_group-process"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Exécution des Travaux - K ISOLATION</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Exécution des Travaux - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Nos équipes qualifiées réalisent les travaux dans les règles de l’art et les délais convenus.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/execution-des-travaux/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T10:15:11+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/execution-des-travaux\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/execution-des-travaux\\/\",\"name\":\"Exécution des Travaux - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"datePublished\":\"2025-11-03T18:57:37+00:00\",\"dateModified\":\"2026-04-25T10:15:11+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/execution-des-travaux\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/execution-des-travaux\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/execution-des-travaux\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Exécution des Travaux\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Exécution des Travaux - K ISOLATION",
+   "robots": {
+    "index": "noindex",
+    "follow": "follow"
+   },
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Exécution des Travaux - K ISOLATION",
+   "og_description": "Nos équipes qualifiées réalisent les travaux dans les règles de l’art et les délais convenus.",
+   "og_url": "https://k-isolation.fr/services/execution-des-travaux/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T10:15:11+00:00",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/execution-des-travaux/",
+      "url": "https://k-isolation.fr/services/execution-des-travaux/",
+      "name": "Exécution des Travaux - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "datePublished": "2025-11-03T18:57:37+00:00",
+      "dateModified": "2026-04-25T10:15:11+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/execution-des-travaux/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/execution-des-travaux/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/execution-des-travaux/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Exécution des Travaux"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/19565",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=19565"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=19565"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=19565"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 19564,
+  "date": "2025-11-03T18:57:37",
+  "date_gmt": "2025-11-03T18:57:37",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=19564"
+  },
+  "modified": "2026-04-25T10:15:11",
+  "modified_gmt": "2026-04-25T10:15:11",
+  "slug": "validation-du-devis",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/validation-du-devis/",
+  "title": {
+   "rendered": "Validation du Devis"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Une fois le devis accepté, nous planifions l’intervention selon vos disponibilités.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   185
+  ],
+  "class_list": [
+   "post-19564",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "hentry",
+   "cpt_services_group-process"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Validation du Devis - K ISOLATION</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Validation du Devis - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Une fois le devis accepté, nous planifions l’intervention selon vos disponibilités.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/validation-du-devis/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T10:15:11+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/validation-du-devis\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/validation-du-devis\\/\",\"name\":\"Validation du Devis - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"datePublished\":\"2025-11-03T18:57:37+00:00\",\"dateModified\":\"2026-04-25T10:15:11+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/validation-du-devis\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/validation-du-devis\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/validation-du-devis\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Validation du Devis\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Validation du Devis - K ISOLATION",
+   "robots": {
+    "index": "noindex",
+    "follow": "follow"
+   },
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Validation du Devis - K ISOLATION",
+   "og_description": "Une fois le devis accepté, nous planifions l’intervention selon vos disponibilités.",
+   "og_url": "https://k-isolation.fr/services/validation-du-devis/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T10:15:11+00:00",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/validation-du-devis/",
+      "url": "https://k-isolation.fr/services/validation-du-devis/",
+      "name": "Validation du Devis - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "datePublished": "2025-11-03T18:57:37+00:00",
+      "dateModified": "2026-04-25T10:15:11+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/validation-du-devis/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/validation-du-devis/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/validation-du-devis/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Validation du Devis"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/19564",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=19564"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=19564"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=19564"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 19563,
+  "date": "2025-11-03T18:57:37",
+  "date_gmt": "2025-11-03T18:57:37",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=19563"
+  },
+  "modified": "2026-04-25T10:15:11",
+  "modified_gmt": "2026-04-25T10:15:11",
+  "slug": "demande-envoi-de-devis",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/demande-envoi-de-devis/",
+  "title": {
+   "rendered": "Demande &amp; Envoi de Devis"
+  },
+  "content": {
+   "rendered": "",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>Nous analysons votre demande et vous envoyons un devis clair et personnalisé.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   185
+  ],
+  "class_list": [
+   "post-19563",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "hentry",
+   "cpt_services_group-process"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Demande &amp; Envoi de Devis - K ISOLATION</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Demande &amp; Envoi de Devis - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Nous analysons votre demande et vous envoyons un devis clair et personnalisé.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/demande-envoi-de-devis/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T10:15:11+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/demande-envoi-de-devis\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/demande-envoi-de-devis\\/\",\"name\":\"Demande &amp; Envoi de Devis - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"datePublished\":\"2025-11-03T18:57:37+00:00\",\"dateModified\":\"2026-04-25T10:15:11+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/demande-envoi-de-devis\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/demande-envoi-de-devis\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/demande-envoi-de-devis\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Demande &amp; Envoi de Devis\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Demande &amp; Envoi de Devis - K ISOLATION",
+   "robots": {
+    "index": "noindex",
+    "follow": "follow"
+   },
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Demande &amp; Envoi de Devis - K ISOLATION",
+   "og_description": "Nous analysons votre demande et vous envoyons un devis clair et personnalisé.",
+   "og_url": "https://k-isolation.fr/services/demande-envoi-de-devis/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T10:15:11+00:00",
+   "twitter_card": "summary_large_image",
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/demande-envoi-de-devis/",
+      "url": "https://k-isolation.fr/services/demande-envoi-de-devis/",
+      "name": "Demande &amp; Envoi de Devis - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "datePublished": "2025-11-03T18:57:37+00:00",
+      "dateModified": "2026-04-25T10:15:11+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/demande-envoi-de-devis/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/demande-envoi-de-devis/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/demande-envoi-de-devis/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Demande &amp; Envoi de Devis"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/19563",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=19563"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=19563"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=19563"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 18627,
+  "date": "2025-11-03T18:57:37",
+  "date_gmt": "2025-11-03T18:57:37",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=18627"
+  },
+  "modified": "2026-04-25T10:15:11",
+  "modified_gmt": "2026-04-25T10:15:11",
+  "slug": "renovation-mise-en-conformite",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/renovation-mise-en-conformite/",
+  "title": {
+   "rendered": "Rénovation &amp; mise en conformité"
+  },
+  "content": {
+   "rendered": "\n<style>\n:root{\n  --kiso-blue:#0052a3;\n  --kiso-blue-dark:#003f7d;\n  --kiso-soft:#eef4fb;\n  --kiso-text:#0f172a;\n  --kiso-muted:#64748b;\n  --kiso-border:#e5e7eb;\n  --kiso-bg:#ffffff;\n  --kiso-radius:14px;\n  --kiso-shadow:0 10px 28px rgba(0,0,0,.04);\n}\n\n*{box-sizing:border-box}\n\n.kiso-container{\n  max-width:1200px;\n  margin:0 auto;\n  padding:0 20px;\n}\n\n.kiso-sec{padding:70px 0}\n@media (max-width:900px){.kiso-sec{padding:60px 0}}\n@media (max-width:520px){.kiso-sec{padding:52px 0}}\n\n.kiso-eyebrow{\n  display:flex;align-items:center;gap:10px;\n  font-size:12px;letter-spacing:.22em;text-transform:uppercase;\n  color:var(--kiso-blue);font-weight:800;margin:0 0 14px 0;\n}\n.kiso-eyebrow::before{\n  content:\"\";width:10px;height:10px;border-radius:3px;\n  background:var(--kiso-blue);opacity:.95;\n}\n\n.kiso-title{\n  font-size:clamp(26px,3.1vw,42px);\n  line-height:1.15;color:var(--kiso-text);\n  font-weight:900;margin:0 0 14px 0;\n}\n\n.kiso-lead{\n  max-width:860px;\n  color:var(--kiso-muted);\n  font-size:16px;\n  line-height:1.8;\n  margin:0;\n}\n\n.kiso-divider{\n  height:1px;\n  background:linear-gradient(to right, var(--kiso-border), transparent);\n  margin:28px 0 0;\n}\n\n/* =========================================================\n   HERO\n========================================================= */\n.kiso-hero{\n  position:relative;\n  padding:80px 0;\n  background:linear-gradient(180deg, rgba(0,82,163,.06), rgba(0,82,163,0));\n  overflow:hidden;\n}\n.kiso-hero::before{\n  content:\"\";\n  position:absolute;\n  width:520px;height:520px;border-radius:50%;\n  background:rgba(0,82,163,.08);\n  left:-220px;top:50%;\n  transform:translateY(-50%);\n}\n.kiso-hero-grid{\n  position:relative;\n  display:grid;\n  grid-template-columns:1.15fr .85fr;\n  gap:40px;\n  align-items:center;\n}\n.kiso-hero h1{\n  font-size:clamp(30px,4vw,54px);\n  line-height:1.05;\n  margin:0 0 16px 0;\n  color:var(--kiso-text);\n  font-weight:950;\n  letter-spacing:-0.02em;\n}\n.kiso-hero p{\n  margin:0;\n  font-size:17px;\n  line-height:1.9;\n  color:var(--kiso-muted);\n  max-width:760px;\n}\n.kiso-hero-actions{\n  margin-top:26px;\n  display:flex;\n  gap:14px;\n  flex-wrap:wrap;\n}\n.kiso-btn{\n  display:inline-flex;\n  align-items:center;\n  justify-content:center;\n  gap:10px;\n  padding:14px 20px;\n  border-radius:12px;\n  text-decoration:none;\n  font-weight:800;\n  font-size:15px;\n  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;\n  white-space:nowrap;\n}\n.kiso-btn-primary{\n  background:var(--kiso-blue-dark);\n  color:#fff;\n  box-shadow:0 10px 24px rgba(0,63,125,.18);\n}\n.kiso-btn-primary:hover{transform:translateY(-1px); box-shadow:0 14px 30px rgba(0,63,125,.22)}\n.kiso-btn-secondary{\n  background:#fff;\n  color:var(--kiso-text);\n  border:1px solid var(--kiso-border);\n}\n.kiso-btn-secondary:hover{transform:translateY(-1px); border-color:rgba(0,82,163,.35)}\n.kiso-hero-aside{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  box-shadow:var(--kiso-shadow);\n  padding:26px;\n}\n.kiso-hero-aside-title{\n  font-weight:900;\n  color:var(--kiso-text);\n  margin:0 0 12px 0;\n  font-size:15px;\n}\n.kiso-hero-aside ul{\n  margin:0; padding:0; list-style:none;\n  display:grid; gap:10px;\n  color:var(--kiso-muted);\n  font-size:14.5px;\n  line-height:1.6;\n}\n.kiso-hero-aside li{\n  display:grid;\n  grid-template-columns:12px 1fr;\n  gap:10px;\n  align-items:start;\n}\n.kiso-hero-aside li::before{\n  content:\"\";\n  width:10px;height:10px;border-radius:3px;\n  background:var(--kiso-blue);\n  margin-top:6px;opacity:.9;\n}\n@media (max-width:900px){\n  .kiso-hero{padding:64px 0}\n  .kiso-hero-grid{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   LISTE PREMIUM\n========================================================= */\n.kiso-list-card{\n  margin-top:34px;\n  background:var(--kiso-bg);\n  border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  overflow:hidden;\n  box-shadow:var(--kiso-shadow);\n}\n.kiso-item{\n  display:grid;\n  grid-template-columns:72px 1fr;\n  padding:26px 28px;\n  border-top:1px solid var(--kiso-border);\n  transition:background .25s ease;\n}\n.kiso-item:first-child{border-top:none;}\n.kiso-num{\n  font-size:12px;\n  letter-spacing:.18em;\n  color:#94a3b8;\n  font-weight:900;\n  padding-top:4px;\n}\n.kiso-item h3{\n  margin:0 0 8px 0;\n  color:var(--kiso-text);\n  font-size:18px;\n  font-weight:950;\n  line-height:1.25;\n}\n.kiso-item p{\n  margin:0;\n  color:var(--kiso-muted);\n  font-size:15px;\n  line-height:1.8;\n  max-width:900px;\n}\n.kiso-item:hover{background:rgba(0,82,163,0.03)}\n.kiso-item:hover .kiso-num{color:rgba(0,82,163,0.55)}\n@media (max-width:900px){\n  .kiso-item{grid-template-columns:56px 1fr; padding:22px 18px}\n}\n@media (max-width:520px){\n  .kiso-item{grid-template-columns:44px 1fr}\n  .kiso-item h3{font-size:17px}\n  .kiso-item p{font-size:14.5px}\n}\n\n/* =========================================================\n   ENGAGEMENTS (3 points, sobre)\n========================================================= */\n.kiso-commit{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:repeat(3, 1fr);\n  gap:14px;\n}\n.kiso-commit-card{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:14px;\n  padding:20px 18px;\n  box-shadow:0 10px 24px rgba(0,0,0,.03);\n}\n.kiso-commit-card b{\n  display:block;\n  font-size:12px;\n  letter-spacing:.18em;\n  color:rgba(0,82,163,.70);\n  margin-bottom:10px;\n  text-transform:uppercase;\n  font-weight:900;\n}\n.kiso-commit-card p{\n  margin:0;\n  font-size:14.5px;\n  line-height:1.7;\n  color:var(--kiso-muted);\n}\n@media (max-width:900px){\n  .kiso-commit{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   PHOTOS (grille élégante)\n========================================================= */\n.kiso-photos{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:1.2fr .8fr;\n  gap:14px;\n}\n.kiso-photo{\n  position:relative;\n  overflow:hidden;\n  border-radius:16px;\n  border:1px solid var(--kiso-border);\n  background:#f8fafc;\n  min-height:240px;\n}\n.kiso-photo img{\n  width:100%;\n  height:100%;\n  object-fit:cover;\n  display:block;\n  transition:transform .45s ease;\n}\n.kiso-photo:hover img{transform:scale(1.04)}\n.kiso-photos-right{\n  display:grid;\n  grid-template-rows:1fr 1fr;\n  gap:14px;\n}\n.kiso-photo-badge{\n  position:absolute;\n  left:14px;\n  bottom:14px;\n  background:rgba(15,23,42,.72);\n  color:#fff;\n  font-size:12px;\n  font-weight:800;\n  padding:8px 10px;\n  border-radius:12px;\n  letter-spacing:.08em;\n}\n@media (max-width:900px){\n  .kiso-photos{grid-template-columns:1fr}\n  .kiso-photo{min-height:200px}\n}\n\n/* =========================================================\n   SECTEURS (liens)\n========================================================= */\n.kiso-sectors{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:repeat(3, 1fr);\n  gap:12px;\n}\n.kiso-sector{\n  display:flex;\n  align-items:center;\n  justify-content:space-between;\n  gap:14px;\n  padding:16px 18px;\n  border:1px solid var(--kiso-border);\n  border-radius:14px;\n  background:#fff;\n  text-decoration:none;\n  color:var(--kiso-text);\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n}\n.kiso-sector span{font-weight:900}\n.kiso-sector i{\n  font-style:normal;\n  color:rgba(0,63,125,.75);\n  transition:transform .2s ease;\n}\n.kiso-sector:hover{\n  transform:translateY(-1px);\n  border-color:rgba(0,82,163,.30);\n  box-shadow:0 14px 30px rgba(0,0,0,.05);\n}\n.kiso-sector:hover i{transform:translateX(3px)}\n@media (max-width:900px){\n  .kiso-sectors{grid-template-columns:repeat(2,1fr)}\n}\n@media (max-width:520px){\n  .kiso-sectors{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   CTA FINAL\n========================================================= */\n.kiso-cta{\n  margin-top:44px;\n  border-radius:16px;\n  border:1px solid rgba(0,82,163,.18);\n  background:linear-gradient(180deg, rgba(0,82,163,.08), rgba(0,82,163,0));\n  padding:34px;\n  position:relative;\n  overflow:hidden;\n}\n.kiso-cta::before{\n  content:\"\";\n  position:absolute;\n  width:320px;height:320px;border-radius:50%;\n  background:rgba(0,82,163,.10);\n  right:-140px; top:-160px;\n}\n.kiso-cta h3{\n  position:relative;\n  margin:0 0 10px 0;\n  font-size:22px;\n  font-weight:950;\n  color:var(--kiso-text);\n}\n.kiso-cta p{\n  position:relative;\n  margin:0 0 18px 0;\n  color:var(--kiso-muted);\n  line-height:1.9;\n  font-size:15.5px;\n  max-width:880px;\n}\n.kiso-cta-actions{\n  position:relative;\n  display:flex;\n  gap:12px;\n  flex-wrap:wrap;\n}\n\n/* =========================================================\n   SECTION – 2 PANNEAUX\n========================================================= */\n.kiso-split{\n  display:grid;\n  grid-template-columns:1fr 1fr;\n  gap:16px;\n  margin-top:34px;\n}\n\n.kiso-panel{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:16px;\n  box-shadow:var(--kiso-shadow);\n  overflow:hidden;\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n}\n\n.kiso-panel:hover{\n  transform:translateY(-1px);\n  border-color:rgba(0,82,163,.25);\n  box-shadow:0 14px 30px rgba(0,0,0,.05);\n}\n\n.kiso-panel-head{\n  padding:20px 22px;\n  border-bottom:1px solid var(--kiso-border);\n  display:flex;\n  align-items:flex-start;\n  justify-content:space-between;\n  gap:14px;\n}\n\n.kiso-panel-head b{\n  display:block;\n  font-size:12px;\n  letter-spacing:.18em;\n  text-transform:uppercase;\n  color:rgba(0,82,163,.70);\n  font-weight:900;\n  margin-bottom:6px;\n}\n\n.kiso-panel-head h3{\n  margin:0;\n  font-size:18px;\n  font-weight:950;\n  color:var(--kiso-text);\n  line-height:1.25;\n}\n\n.kiso-panel-pill{\n  flex:0 0 auto;\n  border:1px solid rgba(0,82,163,.18);\n  background:rgba(0,82,163,.06);\n  color:var(--kiso-blue-dark);\n  font-weight:900;\n  font-size:12px;\n  padding:8px 10px;\n  border-radius:999px;\n  white-space:nowrap;\n}\n\n.kiso-panel-body{\n  padding:20px 22px;\n}\n\n.kiso-panel-body p{\n  margin:0 0 12px 0;\n  color:var(--kiso-muted);\n  line-height:1.9;\n  font-size:15px;\n}\n\n.kiso-bullets{\n  margin:0;\n  padding:0;\n  list-style:none;\n  display:grid;\n  gap:10px;\n  color:var(--kiso-text);\n  font-size:14.8px;\n  line-height:1.65;\n}\n\n.kiso-bullets li{\n  display:grid;\n  grid-template-columns:12px 1fr;\n  gap:10px;\n  align-items:start;\n}\n\n.kiso-bullets li::before{\n  content:\"\";\n  width:10px;\n  height:10px;\n  border-radius:3px;\n  background:rgba(0,82,163,.85);\n  margin-top:6px;\n}\n\n@media (max-width:900px){\n  .kiso-split{\n    grid-template-columns:1fr;\n  }\n}\n</style>\n\n<!-- =========================================================\n     HERO\n========================================================= -->\n<section class=\"kiso-hero\">\n  <div class=\"kiso-container\">\n    <div class=\"kiso-hero-grid\">\n\n      <div>\n        <div class=\"kiso-eyebrow\">Nos solutions</div>\n        <p>\n Avec le temps, les chambres froides et espaces isothermes peuvent perdre en efficacité thermique, en étanchéité ou en conformité réglementaire.\nK Isolation intervient pour rénover, mettre aux normes et optimiser vos installations, tout en s’adaptant aux contraintes de votre exploitation.\n        </p>\n\n        <div class=\"kiso-hero-actions\">\n          <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis gratuit</a>\n          <a class=\"kiso-btn kiso-btn-secondary\" href=\"/portfolio\">Voir nos réalisations</a>\n        </div>\n\n        <div class=\"kiso-divider\"></div>\n      </div>\n\n      <div class=\"kiso-hero-aside\">\n        <div class=\"kiso-hero-aside-title\">Objectifs de la rénovation</div>\n        <ul>\n          <li>Améliorer l’isolation et l’étanchéité des installations</li>\n          <li>Prolonger la durée de vie des équipements et réduire les coûts d’exploitation</li>\n          <li>Mettre aux normes : HACCP, IFS, BRC et exigences métier</li>\n          <li>Adapter vos volumes et votre organisation à votre activité</li>\n        </ul>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<!-- =========================================================\n     SECTION : CE QUE NOUS FAISONS\n========================================================= -->\n<section class=\"kiso-sec\">\n  <div class=\"kiso-container\">\n\n    <div class=\"kiso-eyebrow\">Rénovation &#038; conformité</div>\n    <h2 class=\"kiso-title\">Rénover, sécuriser, mettre aux normes</h2>\n    <p class=\"kiso-lead\">\n     Nous intervenons pour remettre à niveau vos chambres froides et enveloppes isothermes : amélioration des performances thermiques, renforcement de l’étanchéité, remplacement d’éléments dégradés, mise en conformité réglementaire et adaptation à l’évolution de vos process.\n    </p>\n\n    <div class=\"kiso-list-card\">\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">01</div>\n        <div>\n          <h3>Rénovation de chambres froides existantes</h3>\n          <p>\n            Remplacement ou réfection des panneaux sandwich, amélioration de l’isolation et de l’étanchéité\n            afin de retrouver des performances thermiques optimales.\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">02</div>\n        <div>\n          <h3>Remise en état des éléments isothermes</h3>\n          <p>\n            Intervention sur portes frigorifiques, panneaux muraux, plafonds et cloisons isothermes\n            pour corriger les défauts, renforcer la durabilité et sécuriser l’exploitation.\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">03</div>\n        <div>\n          <h3>Mise en conformité réglementaire</h3>\n          <p>\n            Adaptation de vos installations aux normes en vigueur : HACCP, IFS, BRC,\n            et exigences spécifiques à votre activité (procédures, hygiène, sécurité).\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">04</div>\n        <div>\n          <h3>Adaptation et évolution de vos espaces</h3>\n          <p>\n            Modification des volumes, agrandissement de chambres froides ou réaménagement des installations afin de s’adapter à l’évolution de votre activité, de vos process ou de l’organisation des flux.\n          </p>\n        </div>\n      </article>\n\n    </div>\n\n<!-- =========================================================\n         POURQUOI K ISOLATION\n    ========================================================= -->\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Pourquoi K ISOLATION</div>\n    <h2 class=\"kiso-title\">Un partenaire technique, du cahier des charges à la mise en service</h2>\n    <p class=\"kiso-lead\">\n      Nous concevons des solutions durables et robustes, avec un accompagnement clair à chaque étape :\n      étude, conception, installation, réglages et recommandations d’exploitation.\n    </p>\n\n    <div class=\"kiso-split\">\n      <article class=\"kiso-panel\">\n        <div class=\"kiso-panel-head\">\n          <div>\n            <b>Engagement</b>\n            <h3>Solutions durables, robustes et conformes</h3>\n          </div>\n          <div class=\"kiso-panel-pill\">Qualité</div>\n        </div>\n        <div class=\"kiso-panel-body\">\n          <ul class=\"kiso-bullets\">\n            <li>Expertise reconnue en solutions isothermes et panneaux sandwich</li>\n            <li>Réalisations sur mesure adaptées à chaque activité</li>\n            <li>Accompagnement technique de la conception à la mise en service</li>\n            <li>Choix de matériaux et finitions adaptés à l’alimentaire</li>\n          </ul>\n        </div>\n      </article>\n\n      <article class=\"kiso-panel\">\n        <div class=\"kiso-panel-head\">\n          <div>\n            <b>Approche</b>\n            <h3>Optimiser l’existant tout en maîtrisant les coûts</h3>\n          </div>\n          <div class=\"kiso-panel-pill\">Efficience</div>\n        </div>\n        <div class=\"kiso-panel-body\">\n          <p style=\"margin:0;color:#000;line-height:1.9;font-size:15px;\">\n            Selon votre parc et votre activité, nous vous orientons vers la meilleure stratégie :\n            création clé en main, ou adaptation de votre remorque actuelle avec une enveloppe isotherme performante.\n          </p>\n        </div>\n      </article>\n    </div>\n\n    <!-- =========================================================\n         PHOTOS (À REMPLACER PAR TES IMAGES)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Exemples de réalisations</div>\n    <h2 class=\"kiso-title\">Des rénovations visibles, des performances mesurables</h2>\n    <p class=\"kiso-lead\">Remplace tes images ci-dessous par tes photos portfolio (URL WordPress).</p>\n\n    <div class=\"kiso-photos\">\n      <figure class=\"kiso-photo\">\n        <img decoding=\"async\" loading=\"lazy\" src=\"https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-1-scaled.jpeg\" alt=\"Rénovation chambre froide K Isolation\">\n        <span class=\"kiso-photo-badge\">Chambre froide • Rénovation</span>\n      </figure>\n\n      <div class=\"kiso-photos-right\">\n        <figure class=\"kiso-photo\">\n          <img decoding=\"async\" loading=\"lazy\" src=\"https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg\" alt=\"Mise en conformité isotherme K Isolation\">\n          <span class=\"kiso-photo-badge\">Mise aux normes</span>\n        </figure>\n        <figure class=\"kiso-photo\">\n          <img decoding=\"async\" loading=\"lazy\" src=\"https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-3-scaled.jpeg\" alt=\"Rénovation panneaux sandwich K Isolation\">\n          <span class=\"kiso-photo-badge\">Rénovation d’un sol</span>\n        </figure>\n      </div>\n    </div>\n\n    <!-- =========================================================\n         NOS ENGAGEMENTS\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Nos engagements</div>\n    <h2 class=\"kiso-title\">Rénover sans bloquer votre exploitation</h2>\n    <p class=\"kiso-lead\">Une approche technique et économique, conçue pour limiter l’impact sur votre activité.</p>\n\n    <div class=\"kiso-commit\">\n      <div class=\"kiso-commit-card\">\n        <b>Interventions maîtrisées</b>\n        <p>Chantiers planifiés pour réduire au maximum l’impact sur votre production, vos flux et vos accès.</p>\n      </div>\n      <div class=\"kiso-commit-card\">\n        <b>Solution durable &#038; rentable</b>\n        <p>Optimisation technique et économique pour prolonger la durée de vie de vos installations existantes.</p>\n      </div>\n      <div class=\"kiso-commit-card\">\n        <b>Conformité stricte</b>\n        <p>Respect rigoureux des normes et contraintes sanitaires, pour une exploitation en toute sécurité.</p>\n      </div>\n    </div>\n\n    <!-- =========================================================\n         SECTEURS (liens)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Applications</div>\n    <h2 class=\"kiso-title\">Nos rénovations par secteur</h2>\n    <p class=\"kiso-lead\">Nous adaptons nos rénovations à vos normes, vos contraintes et vos processus.</p>\n\n    <div class=\"kiso-sectors\">\n      <a class=\"kiso-sector\" href=\"/agroalimentaire\"><span>Agroalimentaire</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/logistique\"><span>Logistique</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/laboratoire-cuisine\"><span>Laboratoire &#038; Cuisine</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/salle-blanche\"><span>Salle blanche</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/industrie\"><span>Industrie</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/distribution\"><span>Distribution</span><i>→</i></a>\n    </div>\n\n    <!-- =========================================================\n         CTA FINAL\n    ========================================================= -->\n    <div class=\"kiso-cta\">\n      <h3>Besoin de remettre vos installations au niveau ?</h3>\n      <p>\n        Nous évaluons l’état de vos équipements, identifions les pertes de performance et vous proposons\n        une solution technique adaptée (rénovation, conformité, adaptation de volumes).\n        <strong>Devis gratuit sous 24h.</strong>\n      </p>\n      <div class=\"kiso-cta-actions\">\n        <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis</a>\n        <a class=\"kiso-btn kiso-btn-secondary\" href=\"/portfolio\">Voir des réalisations</a>\n      </div>\n    </div>\n\n  </div>\n</section>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>If you feel tired and stressed after work.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 21430,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   184
+  ],
+  "class_list": [
+   "post-18627",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "cpt_services_group-nos-services"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Rénovation &amp; mise en conformité - K ISOLATION</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/services/renovation-mise-en-conformite/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Rénovation &amp; mise en conformité - K ISOLATION\" />\n<meta property=\"og:description\" content=\"If you feel tired and stressed after work.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/renovation-mise-en-conformite/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T10:15:11+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg\" />\n\t<meta property=\"og:image:width\" content=\"1200\" />\n\t<meta property=\"og:image:height\" content=\"1600\" />\n\t<meta property=\"og:image:type\" content=\"image/jpeg\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Durée de lecture estimée\" />\n\t<meta name=\"twitter:data1\" content=\"4 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/\",\"name\":\"Rénovation &amp; mise en conformité - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2026\\/02\\/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg\",\"datePublished\":\"2025-11-03T18:57:37+00:00\",\"dateModified\":\"2026-04-25T10:15:11+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2026\\/02\\/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2026\\/02\\/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg\",\"width\":1200,\"height\":1600,\"caption\":\"K Isolation — chantier d'isolation industrielle\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/renovation-mise-en-conformite\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Rénovation &amp; mise en conformité\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Rénovation &amp; mise en conformité - K ISOLATION",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/services/renovation-mise-en-conformite/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Rénovation &amp; mise en conformité - K ISOLATION",
+   "og_description": "If you feel tired and stressed after work.",
+   "og_url": "https://k-isolation.fr/services/renovation-mise-en-conformite/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T10:15:11+00:00",
+   "og_image": [
+    {
+     "width": 1200,
+     "height": 1600,
+     "url": "https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg",
+     "type": "image/jpeg"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Durée de lecture estimée": "4 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/renovation-mise-en-conformite/",
+      "url": "https://k-isolation.fr/services/renovation-mise-en-conformite/",
+      "name": "Rénovation &amp; mise en conformité - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/services/renovation-mise-en-conformite/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/services/renovation-mise-en-conformite/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg",
+      "datePublished": "2025-11-03T18:57:37+00:00",
+      "dateModified": "2026-04-25T10:15:11+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/renovation-mise-en-conformite/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/renovation-mise-en-conformite/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/services/renovation-mise-en-conformite/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-23-at-23.17.13-2.jpeg",
+      "width": 1200,
+      "height": 1600,
+      "caption": "K Isolation — chantier d'isolation industrielle"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/renovation-mise-en-conformite/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Rénovation &amp; mise en conformité"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/18627",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=18627"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/21430"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=18627"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=18627"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 18626,
+  "date": "2025-11-03T18:57:37",
+  "date_gmt": "2025-11-03T18:57:37",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=18626"
+  },
+  "modified": "2026-04-25T15:08:28",
+  "modified_gmt": "2026-04-25T15:08:28",
+  "slug": "amenagements-professionnels-specifiques",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/",
+  "title": {
+   "rendered": "Aménagements Spécifiques"
+  },
+  "content": {
+   "rendered": "\n<style>\n:root{\n  --kiso-blue:#0052a3;\n  --kiso-blue-dark:#003f7d;\n  --kiso-soft:#eef4fb;\n  --kiso-text:#0f172a;\n  --kiso-muted:#64748b;\n  --kiso-border:#e5e7eb;\n  --kiso-bg:#ffffff;\n  --kiso-radius:14px;\n  --kiso-shadow:0 10px 28px rgba(0,0,0,.04);\n}\n\n*{box-sizing:border-box}\n\n.kiso-container{\n  max-width:1200px;\n  margin:0 auto;\n  padding:0 20px;\n}\n\n.kiso-sec{padding:70px 0}\n@media (max-width:900px){.kiso-sec{padding:60px 0}}\n@media (max-width:520px){.kiso-sec{padding:52px 0}}\n\n.kiso-eyebrow{\n  display:flex;align-items:center;gap:10px;\n  font-size:12px;letter-spacing:.22em;text-transform:uppercase;\n  color:var(--kiso-blue);font-weight:800;margin:0 0 14px 0;\n}\n.kiso-eyebrow::before{\n  content:\"\";width:10px;height:10px;border-radius:3px;\n  background:var(--kiso-blue);opacity:.95;\n}\n\n.kiso-title{\n  font-size:clamp(26px,3.1vw,42px);\n  line-height:1.15;color:var(--kiso-text);\n  font-weight:800;margin:0 0 14px 0;\n}\n\n.kiso-lead{\n  max-width:820px;\n  color:var(--kiso-muted);\n  font-size:16px;\n  line-height:1.75;\n  margin:0;\n}\n\n.kiso-divider{\n  height:1px;\n  background:linear-gradient(to right, var(--kiso-border), transparent);\n  margin:28px 0 0;\n}\n\n/* =========================================================\n   HERO (simple, premium, proche “Installation & Fourniture”)\n========================================================= */\n.kiso-hero{\n  position:relative;\n  padding:80px 0;\n  background:linear-gradient(180deg, rgba(0,82,163,.06), rgba(0,82,163,0));\n  overflow:hidden;\n}\n.kiso-hero::before{\n  content:\"\";\n  position:absolute;\n  width:520px;height:520px;border-radius:50%;\n  background:rgba(0,82,163,.08);\n  left:-220px;top:50%;\n  transform:translateY(-50%);\n  filter:blur(0px);\n}\n.kiso-hero-grid{\n  position:relative;\n  display:grid;\n  grid-template-columns:1.1fr .9fr;\n  gap:40px;\n  align-items:center;\n}\n.kiso-hero h1{\n  font-size:clamp(30px,4vw,54px);\n  line-height:1.05;\n  margin:0 0 16px 0;\n  color:var(--kiso-text);\n  font-weight:900;\n  letter-spacing:-0.02em;\n}\n.kiso-hero p{\n  margin:0;\n  font-size:17px;\n  line-height:1.8;\n  color:var(--kiso-muted);\n  max-width:720px;\n}\n.kiso-hero-actions{\n  margin-top:26px;\n  display:flex;\n  gap:14px;\n  flex-wrap:wrap;\n}\n.kiso-btn{\n  display:inline-flex;\n  align-items:center;\n  justify-content:center;\n  gap:10px;\n  padding:14px 20px;\n  border-radius:12px;\n  text-decoration:none;\n  font-weight:700;\n  font-size:15px;\n  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;\n  white-space:nowrap;\n}\n.kiso-btn-primary{\n  background:var(--kiso-blue-dark);\n  color:#fff;\n  box-shadow:0 10px 24px rgba(0,63,125,.18);\n}\n.kiso-btn-primary:hover{transform:translateY(-1px); box-shadow:0 14px 30px rgba(0,63,125,.22)}\n.kiso-btn-secondary{\n  background:#fff;\n  color:var(--kiso-text);\n  border:1px solid var(--kiso-border);\n}\n.kiso-btn-secondary:hover{transform:translateY(-1px); border-color:rgba(0,82,163,.35)}\n.kiso-hero-aside{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  box-shadow:var(--kiso-shadow);\n  padding:26px;\n}\n.kiso-hero-aside-title{\n  font-weight:800;\n  color:var(--kiso-text);\n  margin:0 0 12px 0;\n  font-size:15px;\n}\n.kiso-hero-aside ul{\n  margin:0; padding:0; list-style:none;\n  display:grid; gap:10px;\n  color:var(--kiso-muted);\n  font-size:14.5px;\n  line-height:1.6;\n}\n.kiso-hero-aside li{\n  display:grid;\n  grid-template-columns:12px 1fr;\n  gap:10px;\n  align-items:start;\n}\n.kiso-hero-aside li::before{\n  content:\"\";\n  width:10px;height:10px;border-radius:3px;\n  background:var(--kiso-blue);\n  margin-top:6px;opacity:.9;\n}\n@media (max-width:900px){\n  .kiso-hero{padding:64px 0}\n  .kiso-hero-grid{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   SECTION 1 : LISTE PREMIUM (ta section validée)\n========================================================= */\n.kiso-list-card{\n  margin-top:34px;\n  background:var(--kiso-bg);\n  border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  overflow:hidden;\n  box-shadow:var(--kiso-shadow);\n}\n.kiso-item{\n  display:grid;\n  grid-template-columns:72px 1fr;\n  padding:26px 28px;\n  border-top:1px solid var(--kiso-border);\n  transition:background .25s ease;\n}\n.kiso-item:first-child{border-top:none;}\n.kiso-num{\n  font-size:12px;\n  letter-spacing:.18em;\n  color:#94a3b8;\n  font-weight:800;\n  padding-top:4px;\n}\n.kiso-item h3{\n  margin:0 0 8px 0;\n  color:var(--kiso-text);\n  font-size:18px;\n  font-weight:800;\n  line-height:1.25;\n}\n.kiso-item p{\n  margin:0;\n  color:var(--kiso-muted);\n  font-size:15px;\n  line-height:1.7;\n  max-width:860px;\n}\n.kiso-item:hover{background:rgba(0,82,163,0.03)}\n.kiso-item:hover .kiso-num{color:rgba(0,82,163,0.55)}\n@media (max-width:900px){\n  .kiso-item{grid-template-columns:56px 1fr; padding:22px 18px}\n}\n@media (max-width:520px){\n  .kiso-item{grid-template-columns:44px 1fr}\n  .kiso-item h3{font-size:17px}\n  .kiso-item p{font-size:14.5px}\n}\n\n/* =========================================================\n   SECTION : REALISATION DES TRAVAUX (nouvelle, plus élégante)\n   → pas de gros bloc, pas d’effet promo\n========================================================= */\n.kiso-work-wrap{\n  margin-top:44px;\n  display:grid;\n  grid-template-columns:1.05fr .95fr;\n  gap:34px;\n  align-items:start;\n}\n.kiso-work-copy{\n  padding-right:10px;\n}\n.kiso-work-copy h2{\n  font-size:24px;\n  margin:0 0 14px 0;\n  font-weight:900;\n  color:var(--kiso-text);\n}\n.kiso-work-copy p{\n  margin:0;\n  color:var(--kiso-muted);\n  line-height:1.85;\n  font-size:15.5px;\n}\n.kiso-work-spec{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:var(--kiso-radius);\n  padding:26px;\n  box-shadow:var(--kiso-shadow);\n}\n.kiso-spec-row{\n  display:flex;\n  justify-content:space-between;\n  gap:16px;\n  padding:14px 0;\n  border-top:1px solid var(--kiso-border);\n}\n.kiso-spec-row:first-child{border-top:none}\n.kiso-spec-k{\n  font-weight:800;\n  color:var(--kiso-text);\n  font-size:13px;\n  letter-spacing:.08em;\n  text-transform:uppercase;\n}\n.kiso-spec-v{\n  color:var(--kiso-muted);\n  font-size:14.5px;\n  text-align:right;\n  line-height:1.5;\n}\n@media (max-width:900px){\n  .kiso-work-wrap{grid-template-columns:1fr}\n  .kiso-spec-v{text-align:left}\n}\n\n/* =========================================================\n   SECTION : MÉTHODE (5 étapes)\n========================================================= */\n.kiso-steps{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:repeat(5, 1fr);\n  gap:14px;\n}\n.kiso-step{\n  background:#fff;\n  border:1px solid var(--kiso-border);\n  border-radius:14px;\n  padding:18px 16px;\n  box-shadow:0 10px 24px rgba(0,0,0,.03);\n}\n.kiso-step b{\n  display:block;\n  font-size:12px;\n  letter-spacing:.18em;\n  color:rgba(0,82,163,.65);\n  margin-bottom:10px;\n}\n.kiso-step h4{\n  margin:0 0 6px 0;\n  font-size:15px;\n  color:var(--kiso-text);\n  font-weight:900;\n}\n.kiso-step p{\n  margin:0;\n  font-size:13.8px;\n  color:var(--kiso-muted);\n  line-height:1.6;\n}\n@media (max-width:1024px){\n  .kiso-steps{grid-template-columns:repeat(2,1fr)}\n}\n@media (max-width:520px){\n  .kiso-steps{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   SECTION : SECTEURS (liens)\n========================================================= */\n.kiso-sectors{\n  margin-top:34px;\n  display:grid;\n  grid-template-columns:repeat(3, 1fr);\n  gap:12px;\n}\n.kiso-sector{\n  display:flex;\n  align-items:center;\n  justify-content:space-between;\n  gap:14px;\n  padding:16px 18px;\n  border:1px solid var(--kiso-border);\n  border-radius:14px;\n  background:#fff;\n  text-decoration:none;\n  color:var(--kiso-text);\n  transition:transform .2s ease, border-color .2s ease, box-shadow .2s ease;\n}\n.kiso-sector span{\n  font-weight:800;\n}\n.kiso-sector i{\n  font-style:normal;\n  color:rgba(0,63,125,.75);\n  transition:transform .2s ease;\n}\n.kiso-sector:hover{\n  transform:translateY(-1px);\n  border-color:rgba(0,82,163,.30);\n  box-shadow:0 14px 30px rgba(0,0,0,.05);\n}\n.kiso-sector:hover i{transform:translateX(3px)}\n@media (max-width:900px){\n  .kiso-sectors{grid-template-columns:repeat(2,1fr)}\n}\n@media (max-width:520px){\n  .kiso-sectors{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   CTA FINAL (sobre)\n========================================================= */\n.kiso-cta{\n  margin-top:44px;\n  border-radius:16px;\n  border:1px solid rgba(0,82,163,.18);\n  background:linear-gradient(180deg, rgba(0,82,163,.08), rgba(0,82,163,0));\n  padding:34px;\n  position:relative;\n  overflow:hidden;\n}\n.kiso-cta::before{\n  content:\"\";\n  position:absolute;\n  width:320px;height:320px;border-radius:50%;\n  background:rgba(0,82,163,.10);\n  right:-140px; top:-160px;\n}\n.kiso-cta h3{\n  position:relative;\n  margin:0 0 10px 0;\n  font-size:22px;\n  font-weight:900;\n  color:var(--kiso-text);\n}\n.kiso-cta p{\n  position:relative;\n  margin:0 0 18px 0;\n  color:var(--kiso-muted);\n  line-height:1.8;\n  font-size:15.5px;\n  max-width:820px;\n}\n.kiso-cta-actions{\n  position:relative;\n  display:flex;\n  gap:12px;\n  flex-wrap:wrap;\n}\n</style>\n\n<!-- =========================================================\n     HERO\n========================================================= -->\n<section class=\"kiso-hero\">\n  <div class=\"kiso-container\">\n    <div class=\"kiso-hero-grid\">\n\n      <div>\n        <div class=\"kiso-eyebrow\">Nos solutions</div>\n        <p>\n          Des aménagements isothermes conçus pour organiser vos flux, sécuriser vos zones sensibles\n          et garantir des environnements maîtrisés, conformes et durables.\n        </p>\n\n        <div class=\"kiso-hero-actions\">\n          <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis gratuit</a>\n          <a class=\"kiso-btn kiso-btn-secondary\" href=\"/portfolio\">Voir nos réalisations</a>\n        </div>\n\n        <div class=\"kiso-divider\"></div>\n      </div>\n\n      <div class=\"kiso-hero-aside\">\n        <div class=\"kiso-hero-aside-title\">Ce que couvre cette solution</div>\n        <ul>\n          <li>Création et séparation de zones selon les exigences thermiques, sanitaires et réglementaires</li>\n          <li>Réalisation d’enveloppes isothermes : panneaux sandwich, cloisons et plafonds isolants</li>\n          <li>Intervention possible en site occupé, avec une organisation et un ordonnancement rigoureux des travaux</li>\n          <li>Contrôles de conformité et finitions techniques pour garantir la performance et la durabilité de l’installation</li>\n        </ul>\n      </div>\n\n    </div>\n  </div>\n</section>\n\n<!-- =========================================================\n     SECTION 1 : AMENAGEMENTS SPECIFIQUES (ta section)\n========================================================= -->\n<section class=\"kiso-sec\">\n  <div class=\"kiso-container\">\n\n    <div class=\"kiso-eyebrow\">Aménagements spécifiques</div>\n    <h2 class=\"kiso-title\">Concevoir des zones fiables, performantes et conformes</h2>\n    <p class=\"kiso-lead\">Nous réalisons des aménagements isothermes sur mesure pour créer, séparer et sécuriser des zones sensibles.\nChaque intervention est conçue pour garantir hygiène, performance thermique et conformité aux normes, tout en s’adaptant aux contraintes techniques de votre activité.\n    </p>\n\n    <div class=\"kiso-list-card\">\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">01</div>\n        <div>\n          <h3>Séparation et gestion des zones sensibles</h3>\n          <p>\n          Mise en œuvre de solutions isothermes permettant de séparer efficacement les flux et les espaces soumis à des contraintes thermiques, sanitaires ou réglementaires, grâce à l’installation de panneaux sandwich et de systèmes adaptés.\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">02</div>\n        <div>\n          <h3>Création de laboratoires alimentaires ou pharmaceutiques</h3>\n          <p>\n           Réalisation d’enveloppes isothermes adaptées aux environnements contrôlés, garantissant un haut niveau d’hygiène, une stabilité thermique optimale et une conformité aux normes en vigueur.\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">03</div>\n        <div>\n          <h3>Aménagement d’entrepôts industriels et frigorifiques</h3>\n          <p>\nInstallation de panneaux sandwich isothermes pour la création ou la rénovation d’entrepôts industriels, de chambres froides positives ou négatives et de zones de stockage à température dirigée.\n          </p>\n        </div>\n      </article>\n\n      <article class=\"kiso-item\">\n        <div class=\"kiso-num\">04</div>\n        <div>\n          <h3>Création de zones de production, de stockage et d’espaces techniques</h3>\n          <p>\n          Conception et réalisation de zones isothermes fonctionnelles : ateliers de production, zones de stockage, sas thermiques, vestiaires et locaux techniques.\n          </p>\n        </div>\n      </article>\n\n    </div>\n\n    <!-- =========================================================\n         REALISATION DES TRAVAUX (nouvelle version)\n    ========================================================= -->\n    <div class=\"kiso-work-wrap\">\n\n      <div class=\"kiso-work-copy\">\n        <div class=\"kiso-eyebrow\" style=\"margin-top:0;\">Réalisation des travaux</div>\n        <h2>Une exécution rigoureuse, pensée pour votre exploitation</h2>\n        <p>\n         K Isolation mobilise l’ensemble des moyens humains et techniques nécessaires à la réalisation de solutions isothermes adaptées à chaque projet.\nNous intervenons sur des installations en panneaux sandwich, cloisons et plafonds isothermes, en tenant compte des contraintes techniques, thermiques et d’exploitation propres à chaque chantier.\n<br><br>\n        Une méthodologie rigoureuse et un ordonnancement précis des travaux sont définis afin de respecter le planning établi. Des contrôles réguliers de l’avancement et de la conformité des prestations sont réalisés afin de garantir des installations performantes, durables et parfaitement adaptées à vos besoins d’exploitation.\n        </p>\n      </div>\n\n      <div class=\"kiso-work-spec\">\n        <div class=\"kiso-spec-row\">\n          <div class=\"kiso-spec-k\">Périmètre</div>\n          <div class=\"kiso-spec-v\">Panneaux sandwich • Cloisons • Plafonds isothermes</div>\n        </div>\n        <div class=\"kiso-spec-row\">\n          <div class=\"kiso-spec-k\">Contraintes</div>\n          <div class=\"kiso-spec-v\">Thermique • Hygiène • Flux • Accès chantier</div>\n        </div>\n        <div class=\"kiso-spec-row\">\n          <div class=\"kiso-spec-k\">Organisation</div>\n          <div class=\"kiso-spec-v\">Ordonnancement • Planning • Continuité d’activité</div>\n        </div>\n        <div class=\"kiso-spec-row\">\n          <div class=\"kiso-spec-k\">Qualité</div>\n          <div class=\"kiso-spec-v\">Contrôles réguliers • Conformité • Finitions techniques</div>\n        </div>\n      </div>\n\n    </div>\n\n    <!-- =========================================================\n         MÉTHODE (5 étapes)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Notre méthode</div>\n    <h2 class=\"kiso-title\">Un déroulé clair, du cadrage à la livraison</h2>\n    <p class=\"kiso-lead\">Chaque étape est structurée pour sécuriser délais, conformité et performance.</p>\n\n    <div class=\"kiso-steps\">\n      <div class=\"kiso-step\">\n        <b>01</b><h4>Analyse</h4><p>Relevés, contraintes et objectifs d’exploitation.</p>\n      </div>\n      <div class=\"kiso-step\">\n        <b>02</b><h4>Conception</h4><p>Choix techniques, dimensionnement, validation.</p>\n      </div>\n      <div class=\"kiso-step\">\n        <b>03</b><h4>Planification</h4><p>Ordonnancement précis selon votre activité.</p>\n      </div>\n      <div class=\"kiso-step\">\n        <b>04</b><h4>Réalisation</h4><p>Pose maîtrisée, sécurité et finitions.</p>\n      </div>\n      <div class=\"kiso-step\">\n        <b>05</b><h4>Contrôle</h4><p>Vérifications, conformité et mise en service.</p>\n      </div>\n    </div>\n\n    <!-- =========================================================\n         SECTEURS (liens)\n    ========================================================= -->\n    <div class=\"kiso-divider\"></div>\n\n    <div class=\"kiso-eyebrow\" style=\"margin-top:34px;\">Applications</div>\n    <h2 class=\"kiso-title\">Nos interventions par secteur</h2>\n    <p class=\"kiso-lead\">Des environnements exigeants, des exigences différentes — une même rigueur.</p>\n\n    <div class=\"kiso-sectors\">\n      <a class=\"kiso-sector\" href=\"/agroalimentaire\"><span>Agroalimentaire</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/logistique\"><span>Logistique</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/laboratoire-cuisine\"><span>Laboratoire &#038; Cuisine</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/salle-blanche\"><span>Salle blanche</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/industrie\"><span>Industrie</span><i>→</i></a>\n      <a class=\"kiso-sector\" href=\"/distribution\"><span>Distribution</span><i>→</i></a>\n    </div>\n\n    <!-- =========================================================\n         CTA FINAL\n    ========================================================= -->\n    <div class=\"kiso-cta\">\n      <h3>Un aménagement à réaliser ou une zone à sécuriser ?</h3>\n      <p>\n        Décrivez votre besoin : nous vous proposons une solution isotherme adaptée à vos contraintes techniques,\n        à vos exigences sanitaires et à votre organisation d’exploitation.\n        <strong>Devis gratuit sous 24h.</strong>\n      </p>\n      <div class=\"kiso-cta-actions\">\n        <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis</a>\n        <a class=\"kiso-btn kiso-btn-secondary\" href=\"/portfolio\">Voir des réalisations</a>\n      </div>\n    </div>\n\n  </div>\n</section>\n\n\n\n<p></p>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>If you feel tired and stressed after work.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 21587,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   184
+  ],
+  "class_list": [
+   "post-18626",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "cpt_services_group-nos-services"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Aménagements Spécifiques - K ISOLATION</title>\n<meta name=\"description\" content=\"Aménagements isothermes sur mesure : séparation de zones, laboratoires alimentaires, entrepôts frigorifiques et espaces techniques. Intervention rigoureuse, conformité garantie. Devis gratuit sous 24h.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/services/amenagements-professionnels-specifiques/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Aménagements Spécifiques - K ISOLATION\" />\n<meta property=\"og:description\" content=\"Aménagements isothermes sur mesure : séparation de zones, laboratoires alimentaires, entrepôts frigorifiques et espaces techniques. Intervention rigoureuse, conformité garantie. Devis gratuit sous 24h.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/amenagements-professionnels-specifiques/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T15:08:28+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2025/11/ChatGPT-Image-25-avr.-2026-13_28_48.png\" />\n\t<meta property=\"og:image:width\" content=\"1536\" />\n\t<meta property=\"og:image:height\" content=\"1024\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Durée de lecture estimée\" />\n\t<meta name=\"twitter:data1\" content=\"3 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/\",\"name\":\"Aménagements Spécifiques - K ISOLATION\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2025\\/11\\/ChatGPT-Image-25-avr.-2026-13_28_48.png\",\"datePublished\":\"2025-11-03T18:57:37+00:00\",\"dateModified\":\"2026-04-25T15:08:28+00:00\",\"description\":\"Aménagements isothermes sur mesure : séparation de zones, laboratoires alimentaires, entrepôts frigorifiques et espaces techniques. Intervention rigoureuse, conformité garantie. Devis gratuit sous 24h.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2025\\/11\\/ChatGPT-Image-25-avr.-2026-13_28_48.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2025\\/11\\/ChatGPT-Image-25-avr.-2026-13_28_48.png\",\"width\":1536,\"height\":1024,\"caption\":\"ChatGPT Image 25 avr. 2026, 13 28 48\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/amenagements-professionnels-specifiques\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Aménagements Spécifiques\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Aménagements Spécifiques - K ISOLATION",
+   "description": "Aménagements isothermes sur mesure : séparation de zones, laboratoires alimentaires, entrepôts frigorifiques et espaces techniques. Intervention rigoureuse, conformité garantie. Devis gratuit sous 24h.",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Aménagements Spécifiques - K ISOLATION",
+   "og_description": "Aménagements isothermes sur mesure : séparation de zones, laboratoires alimentaires, entrepôts frigorifiques et espaces techniques. Intervention rigoureuse, conformité garantie. Devis gratuit sous 24h.",
+   "og_url": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T15:08:28+00:00",
+   "og_image": [
+    {
+     "width": 1536,
+     "height": 1024,
+     "url": "https://k-isolation.fr/wp-content/uploads/2025/11/ChatGPT-Image-25-avr.-2026-13_28_48.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Durée de lecture estimée": "3 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/",
+      "url": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/",
+      "name": "Aménagements Spécifiques - K ISOLATION",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2025/11/ChatGPT-Image-25-avr.-2026-13_28_48.png",
+      "datePublished": "2025-11-03T18:57:37+00:00",
+      "dateModified": "2026-04-25T15:08:28+00:00",
+      "description": "Aménagements isothermes sur mesure : séparation de zones, laboratoires alimentaires, entrepôts frigorifiques et espaces techniques. Intervention rigoureuse, conformité garantie. Devis gratuit sous 24h.",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/amenagements-professionnels-specifiques/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2025/11/ChatGPT-Image-25-avr.-2026-13_28_48.png",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2025/11/ChatGPT-Image-25-avr.-2026-13_28_48.png",
+      "width": 1536,
+      "height": 1024,
+      "caption": "ChatGPT Image 25 avr. 2026, 13 28 48"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/amenagements-professionnels-specifiques/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Aménagements Spécifiques"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/18626",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=18626"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/21587"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=18626"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=18626"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ {
+  "id": 18625,
+  "date": "2024-09-12T18:19:56",
+  "date_gmt": "2024-09-12T18:19:56",
+  "guid": {
+   "rendered": "https://k-isolation.fr/?post_type=cpt_services&#038;p=18625"
+  },
+  "modified": "2026-04-25T15:10:34",
+  "modified_gmt": "2026-04-25T15:10:34",
+  "slug": "installation-fourniture",
+  "status": "publish",
+  "type": "cpt_services",
+  "link": "https://k-isolation.fr/services/installation-fourniture/",
+  "title": {
+   "rendered": "Installation &amp; fourniture"
+  },
+  "content": {
+   "rendered": "\n<style>\n:root{\n  --kiso-blue:#0052a3;\n  --kiso-blue-dark:#003f7d;\n  --kiso-soft:#eef4fb;\n  --kiso-text:#0f172a;\n  --kiso-muted:#64748b;\n  --kiso-border:#e5e7eb;\n  --kiso-bg:#ffffff;\n  --kiso-radius:16px;\n  --kiso-shadow:0 12px 30px rgba(0,0,0,.05);\n}\n\n*{box-sizing:border-box}\n.kiso-page{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--kiso-text)}\n.kiso-container{max-width:1200px;margin:0 auto;padding:0 20px}\n.kiso-sec{padding:72px 0}\n@media (max-width:900px){.kiso-sec{padding:60px 0}}\n@media (max-width:520px){.kiso-sec{padding:52px 0}}\n\n.kiso-eyebrow{\n  display:flex;align-items:center;gap:10px;\n  font-size:12px;letter-spacing:.22em;text-transform:uppercase;\n  color:var(--kiso-blue);font-weight:900;margin:0 0 14px 0;\n}\n.kiso-eyebrow::before{content:\"\";width:10px;height:10px;border-radius:3px;background:var(--kiso-blue);opacity:.95}\n.kiso-title{\n  font-size:clamp(28px,4vw,56px);\n  line-height:1.03;margin:0 0 14px 0;\n  color:var(--kiso-text);\n  font-weight:950;letter-spacing:-0.02em;\n}\n.kiso-lead{\n  max-width:900px;\n  color:var(--kiso-muted);\n  font-size:16.5px;\n  line-height:1.95;\n  margin:0;\n}\n.kiso-divider{\n  height:1px;\n  background:linear-gradient(to right, var(--kiso-border), transparent);\n  margin:30px 0 0;\n}\n\n.kiso-btn{\n  display:inline-flex;align-items:center;justify-content:center;gap:10px;\n  padding:14px 20px;border-radius:12px;text-decoration:none;\n  font-weight:900;font-size:15px;white-space:nowrap;\n  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, color .2s ease, border-color .2s ease;\n}\n.kiso-btn-primary{background:var(--kiso-blue-dark);color:#fff;box-shadow:0 10px 24px rgba(0,63,125,.18)}\n.kiso-btn-primary:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(0,63,125,.22)}\n.kiso-btn-secondary{background:#fff;color:var(--kiso-text);border:1px solid var(--kiso-border)}\n.kiso-btn-secondary:hover{transform:translateY(-1px);border-color:rgba(0,82,163,.35)}\n\n/* =========================================================\n   HERO – INSTALLATION & FOURNITURE\n========================================================= */\n.kiso-hero{\n  position:relative;\n  padding:92px 0 74px;\n  background:linear-gradient(180deg, rgba(0,82,163,.08), rgba(0,82,163,0));\n  overflow:hidden;\n}\n.kiso-hero::before{\n  content:\"\";\n  position:absolute;\n  width:560px;height:560px;border-radius:50%;\n  background:rgba(0,82,163,.10);\n  left:-260px;top:50%;\n  transform:translateY(-50%);\n}\n.kiso-hero::after{\n  content:\"\";\n  position:absolute;\n  width:520px;height:520px;border-radius:50%;\n  background:rgba(0,82,163,.07);\n  right:-280px;bottom:-320px;\n}\n.kiso-hero-grid{\n  position:relative;\n  display:grid;\n  grid-template-columns:1.1fr .9fr;\n  gap:44px;\n  align-items:center;\n}\n.kiso-hero-actions{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}\n.kiso-hero-card{\n  background:#fff;border:1px solid var(--kiso-border);\n  border-radius:18px;box-shadow:var(--kiso-shadow);\n  padding:26px;position:relative;overflow:hidden;\n}\n.kiso-hero-card::before{\n  content:\"\";\n  position:absolute;\n  width:230px;height:230px;border-radius:50%;\n  background:rgba(0,82,163,.06);\n  right:-110px;top:-110px;\n}\n.kiso-hero-card h3{\n  position:relative;\n  margin:0 0 12px 0;\n  font-size:15px;font-weight:950;color:var(--kiso-text);\n}\n.kiso-hero-card ul{\n  position:relative;\n  margin:0;padding:0;list-style:none;\n  display:grid;gap:10px;\n  color:var(--kiso-muted);\n  font-size:14.5px;line-height:1.65;\n}\n.kiso-hero-card li{display:grid;grid-template-columns:12px 1fr;gap:10px;align-items:start}\n.kiso-hero-card li::before{content:\"\";width:10px;height:10px;border-radius:3px;background:var(--kiso-blue);margin-top:6px;opacity:.9}\n\n@media (max-width:900px){\n  .kiso-hero{padding:74px 0 60px}\n  .kiso-hero-grid{grid-template-columns:1fr}\n}\n\n/* =========================================================\n   LISTE PREMIUM – \"CE QUE NOUS INSTALLONS\"\n========================================================= */\n.kiso-solutions-wrap{margin-top:34px}\n.kiso-solution{\n  display:grid;\n  grid-template-columns:90px 1fr 56px;\n  align-items:center;\n  gap:22px;\n  padding:26px 8px;\n  border-bottom:1px solid rgba(15,23,42,.08);\n  text-decoration:none;\n  color:inherit;\n  position:relative;\n  overflow:hidden;\n}\n.kiso-solution:last-child{border-bottom:1px solid rgba(15,23,42,.08)}\n.kiso-solution::before{\n  content:\"\";\n  position:absolute;\n  left:0;bottom:0;\n  width:0%;height:2px;\n  background:var(--kiso-blue);\n  transition:width .45s ease;\n}\n.kiso-solution:hover::before{width:100%}\n\n.kiso-solution-num{\n  font-weight:950;\n  letter-spacing:.2em;\n  color:rgba(0,82,163,.60);\n  font-size:12px;\n  text-transform:uppercase;\n}\n.kiso-solution-title{\n  font-size:clamp(18px,2.2vw,26px);\n  font-weight:950;\n  letter-spacing:-.01em;\n  margin:0 0 6px 0;\n}\n.kiso-solution-desc{\n  margin:0;\n  color:var(--kiso-muted);\n  line-height:1.8;\n  font-size:15px;\n  max-width:860px;\n}\n.kiso-solution-arrow{\n  width:44px;height:44px;border-radius:999px;\n  border:1px solid rgba(0,82,163,.22);\n  display:grid;place-items:center;\n  color:var(--kiso-blue-dark);\n  transition:transform .35s ease, background .35s ease, border-color .35s ease;\n}\n.kiso-solution:hover .kiso-solution-arrow{\n  transform:translateX(6px);\n  background:rgba(0,82,163,.06);\n  border-color:rgba(0,82,163,.35);\n}\n\n@media (max-width:900px){\n  .kiso-solution{grid-template-columns:64px 1fr 46px;padding:22px 0}\n}\n@media (max-width:520px){\n  .kiso-solution{grid-template-columns:1fr 46px;gap:14px}\n  .kiso-solution-num{display:none}\n}\n\n/* =========================================================\n   MICRO ANIM SCROLL REVEAL (optionnel, léger)\n========================================================= */\n.kiso-reveal{opacity:0;transform:translateY(14px);transition:opacity .7s ease, transform .7s ease}\n.kiso-reveal.is-in{opacity:1;transform:none}\n</style>\n\n<div class=\"kiso-page\">\n\n  <!-- HERO -->\n  <section class=\"kiso-hero\">\n    <div class=\"kiso-container\">\n      <div class=\"kiso-hero-grid\">\n\n        <div class=\"kiso-reveal\">\n          <div class=\"kiso-eyebrow\">Nos solutions</div>\n          <p class=\"kiso-lead\">\n            De la fourniture à la pose, K Isolation conçoit, fournit et installe des solutions isothermes clés en main pour les environnements exigeants : agroalimentaire, logistique, laboratoires, salles blanches et industrie.\n          </p>\n\n          <div class=\"kiso-hero-actions\">\n            <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Demander un devis gratuit</a>\n            <a class=\"kiso-btn kiso-btn-secondary\" href=\"/nos-realisations\">Voir des réalisations</a>\n          </div>\n\n          <div class=\"kiso-divider\"></div>\n        </div>\n\n        <aside class=\"kiso-hero-card kiso-reveal\">\n          <h3>Installation &#038; Fourniture</h3>\n          <ul>\n            <li>Étude technique et dimensionnement selon vos contraintes</li>\n            <li>Matériaux certifiés, finitions hygiéniques, étanchéité soignée</li>\n            <li>Pose réalisée par nos équipes qualifiées, dans le respect des délais</li>\n            <li>Mise en service et recommandations pour une exploitation optimale</li>\n          </ul>\n        </aside>\n\n      </div>\n    </div>\n  </section>\n\n  <!-- SECTION : CE QUE NOUS INSTALLONS -->\n  <section class=\"kiso-sec\">\n    <div class=\"kiso-container\">\n\n      <h2 class=\"kiso-title kiso-reveal\">Ce que nous installons</h2>\n      <p class=\"kiso-lead kiso-reveal\">\n       Nous proposons une gamme complète d’équipements isothermes et de finitions techniques, conçus pour garantir performance thermique, hygiène et durabilité.\n      </p>\n\n      <div class=\"kiso-solutions-wrap\">\n\n        <a class=\"kiso-solution kiso-reveal\" href=\"#\">\n          <div class=\"kiso-solution-num\">01</div>\n          <div>\n            <div class=\"kiso-solution-title\">Panneaux sandwich isothermes</div>\n            <p class=\"kiso-solution-desc\">Murs, cloisons et plafonds isolants offrant d’excellentes performances thermiques et sanitaires.</p>\n          </div>\n          <div class=\"kiso-solution-arrow\" aria-hidden=\"true\">→</div>\n        </a>\n\n        <a class=\"kiso-solution kiso-reveal\" href=\"#\">\n          <div class=\"kiso-solution-num\">02</div>\n          <div>\n            <div class=\"kiso-solution-title\">Portes isothermes techniques</div>\n            <p class=\"kiso-solution-desc\">Solutions d’accès adaptées aux flux intensifs, aux contraintes thermiques et aux exigences d’hygiène.</p>\n          </div>\n          <div class=\"kiso-solution-arrow\" aria-hidden=\"true\">→</div>\n        </a>\n\n        <a class=\"kiso-solution kiso-reveal\" href=\"#\">\n          <div class=\"kiso-solution-num\">03</div>\n          <div>\n            <div class=\"kiso-solution-title\">Chambres froides sur mesure</div>\n            <p class=\"kiso-solution-desc\">Conception et installation de chambres froides positives et négatives selon vos besoins.</p>\n          </div>\n          <div class=\"kiso-solution-arrow\" aria-hidden=\"true\">→</div>\n        </a>\n\n        <a class=\"kiso-solution kiso-reveal\" href=\"#\">\n          <div class=\"kiso-solution-num\">04</div>\n          <div>\n            <div class=\"kiso-solution-title\">Accessoires &amp; finitions techniques</div>\n            <p class=\"kiso-solution-desc\">Finitions hygiéniques, protections inox et solutions d’étanchéité pour une isolation continue.</p>\n          </div>\n          <div class=\"kiso-solution-arrow\" aria-hidden=\"true\">→</div>\n        </a>\n\n        <a class=\"kiso-solution kiso-reveal\" href=\"#\">\n          <div class=\"kiso-solution-num\">05</div>\n          <div>\n            <div class=\"kiso-solution-title\">Faux plafonds isolants</div>\n            <p class=\"kiso-solution-desc\">Plafonds suspendus sanitaires intégrant isolation, éclairage et ventilation.</p>\n          </div>\n          <div class=\"kiso-solution-arrow\" aria-hidden=\"true\">→</div>\n        </a>\n\n      </div>\n\n      <div class=\"kiso-divider\"></div>\n\n      <!-- CTA compact (optionnel) -->\n      <div style=\"margin-top:26px;display:flex;gap:12px;flex-wrap:wrap\">\n        <a class=\"kiso-btn kiso-btn-primary\" href=\"/contact\">Parler à un expert</a>\n        <a class=\"kiso-btn kiso-btn-secondary\" href=\"/nos-solutions\">Voir toutes nos solutions</a>\n      </div>\n\n    </div>\n  </section>\n\n</div>\n\n<script>\n/* Scroll reveal léger (sans dépendances) */\n(function(){\n  const els = document.querySelectorAll('.kiso-reveal');\n  if(!els.length) return;\n\n  const io = new IntersectionObserver((entries)=>{\n    entries.forEach(e=>{\n      if(e.isIntersecting){\n        e.target.classList.add('is-in');\n        io.unobserve(e.target);\n      }\n    });\n  }, {threshold:0.12});\n\n  els.forEach(el=>io.observe(el));\n})();\n</script>\n",
+   "protected": false
+  },
+  "excerpt": {
+   "rendered": "<p>If you feel tired and stressed after work.</p>\n",
+   "protected": false
+  },
+  "author": 6,
+  "featured_media": 21588,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "cpt_services_group": [
+   184
+  ],
+  "class_list": [
+   "post-18625",
+   "cpt_services",
+   "type-cpt_services",
+   "status-publish",
+   "has-post-thumbnail",
+   "hentry",
+   "cpt_services_group-nos-services"
+  ],
+  "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.1 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Installation &amp; Fourniture</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://k-isolation.fr/services/installation-fourniture/\" />\n<meta property=\"og:locale\" content=\"fr_FR\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Installation &amp; Fourniture\" />\n<meta property=\"og:description\" content=\"If you feel tired and stressed after work.\" />\n<meta property=\"og:url\" content=\"https://k-isolation.fr/services/installation-fourniture/\" />\n<meta property=\"og:site_name\" content=\"K ISOLATION\" />\n<meta property=\"article:modified_time\" content=\"2026-04-25T15:10:34+00:00\" />\n<meta property=\"og:image\" content=\"https://k-isolation.fr/wp-content/uploads/2024/09/ChatGPT-Image-25-avr.-2026-14_04_41.png\" />\n\t<meta property=\"og:image:width\" content=\"1536\" />\n\t<meta property=\"og:image:height\" content=\"1024\" />\n\t<meta property=\"og:image:type\" content=\"image/png\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Durée de lecture estimée\" />\n\t<meta name=\"twitter:data1\" content=\"2 minutes\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/\",\"name\":\"Installation & Fourniture\",\"isPartOf\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/ChatGPT-Image-25-avr.-2026-14_04_41.png\",\"datePublished\":\"2024-09-12T18:19:56+00:00\",\"dateModified\":\"2026-04-25T15:10:34+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/#breadcrumb\"},\"inLanguage\":\"fr-FR\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/#primaryimage\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/ChatGPT-Image-25-avr.-2026-14_04_41.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/ChatGPT-Image-25-avr.-2026-14_04_41.png\",\"width\":1536,\"height\":1024,\"caption\":\"ChatGPT Image 25 avr. 2026, 14 04 41\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/k-isolation.fr\\/services\\/installation-fourniture\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https:\\/\\/k-isolation.fr\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https:\\/\\/k-isolation.fr\\/services\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Installation &amp; fourniture\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#website\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"name\":\"K ISOLATION\",\"description\":\"Solutions isothermes fiables et durables.\",\"publisher\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/k-isolation.fr\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"fr-FR\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#organization\",\"name\":\"K ISOLATION\",\"url\":\"https:\\/\\/k-isolation.fr\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"fr-FR\",\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"contentUrl\":\"https:\\/\\/k-isolation.fr\\/wp-content\\/uploads\\/2024\\/09\\/k-isolation.png\",\"width\":1187,\"height\":1188,\"caption\":\"K ISOLATION\"},\"image\":{\"@id\":\"https:\\/\\/k-isolation.fr\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.linkedin.com\\/in\\/k-isolation-703640227\\/\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+  "yoast_head_json": {
+   "title": "Installation & Fourniture",
+   "robots": {
+    "index": "index",
+    "follow": "follow",
+    "max-snippet": "max-snippet:-1",
+    "max-image-preview": "max-image-preview:large",
+    "max-video-preview": "max-video-preview:-1"
+   },
+   "canonical": "https://k-isolation.fr/services/installation-fourniture/",
+   "og_locale": "fr_FR",
+   "og_type": "article",
+   "og_title": "Installation & Fourniture",
+   "og_description": "If you feel tired and stressed after work.",
+   "og_url": "https://k-isolation.fr/services/installation-fourniture/",
+   "og_site_name": "K ISOLATION",
+   "article_modified_time": "2026-04-25T15:10:34+00:00",
+   "og_image": [
+    {
+     "width": 1536,
+     "height": 1024,
+     "url": "https://k-isolation.fr/wp-content/uploads/2024/09/ChatGPT-Image-25-avr.-2026-14_04_41.png",
+     "type": "image/png"
+    }
+   ],
+   "twitter_card": "summary_large_image",
+   "twitter_misc": {
+    "Durée de lecture estimée": "2 minutes"
+   },
+   "schema": {
+    "@context": "https://schema.org",
+    "@graph": [
+     {
+      "@type": "WebPage",
+      "@id": "https://k-isolation.fr/services/installation-fourniture/",
+      "url": "https://k-isolation.fr/services/installation-fourniture/",
+      "name": "Installation & Fourniture",
+      "isPartOf": {
+       "@id": "https://k-isolation.fr/#website"
+      },
+      "primaryImageOfPage": {
+       "@id": "https://k-isolation.fr/services/installation-fourniture/#primaryimage"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/services/installation-fourniture/#primaryimage"
+      },
+      "thumbnailUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/ChatGPT-Image-25-avr.-2026-14_04_41.png",
+      "datePublished": "2024-09-12T18:19:56+00:00",
+      "dateModified": "2026-04-25T15:10:34+00:00",
+      "breadcrumb": {
+       "@id": "https://k-isolation.fr/services/installation-fourniture/#breadcrumb"
+      },
+      "inLanguage": "fr-FR",
+      "potentialAction": [
+       {
+        "@type": "ReadAction",
+        "target": [
+         "https://k-isolation.fr/services/installation-fourniture/"
+        ]
+       }
+      ]
+     },
+     {
+      "@type": "ImageObject",
+      "inLanguage": "fr-FR",
+      "@id": "https://k-isolation.fr/services/installation-fourniture/#primaryimage",
+      "url": "https://k-isolation.fr/wp-content/uploads/2024/09/ChatGPT-Image-25-avr.-2026-14_04_41.png",
+      "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/ChatGPT-Image-25-avr.-2026-14_04_41.png",
+      "width": 1536,
+      "height": 1024,
+      "caption": "ChatGPT Image 25 avr. 2026, 14 04 41"
+     },
+     {
+      "@type": "BreadcrumbList",
+      "@id": "https://k-isolation.fr/services/installation-fourniture/#breadcrumb",
+      "itemListElement": [
+       {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://k-isolation.fr/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://k-isolation.fr/services/"
+       },
+       {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Installation &amp; fourniture"
+       }
+      ]
+     },
+     {
+      "@type": "WebSite",
+      "@id": "https://k-isolation.fr/#website",
+      "url": "https://k-isolation.fr/",
+      "name": "K ISOLATION",
+      "description": "Solutions isothermes fiables et durables.",
+      "publisher": {
+       "@id": "https://k-isolation.fr/#organization"
+      },
+      "potentialAction": [
+       {
+        "@type": "SearchAction",
+        "target": {
+         "@type": "EntryPoint",
+         "urlTemplate": "https://k-isolation.fr/?s={search_term_string}"
+        },
+        "query-input": {
+         "@type": "PropertyValueSpecification",
+         "valueRequired": true,
+         "valueName": "search_term_string"
+        }
+       }
+      ],
+      "inLanguage": "fr-FR"
+     },
+     {
+      "@type": "Organization",
+      "@id": "https://k-isolation.fr/#organization",
+      "name": "K ISOLATION",
+      "url": "https://k-isolation.fr/",
+      "logo": {
+       "@type": "ImageObject",
+       "inLanguage": "fr-FR",
+       "@id": "https://k-isolation.fr/#/schema/logo/image/",
+       "url": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "contentUrl": "https://k-isolation.fr/wp-content/uploads/2024/09/k-isolation.png",
+       "width": 1187,
+       "height": 1188,
+       "caption": "K ISOLATION"
+      },
+      "image": {
+       "@id": "https://k-isolation.fr/#/schema/logo/image/"
+      },
+      "sameAs": [
+       "https://www.linkedin.com/in/k-isolation-703640227/"
+      ]
+     }
+    ]
+   }
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services/18625",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services"
+    }
+   ],
+   "about": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/types/cpt_services"
+    }
+   ],
+   "author": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6"
+    }
+   ],
+   "replies": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/comments?post=18625"
+    }
+   ],
+   "wp:featuredmedia": [
+    {
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media/21588"
+    }
+   ],
+   "wp:attachment": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/media?parent=18625"
+    }
+   ],
+   "wp:term": [
+    {
+     "taxonomy": "cpt_services_group",
+     "embeddable": true,
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group?post=18625"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+]

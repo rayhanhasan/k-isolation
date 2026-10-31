@@ -1,0 +1,114 @@
+[
+ {
+  "id": 6,
+  "name": "Inès Ben Labidi",
+  "url": "",
+  "description": "Chargée d'affaires K Isolation — 8 ans d'expérience en isolation industrielle et chaîne du froid. Spécialiste HACCP, normes EN 13165 et conformité réglementaire pour les industriels de l'agroalimentaire et de la logistique.",
+  "link": "https://k-isolation.fr/author/ines/",
+  "slug": "ines",
+  "avatar_urls": {
+   "24": "https://secure.gravatar.com/avatar/1a092bed4787f6f65a8f3c86fdacc1f44e89957fca3995dec34692ec64fc2066?s=24&d=mm&r=g",
+   "48": "https://secure.gravatar.com/avatar/1a092bed4787f6f65a8f3c86fdacc1f44e89957fca3995dec34692ec64fc2066?s=48&d=mm&r=g",
+   "96": "https://secure.gravatar.com/avatar/1a092bed4787f6f65a8f3c86fdacc1f44e89957fca3995dec34692ec64fc2066?s=96&d=mm&r=g"
+  },
+  "meta": [],
+  "yoast_head": null,
+  "yoast_head_json": null,
+  "elementor_introduction": {
+   "yoast-introduction-editor-v2": true
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/6",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users"
+    }
+   ]
+  }
+ },
+ {
+  "id": 4,
+  "name": "jojo jojo",
+  "url": "",
+  "description": "",
+  "link": "https://k-isolation.fr/author/jojo/",
+  "slug": "jojo",
+  "avatar_urls": {
+   "24": "https://secure.gravatar.com/avatar/fca00ce46c596bb62704c4f624f09ff1acfa604069c8f5336a70a7349e92b5fd?s=24&d=mm&r=g",
+   "48": "https://secure.gravatar.com/avatar/fca00ce46c596bb62704c4f624f09ff1acfa604069c8f5336a70a7349e92b5fd?s=48&d=mm&r=g",
+   "96": "https://secure.gravatar.com/avatar/fca00ce46c596bb62704c4f624f09ff1acfa604069c8f5336a70a7349e92b5fd?s=96&d=mm&r=g"
+  },
+  "meta": [],
+  "yoast_head": null,
+  "yoast_head_json": null,
+  "elementor_introduction": "",
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/4",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users"
+    }
+   ]
+  }
+ },
+ {
+  "id": 1,
+  "name": "Rayhan",
+  "url": "https://k-isolation.fr",
+  "description": "",
+  "link": "https://k-isolation.fr/author/rayhan/",
+  "slug": "rayhan",
+  "avatar_urls": {
+   "24": "https://secure.gravatar.com/avatar/c66c4c5edf4ef952b649f91005442e3c3d78813f29b1f9480edc76e7d5e54f78?s=24&d=mm&r=g",
+   "48": "https://secure.gravatar.com/avatar/c66c4c5edf4ef952b649f91005442e3c3d78813f29b1f9480edc76e7d5e54f78?s=48&d=mm&r=g",
+   "96": "https://secure.gravatar.com/avatar/c66c4c5edf4ef952b649f91005442e3c3d78813f29b1f9480edc76e7d5e54f78?s=96&d=mm&r=g"
+  },
+  "meta": [],
+  "yoast_head": null,
+  "yoast_head_json": null,
+  "elementor_introduction": {
+   "ai-get-started-announcement": true,
+   "globals_introduction": true,
+   "upload_json_warning_generic_message": true,
+   "e-apps": true,
+   "yoast-introduction-editor-v2": true,
+   "kit_elements_defaults_create_dialog": true,
+   "e-editor-one-notice-pointer": true
+  },
+  "_links": {
+   "self": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users/1",
+     "targetHints": {
+      "allow": [
+       "GET"
+      ]
+     }
+    }
+   ],
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/users"
+    }
+   ]
+  }
+ }
+]

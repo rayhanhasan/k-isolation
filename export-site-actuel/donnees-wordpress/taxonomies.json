@@ -1,0 +1,272 @@
+{
+ "category": {
+  "name": "Catégories",
+  "slug": "category",
+  "description": "",
+  "types": [
+   "post"
+  ],
+  "hierarchical": true,
+  "rest_base": "categories",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/categories"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "post_tag": {
+  "name": "Étiquettes",
+  "slug": "post_tag",
+  "description": "",
+  "types": [
+   "post"
+  ],
+  "hierarchical": false,
+  "rest_base": "tags",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/tags"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "nav_menu": {
+  "name": "Menus de navigation",
+  "slug": "nav_menu",
+  "description": "",
+  "types": [
+   "nav_menu_item"
+  ],
+  "hierarchical": false,
+  "rest_base": "menus",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/menus"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "wp_pattern_category": {
+  "name": "Catégories de compositions",
+  "slug": "wp_pattern_category",
+  "description": "",
+  "types": [
+   "wp_block"
+  ],
+  "hierarchical": false,
+  "rest_base": "wp_pattern_category",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/wp_pattern_category"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "cpt_layouts_group": {
+  "name": "Layouts Group",
+  "slug": "cpt_layouts_group",
+  "description": "",
+  "types": [
+   "cpt_layouts"
+  ],
+  "hierarchical": true,
+  "rest_base": "cpt_layouts_group",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_layouts_group"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "cpt_portfolio_group": {
+  "name": "Portfolio Group",
+  "slug": "cpt_portfolio_group",
+  "description": "",
+  "types": [
+   "cpt_portfolio"
+  ],
+  "hierarchical": true,
+  "rest_base": "cpt_portfolio_group",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_portfolio_group"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "cpt_services_group": {
+  "name": "Services Group",
+  "slug": "cpt_services_group",
+  "description": "",
+  "types": [
+   "cpt_services"
+  ],
+  "hierarchical": true,
+  "rest_base": "cpt_services_group",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_services_group"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "cpt_team_group": {
+  "name": "Team Group",
+  "slug": "cpt_team_group",
+  "description": "",
+  "types": [
+   "cpt_team"
+  ],
+  "hierarchical": true,
+  "rest_base": "cpt_team_group",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_team_group"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ },
+ "cpt_testimonials_group": {
+  "name": "Testimonials Group",
+  "slug": "cpt_testimonials_group",
+  "description": "",
+  "types": [
+   "cpt_testimonials"
+  ],
+  "hierarchical": true,
+  "rest_base": "cpt_testimonials_group",
+  "rest_namespace": "wp/v2",
+  "_links": {
+   "collection": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/taxonomies"
+    }
+   ],
+   "wp:items": [
+    {
+     "href": "https://k-isolation.fr/wp-json/wp/v2/cpt_testimonials_group"
+    }
+   ],
+   "curies": [
+    {
+     "name": "wp",
+     "href": "https://api.w.org/{rel}",
+     "templated": true
+    }
+   ]
+  }
+ }
+}
