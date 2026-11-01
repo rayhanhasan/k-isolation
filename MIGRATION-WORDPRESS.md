@@ -1,159 +1,148 @@
-# Migration du site WordPress k-isolation.fr vers un nouvel hébergeur
+# Migration k-isolation.fr : Hostinger → LWS (domaine chez IONOS)
 
-Ce guide déplace **le site actuel tel quel** (WordPress + Elementor + thème Fuse) de Hostinger vers un autre hébergeur, **sans coupure du site ni des e-mails**. Il ne concerne pas la refonte, qui est en pause.
+Déménagement du site WordPress actuel **tel quel**, et des e-mails, de Hostinger vers LWS, **sans coupure**. Le nom de domaine reste chez IONOS.
 
-> **Les 3 règles qui évitent 99 % des problèmes**
-> 1. **Les e-mails `@k-isolation.fr` sont chez Hostinger.** On ne touche ni aux MX, ni à SPF, DKIM et DMARC, ni aux serveurs de noms tant que la question des e-mails n'est pas réglée (§2).
-> 2. **On teste le site sur le nouveau serveur AVANT de changer le DNS** (§5).
-> 3. **On garde Hostinger actif 30 jours après la bascule** : le retour arrière se fait en 5 minutes (§8).
+## La situation aujourd'hui (relevé du 31/10/2026)
+
+| Élément | Où | Détail |
+|---|---|---|
+| Nom de domaine `k-isolation.fr` | **IONOS** | Ses serveurs DNS pointent vers Hostinger (`ns1/ns2.dns-parking.com`) |
+| Zone DNS (tous les enregistrements) | **Hostinger** | Site : A `46.202.172.2`, AAAA `2a02:4780:27:1890:0:227e:fa92:d`. E-mails : MX `mx1/mx2.hostinger.com`, SPF, DKIM, DMARC |
+| Site WordPress | **Hostinger** | WordPress 6.8, Elementor, thème Fuse, LiteSpeed Cache |
+| E-mails `@k-isolation.fr` | **Hostinger** | Au moins `contact@k-isolation.fr` |
+
+## Le principe : 2 phases, pour ne jamais risquer site ET e-mails en même temps
+
+- **Phase 1 (le site).** On installe le site chez LWS, on le teste, puis on change une seule adresse (enregistrement A) dans la zone DNS encore chez Hostinger. Le retour arrière prend 5 minutes, et les e-mails ne bougent pas.
+- **Phase 2 (les e-mails et le DNS), quelques jours plus tard.** On crée les boîtes chez LWS, on fait pointer le domaine IONOS vers les serveurs DNS de LWS, puis on recopie les anciens messages.
+- **Hostinger reste actif 30 jours** après la phase 2, puis on le résilie.
 
 ---
 
-## 0. Ce qui est déjà exporté dans ce dépôt
+## Étape 0 : commander chez LWS
 
-Le dossier `export-site-actuel/` contient tout ce qui est accessible publiquement, détaillé dans son `LISEZMOI.md` :
+**Formule conseillée : « LWS Perso » (hébergement WordPress).** Elle comprend 3 sites, 5 adresses e-mail pro (2 à 50 Go par boîte), 100 Go, sauvegardes journalières, SSL gratuit et **migration WordPress gratuite**.
 
-| Élément | Contenu | Restaurable tel quel ? |
-|---|---|---|
-| `miroir/` | Copie complète consultable hors ligne (HTML, CSS, JS, images, polices) | Non : c'est une archive de consultation et de secours |
-| `medias/uploads/` | Les 138 fichiers originaux de la médiathèque (105 Mo, vidéos comprises), dans l'arborescence WordPress `AAAA/MM/` | Oui : ils peuvent être recopiés dans `wp-content/uploads/` |
-| `donnees-wordpress/` | Toutes les données publiques en JSON : 25 pages, 4 articles, réalisations, services, témoignages, gabarits, catégories, étiquettes, médias, comptes | Partiellement : contenu et textes, mais pas les mises en page Elementor |
-| `dns-releve.json` | Relevé exact du DNS au 31/10/2026 | Oui : référence pour la bascule |
-| `../audit/source/` | Texte et métadonnées de chacune des 57 pages | — |
+| Formule | 1re année | Ensuite | E-mails | Sites |
+|---|---|---|---|---|
+| **Perso** | 1,49 € HT/mois (1,79 € TTC) | 3,99 €/mois | 5 | 3 |
+| Starter | 3,49 € HT/mois (4,19 € TTC) | 5,99 €/mois | 25 | 10 |
+| Performance | 6,99 € HT/mois (8,39 € TTC) | 11,99 €/mois | 100 | 50 |
 
-**Ce qui ne peut PAS être exporté depuis l'extérieur** : la base de données (mises en page Elementor, menus, réglages des extensions, formulaires, comptes), les extensions et le thème. Seul un accès au serveur le permet (§3). C'est la seule étape qui demande une action de ta part ou du client.
+*Tarifs relevés sur lws.fr le 01/11/2026. LWS précise que le prix normal s'applique dès la 2e année : le vérifier au moment de commander.*
 
----
+- Prendre **Starter** seulement s'il faut plus de 5 boîtes e-mail, ou si tu veux regrouper d'autres sites sur le même hébergement.
+- À la commande, choisir **« utiliser un domaine existant »** (ou équivalent) : on ne transfère pas le domaine, il reste chez IONOS. Le domaine offert par LWS n'est pas utile ici.
 
-## 1. Choisir le nouvel hébergeur
+**Avant de commander, poser ces 3 questions au support LWS (chat ou ticket) :**
+1. « Votre migration WordPress gratuite inclut-elle un site Elementor de 100 Mo de médias depuis une sauvegarde Hostinger ? »
+2. « Migrez-vous aussi le contenu des boîtes e-mail ? »
+3. « Quels serveurs DNS dois-je déclarer chez IONOS, et l'IP de mon hébergement pour un enregistrement A ? »
 
-Critères pour ce site :
+**Alternative à LWS** si leurs réponses ne conviennent pas : o2switch (« Offre Unique », serveurs en France, migration gratuite, e-mails et sites illimités). Prix d'appel 1,86 € HT/mois payé à l'année ; le tarif de renouvellement est à vérifier sur leur site. La suite du guide s'applique de la même façon.
 
-| Critère | Pourquoi |
-|---|---|
-| PHP 8.2 ou plus, MySQL/MariaDB | Exigences d'Elementor et de WordPress 6.8 |
-| **Accès SSH + WP-CLI** | Permet la migration en une commande (§3, méthode C) et les sauvegardes propres |
-| Sauvegardes quotidiennes incluses, restaurables en un clic | Filet de sécurité |
-| Serveurs en France ou dans l'UE | RGPD, proximité des visiteurs |
-| Serveur **LiteSpeed** (ou non) | Si oui, l'extension LiteSpeed Cache actuelle continue de fonctionner ; sinon, il faut la remplacer par le cache de l'hébergeur |
-| **Migration gratuite** proposée par l'hébergeur | Beaucoup d'hébergeurs WordPress la font eux-mêmes à partir d'une sauvegarde ou d'un accès : c'est l'option la plus simple |
-| E-mail inclus ou non | Voir §2 |
+## Étape 1 : faire l'inventaire chez Hostinger (15 min)
 
-Dis-moi lequel tu retiens : j'adapterai les étapes 4 à 6 à son interface exacte.
+Dans hPanel :
+- [ ] **E-mails** : noter **toutes** les adresses existantes (`contact@`, et d'éventuelles autres), leurs **redirections** et réponses automatiques, et la taille de chaque boîte.
+- [ ] **Sites web → k-isolation.fr → Sauvegardes** : générer une sauvegarde, puis télécharger **les fichiers** et **la base de données**. Ce sont les deux fichiers à remettre à LWS pour la migration. Le script SSH `export-site-actuel/scripts/1-export-depuis-hostinger.sh` est l'alternative technique.
+- [ ] **DNS** : vérifier qu'il n'existe pas d'enregistrement ajouté à la main (TXT de vérification Google, sous-domaine…) en plus de ceux du relevé `export-site-actuel/dns-releve.json`.
+- [ ] Autres sites hébergés sur le même compte Hostinger : ils ne sont pas couverts par ce guide et doivent être déménagés ou résiliés séparément.
 
-## 2. Décider du sort des e-mails (AVANT tout le reste)
+## Étape 2 : migrer le site chez LWS
 
-Aujourd'hui (relevé DNS du 31/10/2026) :
+**Option recommandée : la migration gratuite LWS.** Ouvrir la demande dans l'espace client LWS, joindre les 2 fichiers de sauvegarde (ou un accès temporaire à l'administration WordPress), et préciser par écrit :
+> « Merci de ne PAS modifier le DNS : le domaine est chez IONOS et je ferai la bascule moi-même après vérification. »
 
-| Enregistrement | Valeur | Rôle |
-|---|---|---|
-| MX | `mx1.hostinger.com` (5), `mx2.hostinger.com` (10) | Réception des e-mails |
-| TXT (SPF) | `v=spf1 include:_spf.mail.hostinger.com ~all` | Autorise Hostinger à envoyer |
-| CNAME DKIM | `hostingermail-a/b/c._domainkey` → `*.dkim.mail.hostinger.com` | Signature des e-mails |
-| TXT `_dmarc` | `v=DMARC1; p=none` | Politique anti-usurpation |
-| CNAME | `autodiscover` / `autoconfig` → `*.mail.hostinger.com` | Configuration automatique des logiciels de messagerie |
-| NS | `ns1/ns2.dns-parking.com` | Le DNS est géré chez Hostinger |
+**Option autonome :** extension **All-in-One WP Migration** ou **Duplicator**. Exporter depuis le WordPress actuel, installer un WordPress vierge chez LWS, puis importer. Avec le terminal web et WP-CLI de LWS, le script `export-site-actuel/scripts/2-import-sur-nouvel-hebergeur.sh` fait l'import complet.
 
-Trois options :
-- **A. Garder les e-mails chez Hostinger (le plus simple).** Dans hPanel, vérifier si la boîte `contact@` dépend de l'offre d'hébergement web. Si oui, souscrire une offre **e-mail seule** avant de résilier l'hébergement. On ne touche à aucun enregistrement e-mail.
-- **B. Les déplacer chez le nouvel hébergeur.** Créer les boîtes chez lui, copier les messages (outil de migration IMAP de l'hébergeur), puis remplacer MX, SPF et DKIM **le même jour**, en dehors des heures de travail.
-- **C. Google Workspace ou Microsoft 365.** Même principe que B, avec leurs assistants de migration.
+**Réglages indispensables après la migration, à faire chez LWS :**
+1. **LiteSpeed Cache → désactiver.** Cette extension ne fonctionne que sur les serveurs LiteSpeed, ce que LWS n'est pas (leur page cite Nginx, Varnish, Redis). Activer à la place le cache proposé par LWS dans son panneau.
+2. **Extensions Hostinger** (outils, assistant) : désactiver puis supprimer.
+3. **Polices liées à l'ancien domaine de test Hostinger.** Le fichier `wp-content/uploads/elementor/google-fonts/css/roboto.css` charge ses polices depuis `https://mediumspringgreen-narwhal-464896.hostingersite.com`, qui disparaîtra avec Hostinger. Dans Elementor → Outils → **Remplacer l'URL** : remplacer cette adresse par `https://k-isolation.fr`, puis cliquer sur **Régénérer les fichiers CSS**.
+4. **Formulaires (Contact Form 7)** : installer **WP Mail SMTP** et le configurer après la phase 2 avec la boîte `contact@` de LWS. Sans ça, les demandes de devis risquent de finir en spam.
+5. **Comptes utilisateurs** : 3 comptes existent (« Inès Ben Labidi », « Rayhan », « jojo jojo »). Supprimer les comptes de test et changer les mots de passe administrateur.
+6. **Réglages → Permaliens → Enregistrer** (une fois, sans rien changer).
 
-**Le nom de domaine** est aussi géré chez Hostinger : vérifier sa date d'échéance et le renouvellement automatique. Le garder chez Hostinger ne pose aucun problème.
+## Étape 3 : tester le site chez LWS avant de basculer
 
-## 3. Exporter le site depuis Hostinger (3 méthodes, une seule suffit)
+Récupérer **l'adresse IP de l'hébergement LWS** (espace client ou support). Puis ajouter cette ligne dans le fichier `hosts` de ton ordinateur :
+- **Mac** : `sudo nano /etc/hosts`
+- **Windows** : Bloc-notes lancé en administrateur → `C:\Windows\System32\drivers\etc\hosts`
 
-**Méthode A : sauvegarde hPanel (5 minutes, sans technique)**
-hPanel → Sites web → k-isolation.fr → **Sauvegardes**. Générer une nouvelle sauvegarde, puis télécharger séparément **les fichiers** et **la base de données**. Ces deux fichiers suffisent pour l'hébergeur qui fait la migration.
-
-**Méthode B : extension de migration (depuis l'administration WordPress)**
-Installer **All-in-One WP Migration** ou **Duplicator** → Exporter vers un fichier → télécharger. Sur le nouvel hébergeur : installer un WordPress vierge, la même extension, puis Importer. Attention : la version gratuite d'All-in-One limite la taille d'import selon l'hébergeur ; le site complet pèse un peu plus de 100 Mo de médias.
-
-**Méthode C : script SSH fourni (complet et vérifiable)**
-```bash
-ssh -p 65002 <utilisateur>@46.202.172.2
 ```
-Puis copier `export-site-actuel/scripts/1-export-depuis-hostinger.sh` sur le serveur et le lancer :
-```bash
-bash 1-export-depuis-hostinger.sh
-```
-Le script :
-- ne lit **que** le dossier `domains/k-isolation.fr` et ne modifie rien ;
-- produit une archive unique (base de données + fichiers, sans les caches, avec empreintes de contrôle) **hors** de `public_html` ;
-- liste les extensions, thèmes et versions.
-
-Il a été testé sur une installation simulée. Pense à supprimer l'archive du serveur une fois téléchargée.
-
-⚠️ L'export contient la base de données, donc les comptes et les messages reçus par les formulaires : ne pas le partager ni le déposer sur GitHub.
-
-## 4. Installer le site sur le nouvel hébergeur
-
-- **Si l'hébergeur fait la migration** : lui transmettre l'export (méthode A ou C) et lui préciser de **ne pas changer le DNS**.
-- **Avec l'extension (méthode B)** : importer le fichier sur un WordPress neuf.
-- **Avec SSH (méthode C)** : créer une base vide, puis lancer :
-  ```bash
-  bash 2-import-sur-nouvel-hebergeur.sh export-k-isolation-AAAAMMJJ-HHMM.tar ~/dossier-web
-  ```
-  Le script vérifie l'archive, restaure fichiers et base, branche la nouvelle base, régénère les clés de sécurité, désactive ce qui est propre à Hostinger et contrôle l'intégrité de WordPress.
-
-**Réglages à faire après l'import, quelle que soit la méthode :**
-1. **LiteSpeed Cache** : à garder seulement si le nouveau serveur est LiteSpeed. Sinon, désactiver l'extension et activer le cache recommandé par l'hébergeur.
-2. **Extensions Hostinger** (outils, assistant) : à désactiver.
-3. **Polices hébergées sur l'ancien domaine de test Hostinger.** Le fichier `wp-content/uploads/elementor/google-fonts/css/roboto.css` charge ses polices depuis `https://mediumspringgreen-narwhal-464896.hostingersite.com/…`. Ce domaine disparaîtra avec l'hébergement. Correction : Elementor → Outils → **Remplacer l'URL**, de `https://mediumspringgreen-narwhal-464896.hostingersite.com` vers `https://k-isolation.fr`, puis **Régénérer les fichiers CSS**. Avec WP-CLI :
-   ```bash
-   wp search-replace 'https://mediumspringgreen-narwhal-464896.hostingersite.com' 'https://k-isolation.fr' --all-tables --dry-run
-   ```
-   Relancer ensuite la même commande sans `--dry-run`.
-4. **Envoi des e-mails du site** (formulaires Contact Form 7) : configurer une extension SMTP (WP Mail SMTP par exemple) avec la boîte `contact@k-isolation.fr`, sinon les demandes de devis risquent de partir en spam ou de ne jamais arriver.
-5. **Comptes administrateurs** : 3 comptes publics existent (« Inès Ben Labidi », « Rayhan », « jojo jojo »). Supprimer les comptes de test et changer les mots de passe.
-6. **Réglages → Permaliens** : cliquer « Enregistrer » une fois (régénère les règles d'URL).
-
-## 5. Tester avant de changer le DNS
-
-Faire « croire » à ton ordinateur que k-isolation.fr est déjà sur le nouveau serveur, sans rien changer pour le reste du monde :
-- **Mac** : `sudo nano /etc/hosts`.
-- **Windows** : Bloc-notes en administrateur → `C:\Windows\System32\drivers\etc\hosts`.
-
-Ajouter la ligne suivante (IP fournie par le nouvel hébergeur), enregistrer, puis vider le cache du navigateur :
-```
-<IP-du-nouveau-serveur>  k-isolation.fr www.k-isolation.fr
+<IP-LWS>  k-isolation.fr www.k-isolation.fr
 ```
 
-Checklist de recette :
-- [ ] Accueil, une page service, une réalisation, un article, la page contact : affichage identique, images présentes.
-- [ ] Polices correctes : pas de police de remplacement, cf. réglage n° 3.
-- [ ] **Formulaire de contact envoyé et reçu** sur `contact@`.
-- [ ] Connexion à `/wp-admin/`, ouverture d'une page dans l'éditeur Elementor.
-- [ ] `/sitemap_index.xml` accessible.
-- [ ] Certificat HTTPS : souvent généré seulement après la bascule DNS. Un avertissement pendant ce test est normal.
+Ton ordinateur seul voit alors le site chez LWS, le reste du monde voit toujours Hostinger. Vérifier :
+- [ ] Accueil, services, une réalisation, un article, contact : identiques au site actuel (la copie `export-site-actuel/miroir/` sert de référence).
+- [ ] Polices correctes (réglage n° 3) et images présentes.
+- [ ] Connexion à `/wp-admin/` et ouverture d'une page dans Elementor.
+- [ ] Un avertissement HTTPS est **normal** à ce stade : le certificat sera créé après la bascule.
 
-Retirer la ligne du fichier `hosts` après le test.
+Retirer ensuite la ligne du fichier `hosts`.
 
-## 6. Bascule DNS (jour J, 15 minutes)
+## Étape 4 : phase 1, basculer le site (10 min, réversible en 5 min)
 
-48 h avant : dans hPanel → DNS, passer le TTL de `A @`, `AAAA @` et `CNAME www` à **300 secondes**, pour que la bascule et un éventuel retour arrière soient quasi immédiats.
+48 h avant, dans **hPanel → DNS de k-isolation.fr**, passer le TTL des enregistrements `A @`, `AAAA @` et `CNAME www` à **300**.
 
-Le jour J, dans hPanel → Domaines → k-isolation.fr → **DNS**, modifier **uniquement** :
+Le jour J, toujours dans le **DNS Hostinger** :
 
 | Enregistrement | Avant | Après |
 |---|---|---|
-| `A @` | `46.202.172.2` | IP du nouvel hébergeur |
-| `AAAA @` | `2a02:4780:27:1890:0:227e:fa92:d` | IPv6 du nouvel hébergeur, **ou suppression** s'il n'en fournit pas. Sinon une partie des visiteurs continuerait d'arriver chez Hostinger |
-| `CNAME www` | `k-isolation.fr` | inchangé (sauf consigne contraire de l'hébergeur) |
+| `A @` | `46.202.172.2` | **IP LWS** |
+| `AAAA @` | `2a02:4780:27:1890:0:227e:fa92:d` | **Supprimer** (sinon une partie des visiteurs reste chez Hostinger), sauf si LWS fournit une IPv6 |
+| `CNAME www` | `k-isolation.fr` | inchangé |
+| MX, TXT, DKIM, DMARC, autodiscover, autoconfig | — | **Ne pas toucher** |
 
-**Ne pas toucher** : MX, TXT SPF, CNAME `hostingermail-*._domainkey`, TXT `_dmarc`, `autodiscover`, `autoconfig`, NS.
+Ensuite :
+- Chez LWS, activer le **certificat SSL gratuit** pour `k-isolation.fr` et `www`, puis forcer le HTTPS.
+- Tester depuis un téléphone en 4G : le site doit s'afficher, cadenas compris.
+- Envoyer un formulaire de contact : il doit arriver sur `contact@`, encore chez Hostinger à ce stade.
 
-Puis, chez le nouvel hébergeur : activer le certificat HTTPS (Let's Encrypt) et forcer la redirection `http` → `https`.
+**Retour arrière** : remettre `A @` = `46.202.172.2` et l'AAAA d'origine. Effectif en quelques minutes.
 
-## 7. Après la bascule
+## Étape 5 : phase 2, e-mails et DNS (3 à 7 jours après, un vendredi soir de préférence)
 
-- [ ] Visiter le site depuis un téléphone en 4G : on doit être sur le nouveau serveur.
-- [ ] Envoyer et recevoir un e-mail sur `contact@` (doit fonctionner exactement comme avant).
-- [ ] Envoyer un formulaire de contact depuis le site.
-- [ ] **Google Search Console** : vérifier que la propriété est toujours validée. La validation actuelle passe probablement par Site Kit : en profiter pour ajouter une propriété « Domaine » vérifiée par un enregistrement TXT DNS.
+Le principe : au lieu de modifier des enregistrements un par un, on confie toute la zone DNS à LWS en changeant les serveurs DNS chez IONOS. LWS crée automatiquement les bons enregistrements (site, MX, SPF, DKIM).
+
+1. **Chez LWS** : créer les **mêmes adresses e-mail** qu'à l'étape 1 (même orthographe), avec leurs redirections et réponses automatiques.
+2. **Chez LWS** : ouvrir la **zone DNS** du domaine et vérifier qu'elle contient l'enregistrement A du site, les MX de LWS, le SPF et le DKIM LWS. Y ajouter les enregistrements personnalisés notés à l'étape 1 (TXT Google par exemple).
+3. **Chez IONOS** : Domaines & SSL → `k-isolation.fr` → **Serveurs de noms** → serveurs personnalisés → remplacer `ns1/ns2.dns-parking.com` par les serveurs indiqués par LWS (de la forme `nsX.lwsdns.com`).
+4. **Propagation : jusqu'à 24 à 48 h.** Pendant ce temps, une partie des e-mails arrive encore chez Hostinger, et c'est normal : rien n'est perdu, les deux boîtes existent.
+5. **Reconfigurer les messageries** (téléphones, Outlook, Mac Mail) avec les serveurs IMAP et SMTP donnés par LWS.
+6. **48 h après**, **recopier les anciens messages** de Hostinger vers LWS, selon l'une de ces trois méthodes :
+   - **Simple** : ajouter les deux comptes (Hostinger et LWS) dans Thunderbird ou Outlook, puis glisser-déposer les dossiers de l'un vers l'autre. Le webmail Hostinger reste accessible tant que l'abonnement court.
+   - **Technique** (copie complète et relançable sans doublons) :
+     ```bash
+     docker run --rm gilleslamiral/imapsync imapsync \
+       --host1 imap.hostinger.com --port1 993 --ssl1 --user1 contact@k-isolation.fr --password1 '<mdp Hostinger>' \
+       --host2 <serveur IMAP LWS> --port2 993 --ssl2 --user2 contact@k-isolation.fr --password2 '<mdp LWS>'
+     ```
+   - **Par LWS**, si leur migration inclut les e-mails (question n° 2 de l'étape 0).
+7. **Configurer WP Mail SMTP** (étape 2, réglage n° 4) avec la boîte `contact@` de LWS, puis envoyer un formulaire de test.
+
+**Vérifications de fin de phase 2 :**
+- [ ] Un e-mail envoyé depuis Gmail vers `contact@` arrive chez LWS.
+- [ ] Un e-mail envoyé depuis `contact@` (LWS) arrive dans une boîte Gmail, et **pas en spam** : SPF et DKIM sont corrects.
+- [ ] Le formulaire du site arrive bien.
+- [ ] Les anciens messages sont présents chez LWS.
+
+## Étape 6 : après la migration
+
+- [ ] **Google Search Console** : ajouter (ou vérifier) une propriété « Domaine » `k-isolation.fr` validée par un enregistrement TXT, **dans la zone DNS LWS**.
 - [ ] **Site Kit** : reconnecter le compte Google si l'extension le demande.
-- [ ] Pendant 7 jours : surveiller Search Console (pages en erreur) et les formulaires.
+- [ ] **IONOS** : vérifier la date d'échéance et le renouvellement automatique du domaine.
+- [ ] **J+30, si tout fonctionne** : chez Hostinger, désactiver le renouvellement automatique et résilier l'hébergement et l'offre e-mail. Télécharger une dernière sauvegarde avant de résilier.
 
-## 8. Retour arrière (si quelque chose ne va pas)
+## En cas de problème
 
-Remettre `A @` = `46.202.172.2` et `AAAA @` = `2a02:4780:27:1890:0:227e:fa92:d` dans le DNS Hostinger. Avec un TTL de 300 s, le site revient chez Hostinger en quelques minutes. C'est pour cela que **l'hébergement Hostinger reste actif 30 jours** après la bascule. Une fois ce délai passé, et les e-mails réglés (§2), il peut être résilié.
+| Symptôme | Cause probable | Solution |
+|---|---|---|
+| Site sans mise en forme ou polices de remplacement | Polices de l'ancien domaine Hostinger, ou cache Elementor | Étape 2, réglage n° 3, puis vider le cache LWS |
+| Erreur 500 après la migration | Extension LiteSpeed Cache encore active | Renommer le dossier `wp-content/plugins/litespeed-cache` par FTP |
+| Les formulaires n'arrivent pas | Envoi PHP bloqué ou classé en spam | WP Mail SMTP avec `contact@` (étape 5, point 7) |
+| E-mails reçus nulle part pendant la phase 2 | Boîte pas encore créée chez LWS | La créer : les serveurs réessaient pendant plusieurs jours, les messages arriveront |
+| Site encore sur l'ancienne version chez certains | Propagation DNS ou AAAA oublié | Attendre jusqu'à 24 h ; vérifier que l'AAAA Hostinger est supprimé |
+
+Sources : [tarifs et formules LWS](https://www.lws.fr/hebergement_wordpress.php), [o2switch](https://www.o2switch.fr/).

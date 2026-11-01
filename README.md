@@ -1,7 +1,7 @@
 # k-isolation.fr
 
 > **Statut (31/10/2026) : refonte en pause, non validée.** Priorité : export complet du site WordPress actuel et migration vers un nouvel hébergeur.
-> - [`MIGRATION-WORDPRESS.md`](MIGRATION-WORDPRESS.md) : déplacer le site actuel tel quel, sans couper le site ni les e-mails.
+> - [`MIGRATION-WORDPRESS.md`](MIGRATION-WORDPRESS.md) : déménagement Hostinger → LWS (domaine chez IONOS), site puis e-mails, sans coupure.
 > - [`export-site-actuel/`](export-site-actuel/LISEZMOI.md) : copie complète du site, médiathèque originale, données WordPress, relevé DNS, scripts d'export et d'import.
 >
 > Le dossier `site/` (prototype de refonte) et les documents `AUDIT-SYNTHESE.md`, `MIGRATION.md` et `CONTENU-A-VALIDER.md` concernent la refonte en pause. Les audits de `audit/` restent valables pour le site actuel.
